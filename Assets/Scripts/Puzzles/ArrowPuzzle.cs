@@ -12,11 +12,6 @@ public class ArrowPuzzle : MonoBehaviour
         arrows = new int[puzzleLength];
     }
 
-    void Update()
-    {
-
-    }
-
     // for arrow directions, 0 is no value, 1 left and 2 is right
     public void EnterArrow(int arr)
     {
@@ -64,7 +59,13 @@ public class ArrowPuzzle : MonoBehaviour
     {
         arrows[i] = 2;
         PrintArrowList();
-        i++;  
+        i++;
+    }
+
+    //  return the arrow value at a specified index
+    public int GetArrow(int index)
+    {
+        return arrows[index];
     }
 
     //  player enters the final arrow space left and the combination is wrong
