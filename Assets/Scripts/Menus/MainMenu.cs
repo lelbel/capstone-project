@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     //  name of the game's starting scene
     [SerializeField] private string startScene;
-    [SerializeField] private string settingsScene;
+    [SerializeField] private string howToPlayScene;
     [SerializeField] private string creditsScene;
     [SerializeField] private string mainMenuScene;
 
@@ -24,18 +24,18 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    //  navigate player to the settings menu
-    public void OpenSettings()
+    //  navigate player to the how to play menu
+    public void OpenHowToPlay()
     {
         //  check that the scene string is populated
-        if (!string.IsNullOrWhiteSpace(settingsScene))
+        if (!string.IsNullOrWhiteSpace(howToPlayScene))
         {
-            SceneManager.LoadScene(settingsScene);
+            SceneManager.LoadScene(howToPlayScene);
         }
 
         else
         {
-            Debug.Log("settingsScene string argument is blank");
+            Debug.Log("howToPlayScene string argument is blank");
         }
     }
 

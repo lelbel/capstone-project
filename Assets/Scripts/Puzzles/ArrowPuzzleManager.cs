@@ -18,6 +18,8 @@ public class ArrowPuzzleManager : MonoBehaviour
     [SerializeField] private Sprite blankSprite;
     [SerializeField] private Sprite leftArrowSprite;
     [SerializeField] private Sprite rightArrowSprite;
+    [SerializeField] private Sprite completedLeftArrowSprite;
+    [SerializeField] private Sprite completedRightArrowSprite;
 
     //  arrow images for the UI (display the current arrow state)
     [SerializeField] private Image arrowImg0;
@@ -26,9 +28,14 @@ public class ArrowPuzzleManager : MonoBehaviour
     [SerializeField] private Image arrowImg3;
     [SerializeField] private Image arrowImg4;
 
+    //  arrow buttons
+    [SerializeField] private Button leftButton;
+    [SerializeField] private Button rightButton;
+
     void Start()
     {
         puzzleLength = 5;
+
         //  instantiate and populate array
         arrowImages = new Image[] { arrowImg0, arrowImg1, arrowImg2, arrowImg3, arrowImg4 };
 
@@ -133,6 +140,31 @@ public class ArrowPuzzleManager : MonoBehaviour
         arrowPuzzleComplete = true;
 
         //  show some sort ov visual indicator that the player did something
+
+        i = 0;
+
+        foreach (int dir in arrowDir)
+        {
+            //  completed left arrow
+            if (dir == 1)
+            {
+                arrowDir[i] = 1;
+                arrowImages[i].GetComponent<Image>().sprite = completedLeftArrowSprite;
+            }
+
+            //  completed right arrow
+            if (dir == 2)
+            {
+                arrowDir[i] = 2;
+                arrowImages[i].GetComponent<Image>().sprite = completedRightArrowSprite;
+            }
+
+            //  increment counter
+            i++;
+        }
+
+        leftButton.interactable = false;
+        rightButton.interactable = false;    
 
         //  navigate back to the menu
     }
