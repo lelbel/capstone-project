@@ -1,19 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PuzzleMarkers : MonoBehaviour
+public class Navigate : MonoBehaviour
 {
-    [SerializeField] private string puzzleScene;
+    [SerializeField] private string scene;
 
-    public void OpenPuzzle()
+    public void ChangeScene()
     {
-        Debug.Log($"opening puzzle {puzzleScene}");
+        Debug.Log($"opening puzzle {scene}");
         
         //  check that the scene string is populated
-        if (!string.IsNullOrWhiteSpace(puzzleScene))
+        if (!string.IsNullOrWhiteSpace(scene))
         {
             Debug.Log("loading puzzle");
-            SceneManager.LoadScene(puzzleScene);
+            SceneManager.LoadScene(scene);
         }
 
         else
