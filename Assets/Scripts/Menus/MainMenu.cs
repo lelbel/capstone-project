@@ -10,10 +10,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string mainMenuScene;
 
     //  fix this later!!!
-    void Start()
-    {
-        Screen.fullScreen = true;
-    }
+    //void Start()
+    //{
+    //    Screen.fullScreen = true;
+    //}
 
     //  navigate player to the starting scene
     public void PlayGame()

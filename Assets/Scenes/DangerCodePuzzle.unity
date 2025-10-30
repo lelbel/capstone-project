@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002861, y: -52}
-  m_SizeDelta: {x: 923.3992, y: 252.9428}
+  m_AnchoredPosition: {x: -0.00002861, y: -64}
+  m_SizeDelta: {x: 743.6141, y: 203.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300621371
 MonoBehaviour:
@@ -367,7 +367,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000032425, y: -302}
-  m_SizeDelta: {x: 1496.536, y: 191.7917}
+  m_SizeDelta: {x: 1330.8131, y: 197.818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647851762
 MonoBehaviour:
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1081,7 +1081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -848, y: 437}
+  m_AnchoredPosition: {x: -866, y: 476}
   m_SizeDelta: {x: 57.7858, y: 45.8884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499322064
@@ -1772,9 +1772,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A set of paintings inspire dreams of adventure at sea\nOn the right there
-    are two, on the left there are three\nThe rippling surface of the water below\nReflects
-    the key word you need to know \n"
+  m_text: 'Looking outside while in the zone of teen
+
+    You will find a sign that
+    waits to be seen
+
+    Travelers nearby must beware of the slope
+
+    A large
+    word of warning could be their only hope'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b9946b53276b2c4b8fd24da8a8c5578, type: 2}
   m_sharedMaterial: {fileID: -2488896620410430230, guid: 9b9946b53276b2c4b8fd24da8a8c5578, type: 2}
@@ -1801,15 +1807,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 1024
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

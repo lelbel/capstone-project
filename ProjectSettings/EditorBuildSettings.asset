@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Librarian.unity
     guid: fbdc978ba67de9c4b898b2e4492e0adb
+  - enabled: 1
+    path: Assets/Scenes/FinalCodePuzzle.unity
+    guid: 7f5fd0c2db52f6d48b3521630b4cad51
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

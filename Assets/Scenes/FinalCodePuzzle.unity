@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002861, y: -53}
-  m_SizeDelta: {x: 750.1865, y: 205.4954}
+  m_AnchoredPosition: {x: -0.00002861, y: -64}
+  m_SizeDelta: {x: 743.6141, y: 203.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300621371
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -743553865953427267, guid: 824b2a1276c242a4b8fa5c46b78cfc8e, type: 3}
+  m_Sprite: {fileID: 6097354205076843295, guid: 32cbf7a315b93cb4f9a0e9107c531113, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -366,8 +366,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000032425, y: -299}
-  m_SizeDelta: {x: 1115.9, y: 159.9865}
+  m_AnchoredPosition: {x: -0.000032425, y: -302}
+  m_SizeDelta: {x: 1615.4, y: 176.726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647851762
 MonoBehaviour:
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -754,8 +754,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userInput: {fileID: 647851762}
   submitButton: {fileID: 1804496448}
-  solution: boat
-  solutionLength: 4
+  solution: library
+  solutionLength: 7
 --- !u!4 &1087808218
 Transform:
   m_ObjectHideFlags: 0
@@ -1081,7 +1081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -883, y: 465}
+  m_AnchoredPosition: {x: -866, y: 476}
   m_SizeDelta: {x: 57.7858, y: 45.8884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499322064
@@ -1459,7 +1459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -452}
+  m_AnchoredPosition: {x: 0, y: -468}
   m_SizeDelta: {x: 308.1299, y: 66.2768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804496448
@@ -1772,9 +1772,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A set of paintings inspire dreams of adventure at sea\nOn the right there
-    are two, on the left there are three\nThe rippling surface of the water below\nReflects
-    the key word you need to know \n"
+  m_text: Riddle about how the other codes in the game need to be solved to figure
+    this one out
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b9946b53276b2c4b8fd24da8a8c5578, type: 2}
   m_sharedMaterial: {fileID: -2488896620410430230, guid: 9b9946b53276b2c4b8fd24da8a8c5578, type: 2}

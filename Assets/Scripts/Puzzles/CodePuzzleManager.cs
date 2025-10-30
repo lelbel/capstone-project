@@ -9,6 +9,7 @@ public class CodePuzzleManager : MonoBehaviour
     public static bool boatCodePuzzleComplete = false;
     public static bool dangerCodePuzzleComplete = false;
     public static bool libbyCodePuzzleComplete = false;
+    public static bool finalCodePuzzleComplete = false;
 
     [SerializeField] private TMP_InputField userInput;
     [SerializeField] private Button submitButton;
@@ -54,6 +55,11 @@ public class CodePuzzleManager : MonoBehaviour
             else if (string.Equals(userInput.text, "libby", System.StringComparison.OrdinalIgnoreCase) == true)
             {
                 libbyCodePuzzleComplete = true;
+            }
+
+            else if (string.Equals(userInput.text, "library", System.StringComparison.OrdinalIgnoreCase) == true)
+            {
+                finalCodePuzzleComplete = true;
             }
 
             else
