@@ -12,18 +12,27 @@ public class PuzzleMarkers : MonoBehaviour
 
     //  buttons
     [SerializeField] private Button arrowPuzzleBtn;
+    [SerializeField] private Button boatCodePuzzleBtn;
+    [SerializeField] private Button dangerCodePuzzleBtn;
+    [SerializeField] private Button libbyCodePuzzleBtn;
 
     //  puzzle markers
     private PuzzleMarker arrowPuzzleMkr;
+    private PuzzleMarker boatCodePuzzleMkr;
+    private PuzzleMarker dangerCodePuzzleMkr;
+    private PuzzleMarker libbyCodePuzzleMkr;
 
 
     void Start()
     {
         //  instantiate puzzle markers
         arrowPuzzleMkr = new(ArrowPuzzleManager.arrowPuzzleComplete, arrowPuzzleBtn);
+        boatCodePuzzleMkr = new(CodePuzzleManager.boatCodePuzzleComplete, boatCodePuzzleBtn);
+        dangerCodePuzzleMkr = new(CodePuzzleManager.dangerCodePuzzleComplete, dangerCodePuzzleBtn);
+        libbyCodePuzzleMkr = new(CodePuzzleManager.libbyCodePuzzleComplete, libbyCodePuzzleBtn);
 
         //instantiate and populate puzzle marker array with all markers
-        puzzleMarkers = new PuzzleMarker[] {arrowPuzzleMkr};
+        puzzleMarkers = new PuzzleMarker[] {arrowPuzzleMkr, boatCodePuzzleMkr, dangerCodePuzzleMkr, libbyCodePuzzleMkr};
 
         foreach (PuzzleMarker p in puzzleMarkers)
         {

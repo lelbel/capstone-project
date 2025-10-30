@@ -15,11 +15,29 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingsMenu.unity
     guid: 37925a003c302fc47950b6e1952294bc
   - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: db5217eb40217f0479e993767af301f0
+  - enabled: 1
+    path: Assets/Scenes/InGameMenu.unity
+    guid: cb934c18e5a9dbd4680ac8eb5894bf8b
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: c0467993fb0198c478882de0a2fc7ff0
   - enabled: 1
     path: Assets/Scenes/ArrowPuzzle.unity
     guid: 589fc8c509090054fafbfdfdc0f776b2
+  - enabled: 1
+    path: Assets/Scenes/BoatCodePuzzle.unity
+    guid: 18a30eb3a201aaf4c9f711e7d278656f
+  - enabled: 1
+    path: Assets/Scenes/DangerCodePuzzle.unity
+    guid: 842ce876b3a31d8409ec421e081b2d9c
+  - enabled: 1
+    path: Assets/Scenes/LibbyCodePuzzle.unity
+    guid: e73e4a904eb09444280e705d206af1aa
+  - enabled: 1
+    path: Assets/Scenes/Librarian.unity
+    guid: fbdc978ba67de9c4b898b2e4492e0adb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

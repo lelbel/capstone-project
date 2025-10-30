@@ -9,6 +9,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string creditsScene;
     [SerializeField] private string mainMenuScene;
 
+    //  fix this later!!!
+    void Start()
+    {
+        Screen.fullScreen = true;
+    }
+
     //  navigate player to the starting scene
     public void PlayGame()
     {
@@ -53,7 +59,7 @@ public class MainMenu : MonoBehaviour
             Debug.Log("creditsScene string argument is blank");
         }
     }
-        
+
     //  navigate to the main menu
     public void OpenMainMenu()
     {
@@ -70,4 +76,11 @@ public class MainMenu : MonoBehaviour
             Debug.Log("mainMenuScene string argument is blank");
         }
     }
+
+    /*
+    public void ToggleFullscreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+    */
 }
