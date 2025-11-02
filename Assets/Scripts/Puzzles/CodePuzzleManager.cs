@@ -84,7 +84,7 @@ public class CodePuzzleManager : MonoBehaviour
     }
 
     //  add delay
-    public IEnumerator Incorrect()
+    IEnumerator Incorrect()
     {
         Debug.Log("incorrect");
         userInput.textComponent.color = Color.red;
