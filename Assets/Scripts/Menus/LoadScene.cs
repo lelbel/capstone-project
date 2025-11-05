@@ -5,18 +5,17 @@ public class Navigate : MonoBehaviour
 {
     [SerializeField] private string scene;
 
-    public void ChangeScene()
+    public void LoadScene()
     {
-        Debug.Log($"opening puzzle {scene}");
+        Debug.Log($"Loading Scene: {scene}");
 
         //  check that the scene string is populated
         if (string.IsNullOrWhiteSpace(scene))
         {
-            Debug.Log("puzzleScene string argument is blank");
+            Debug.Log("sceneName string argument is blank");
             return;
         }
 
-        Debug.Log("loading puzzle");
         SceneManager.LoadScene(scene);
     }
 }
