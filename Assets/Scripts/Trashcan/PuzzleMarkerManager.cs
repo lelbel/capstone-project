@@ -28,7 +28,7 @@ public class PuzzleMarkers : MonoBehaviour
     void Start()
     {
         //  instantiate puzzle markers
-        arrowPuzzleMkr = new(ArrowPuzzleManager.arrowPuzzleComplete, arrowPuzzleBtn);
+        //arrowPuzzleMkr = new(ArrowPuzzleManager.arrowPuzzleComplete, arrowPuzzleBtn);
         boatCodePuzzleMkr = new(CodePuzzleManager.boatCodePuzzleComplete, boatCodePuzzleBtn);
         dangerCodePuzzleMkr = new(CodePuzzleManager.dangerCodePuzzleComplete, dangerCodePuzzleBtn);
         libbyCodePuzzleMkr = new(CodePuzzleManager.libbyCodePuzzleComplete, libbyCodePuzzleBtn);

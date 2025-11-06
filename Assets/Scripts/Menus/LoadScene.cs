@@ -7,7 +7,7 @@ public class Navigate : MonoBehaviour
 
     public void LoadScene()
     {
-        Debug.Log($"Loading Scene: {scene}");
+        //Debug.Log($"Loading Scene: {scene}");
 
         //  check that the scene string is populated
         if (string.IsNullOrWhiteSpace(scene))

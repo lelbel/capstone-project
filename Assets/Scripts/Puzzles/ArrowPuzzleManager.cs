@@ -3,9 +3,6 @@ using UnityEngine.UI;
 
 public class ArrowPuzzleManager : MonoBehaviour
 {
-    //  global
-    public static bool arrowPuzzleComplete = false; //  bool that indicates whether the puzzle has or has not been beaten
-
     //  general fields
     private Image[] arrowImages;    //  array that stores the image objects for the puzzle
     private int[] arrowDir;         //  array that tracks the player input for arrow entry
@@ -65,7 +62,7 @@ public class ArrowPuzzleManager : MonoBehaviour
         //  check if correct pattern has been found
         if (i > (puzzleLength - 1))
         {
-            Debug.Log("Entry full");
+            //Debug.Log("Entry full");
             if (FoundSolution() == false)
             {
                 ResetPuzzle();
@@ -133,10 +130,10 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     public void CompletePuzzle()
     {
-        Debug.Log("puzzle completed");
+        Debug.Log("puzzle completed NOT MARKING COMPLETE CURRENTLY");
+        //PuzzleManager.currentPuzzleSolved = true;
 
         //  set puzzle completion bool to true
-        arrowPuzzleComplete = true;
 
         //  show some sort ov visual indicator that the player did something
 

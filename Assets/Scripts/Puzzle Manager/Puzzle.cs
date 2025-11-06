@@ -6,20 +6,15 @@ public class Puzzle: MonoBehaviour
 {
     [SerializeField] private string sceneName;
     [SerializeField] private Button mapButton;
-    [SerializeField] private bool isSolved;
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
-
-    public string GetSceneName()
-    {
-        return sceneName;
-    }
+    [SerializeField] private bool isSolved = false;
 
     public Button GetMapButton()
     {
         return mapButton;
     }
-
+    
     public bool IsSolved()
     {
         return isSolved;
@@ -35,14 +30,19 @@ public class Puzzle: MonoBehaviour
         isSolved = false;
     }
 
-    public void UpdateSprite(Sprite spr)
+    public Sprite GetCompleteSprite()
     {
-        mapButton.GetComponent<Image>().sprite = spr;
+        return completeSprite;
+    }
+
+    public Sprite GetIncompleteSprite()
+    {
+        return incompleteSprite;
     }
 
     public void LoadScene()
     {
-        Debug.Log($"Loading Scene: {sceneName}");
+        //Debug.Log($"Loading Scene: {sceneName}");
 
         //  check that the scene string is populated
         if (string.IsNullOrWhiteSpace(sceneName))
@@ -52,15 +52,5 @@ public class Puzzle: MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneName);
-    }
-
-    public Sprite GetCompleteSprite()
-    {
-        return completeSprite;
-    }
-
-    public Sprite GetIncompleteSprite()
-    {
-        return incompleteSprite;
     }
 }
