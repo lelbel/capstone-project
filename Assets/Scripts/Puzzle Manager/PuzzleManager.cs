@@ -5,16 +5,25 @@ using UnityEngine.UI;
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> puzzleList;
-    public static bool currentPuzzleSolved = false;
     public static GameObject currentPuzzle;
-    
+    public static PuzzleManager Instance;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        //Debug.Log(currentPuzzle);
-
-        //  update currrent puzzle
-        UpdateCurrentPuzzle();
-
         //  set each sprite as incomeplete
         foreach (GameObject puzzle in puzzleList)
         {
@@ -44,6 +53,13 @@ public class PuzzleManager : MonoBehaviour
         puzzle.GetComponent<Puzzle>().GetMapButton().GetComponent<Image>().sprite = puzzle.GetComponent<Puzzle>().GetCompleteSprite();
     }
 
+    public void SolveCurrentPuzzle()
+    {
+        currentPuzzle.GetComponent<Puzzle>().SolvePuzzle();
+    }
+}
+
+/*
     //  update the current puzzle if correct conditions are met
     public void UpdateCurrentPuzzle()
     {
@@ -57,4 +73,4 @@ public class PuzzleManager : MonoBehaviour
             Debug.Log("current puzzle updated");
         }
     }
-}
+    */
