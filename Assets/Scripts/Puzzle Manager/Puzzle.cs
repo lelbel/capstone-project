@@ -42,8 +42,6 @@ public class Puzzle: MonoBehaviour
 
     public void LoadScene()
     {
-        //Debug.Log($"Loading Scene: {sceneName}");
-
         //  check that the scene string is populated
         if (string.IsNullOrWhiteSpace(sceneName))
         {

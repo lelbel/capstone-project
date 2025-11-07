@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 1994687782}
   - component: {fileID: 1994687783}
   m_Layer: 0
-  m_Name: PuzzleManager
+  m_Name: ArrowPuzzleManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1673,6 +1673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bf83b1546bd1b49b479d879122bfb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleManagerObjectName: PuzzleManager
   blankSprite: {fileID: 6318422603818717340, guid: defdb90f17a5dfd45a6432ac51506643, type: 3}
   leftArrowSprite: {fileID: -9079181869168717973, guid: 0edbf6cad86b0914eb576faadc9c212b, type: 3}
   rightArrowSprite: {fileID: 7541112579435061693, guid: b19854da68dedad40828f386e64a13ba, type: 3}

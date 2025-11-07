@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//  redo this using enums at some point
+//  add a finished state that displays if the current puzzle.IsSolved returns true
 public class ArrowPuzzleManager : MonoBehaviour
 {
     //  general fields
@@ -30,16 +32,18 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(PuzzleManager.currentPuzzleButton);
+
         puzzleLength = 5;
 
         //  instantiate and populate array
         arrowImages = new Image[] { arrowImg0, arrowImg1, arrowImg2, arrowImg3, arrowImg4 };
 
         //  instantiate array that will hold arrow directions
-        arrowDir = new int[5] {0, 0, 0, 0, 0};
+        arrowDir = new int[5] { 0, 0, 0, 0, 0 };
 
         //  instantiate and populate solution
-        solution = new int[5] {1, 2, 2, 1, 2};
+        solution = new int[5] { 1, 2, 2, 1, 2 };
     }
 
     // for arrow directions 1 left and 2 is right
@@ -130,13 +134,10 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     public void CompletePuzzle()
     {
-        Debug.Log("puzzle completed NOT MARKING COMPLETE CURRENTLY");
-        //PuzzleManager.currentPuzzleSolved = true;
+        //  find the game manager object and solve the current puzzle
+        PuzzleManager.SolveCurrentPuzzle();
 
-        //  set puzzle completion bool to true
-
-        //  show some sort ov visual indicator that the player did something
-
+        //  show each arrow sprite as complete
         i = 0;
 
         foreach (int dir in arrowDir)
@@ -160,9 +161,9 @@ public class ArrowPuzzleManager : MonoBehaviour
         }
 
         leftButton.interactable = false;
-        rightButton.interactable = false;    
+        rightButton.interactable = false;
 
         //  navigate back to the menu
     }
-    
+
 }

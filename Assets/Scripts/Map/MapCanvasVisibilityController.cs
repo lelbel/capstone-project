@@ -8,7 +8,7 @@ public class MapVisibilityManager : MonoBehaviour
     public static MapVisibilityManager Instance;
 
     void Awake()
-    {
+    {        
         if (Instance == null)
         {
             Instance = this;
@@ -31,22 +31,16 @@ public class MapVisibilityManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    //  enable map canvas if player is in the map scene
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log(string.Equals(SceneManager.GetActiveScene().name, mapSceneName, System.StringComparison.OrdinalIgnoreCase));
         if (string.Equals(SceneManager.GetActiveScene().name, mapSceneName, System.StringComparison.OrdinalIgnoreCase))
         {
-            Debug.Log("activate");
-            Debug.Log(SceneManager.GetActiveScene().name);
-            Debug.Log(mapSceneName);
             canvas.SetActive(true);
         }
 
         else
         {
-            Debug.Log("deactivate");
-            Debug.Log(SceneManager.GetActiveScene().name);
-            Debug.Log(mapSceneName);
             canvas.SetActive(false);
         }
     }

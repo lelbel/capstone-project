@@ -1,21 +1,26 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class UpdateCurrentPuzzleManager : MonoBehaviour
+public class UpdateCurrentPuzzle : MonoBehaviour
 {
     //  THE ONCLICK WORKS YES
     //  get clicked game object
     public void OnButtonClick()
     {
+        PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
+        Debug.Log(PuzzleManager.currentPuzzleButton);
+        
+        /*
         if (EventSystem.current.currentSelectedGameObject.CompareTag("PuzzleButton"))
         {
-            PuzzleManager.currentPuzzle = EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;
-            Debug.Log(PuzzleManager.currentPuzzle);
+            PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
+            Debug.Log(PuzzleManager.currentPuzzleButton);
         }
 
         else
         {
             Debug.Log("selected object does not have the correct tag");
         }
+        */
     }
 }

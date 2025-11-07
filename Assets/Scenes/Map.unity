@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 91833366}
   - component: {fileID: 91833365}
   m_Layer: 5
-  m_Name: MapButton (4)
-  m_TagString: PuzzleButton
+  m_Name: FinalCodePuzzleButton
+  m_TagString: FinalCodePuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,15 +146,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91833363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.7204156}
-  m_LocalScale: {x: 1.76868, y: 1.76868, z: 0.88434}
+  m_LocalPosition: {x: 0, y: 0, z: -9.077735}
+  m_LocalScale: {x: 3.401312, y: 3.401312, z: 1.700656}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 200939738}
+  m_Father: {fileID: 791023043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.99998, y: 9.311829}
+  m_AnchoredPosition: {x: 340.38507, y: 17.907394}
   m_SizeDelta: {x: 24.3251, y: 25.234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91833365
@@ -344,42 +344,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
---- !u!1 &200939737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 200939738}
-  m_Layer: 0
-  m_Name: PuzzleButtons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &200939738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200939737}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9230794, y: 1.9230794, z: 1.9230794}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1517513697}
-  - {fileID: 359001282}
-  - {fileID: 1224283537}
-  - {fileID: 778039534}
-  - {fileID: 91833364}
-  m_Father: {fileID: 791023043}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &295860933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2670540632759259198, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
@@ -484,8 +448,8 @@ GameObject:
   - component: {fileID: 359001280}
   - component: {fileID: 359001279}
   m_Layer: 5
-  m_Name: MapButton (1)
-  m_TagString: PuzzleButton
+  m_Name: BoatCodePuzzleButton
+  m_TagString: BoatCodePuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,15 +568,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359001278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.7204156}
-  m_LocalScale: {x: 1.76868, y: 1.76868, z: 0.88434}
+  m_LocalPosition: {x: 0, y: 0, z: -9.077735}
+  m_LocalScale: {x: 3.401312, y: 3.401312, z: 1.700656}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 200939738}
+  m_Father: {fileID: 791023043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -126.000015, y: 9.311829}
+  m_AnchoredPosition: {x: -242.30804, y: 17.907394}
   m_SizeDelta: {x: 24.3251, y: 25.234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &393711662 stripped
@@ -797,8 +761,8 @@ GameObject:
   - component: {fileID: 778039532}
   - component: {fileID: 778039531}
   m_Layer: 5
-  m_Name: MapButton (3)
-  m_TagString: PuzzleButton
+  m_Name: LibbyCodePuzzleButton
+  m_TagString: LibbyCodePuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -917,15 +881,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778039530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.7204156}
-  m_LocalScale: {x: 1.76868, y: 1.76868, z: 0.88434}
+  m_LocalPosition: {x: 0, y: 0, z: -9.077735}
+  m_LocalScale: {x: 3.401312, y: 3.401312, z: 1.700656}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 200939738}
+  m_Father: {fileID: 791023043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79.999985, y: 9.311829}
+  m_AnchoredPosition: {x: 153.84634, y: 17.907394}
   m_SizeDelta: {x: 24.3251, y: 25.234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &791023039
@@ -940,6 +904,7 @@ GameObject:
   - component: {fileID: 791023042}
   - component: {fileID: 791023041}
   - component: {fileID: 791023040}
+  - component: {fileID: 791023044}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1022,9 +987,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1808575926}
   - {fileID: 655630881}
-  - {fileID: 200939738}
+  - {fileID: 1517513697}
+  - {fileID: 359001282}
+  - {fileID: 1224283537}
+  - {fileID: 778039534}
+  - {fileID: 91833364}
   - {fileID: 393711662}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1033,6 +1001,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &791023044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791023039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40abb43f9b7e4db439c7834a80f01253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1189338374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189338376}
+  - component: {fileID: 1189338375}
+  m_Layer: 0
+  m_Name: MapCanvaVisibilityManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1189338375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189338374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10bf542c69afe04fa29ea0cccefb953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapSceneName: Map
+  canvas: {fileID: 791023039}
+--- !u!4 &1189338376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189338374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 972.17883, y: 636.1252, z: -9.792305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224283533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,8 +1072,8 @@ GameObject:
   - component: {fileID: 1224283535}
   - component: {fileID: 1224283534}
   m_Layer: 5
-  m_Name: MapButton (2)
-  m_TagString: PuzzleButton
+  m_Name: DangerCodePuzzleButton
+  m_TagString: DangerCodePuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1166,15 +1192,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224283533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.7204156}
-  m_LocalScale: {x: 1.76868, y: 1.76868, z: 0.88434}
+  m_LocalPosition: {x: 0, y: 0, z: -9.077735}
+  m_LocalScale: {x: 3.401312, y: 3.401312, z: 1.700656}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 200939738}
+  m_Father: {fileID: 791023043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.000015, y: 9.311829}
+  m_AnchoredPosition: {x: -61.538586, y: 17.907394}
   m_SizeDelta: {x: 24.3251, y: 25.234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1270588161
@@ -1495,8 +1521,8 @@ GameObject:
   - component: {fileID: 1517513695}
   - component: {fileID: 1517513694}
   m_Layer: 5
-  m_Name: MapButton
-  m_TagString: PuzzleButton
+  m_Name: ArrowPuzzleButton
+  m_TagString: ArrowPuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1615,15 +1641,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517513693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.7204156}
-  m_LocalScale: {x: 1.76868, y: 1.76868, z: 0.88434}
+  m_LocalPosition: {x: 0, y: 0, z: -9.077735}
+  m_LocalScale: {x: 3.401312, y: 3.401312, z: 1.700656}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 200939738}
+  m_Father: {fileID: 791023043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213, y: 9.311829}
+  m_AnchoredPosition: {x: -409.6159, y: 17.907394}
   m_SizeDelta: {x: 24.3251, y: 25.234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1593767285
@@ -1797,6 +1823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1808575926}
+  - component: {fileID: 1808575927}
   m_Layer: 0
   m_Name: Puzzles
   m_TagString: Untagged
@@ -1813,8 +1840,8 @@ Transform:
   m_GameObject: {fileID: 1808575925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.085436, y: 112.70004, z: -9.975967}
-  m_LocalScale: {x: 1.0187558, y: 1.0187558, z: 1.0187558}
+  m_LocalPosition: {x: 972.17883, y: 636.1252, z: -9.792305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1339834019}
@@ -1822,8 +1849,20 @@ Transform:
   - {fileID: 2101468815}
   - {fileID: 295860936}
   - {fileID: 1476574038}
-  m_Father: {fileID: 791023043}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808575927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808575925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf01a5ae406b0c45885f8ba9968b7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101468812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2670540632759259198, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
@@ -1992,5 +2031,7 @@ SceneRoots:
   - {fileID: 1403371499}
   - {fileID: 1270588163}
   - {fileID: 2107413533}
+  - {fileID: 1808575926}
   - {fileID: 791023043}
   - {fileID: 624800596}
+  - {fileID: 1189338376}
