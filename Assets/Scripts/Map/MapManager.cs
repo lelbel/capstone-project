@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DontDestroyMapCanvas : MonoBehaviour
+public class MapManager : MonoBehaviour
 {
-    public static DontDestroyMapCanvas Instance;
+    public static MapManager Instance;
 
     void Awake()
     {
