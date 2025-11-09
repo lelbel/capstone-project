@@ -31,8 +31,8 @@ public class PuzzleManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(currentPuzzleButton);
-        Debug.Log(currentPuzzle);
+        //Debug.Log(currentPuzzleButton);
+        //Debug.Log(currentPuzzle);
 
         //RefreshSprites();
     }

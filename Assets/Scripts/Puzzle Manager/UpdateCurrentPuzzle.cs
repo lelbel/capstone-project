@@ -8,7 +8,7 @@ public class UpdateCurrentPuzzle : MonoBehaviour
     public void OnButtonClick()
     {
         PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
-        Debug.Log(PuzzleManager.currentPuzzleButton);
+        //Debug.Log(PuzzleManager.currentPuzzleButton);
         
         /*
         if (EventSystem.current.currentSelectedGameObject.CompareTag("PuzzleButton"))

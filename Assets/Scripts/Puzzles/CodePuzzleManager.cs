@@ -5,11 +5,10 @@ using System.Collections;
 
 public class CodePuzzleManager : MonoBehaviour
 {
-    //  global
-    public static bool boatCodePuzzleComplete = false;
-    public static bool dangerCodePuzzleComplete = false;
-    public static bool libbyCodePuzzleComplete = false;
-    public static bool finalCodePuzzleComplete = false;
+    //public static bool boatCodePuzzleComplete = false;
+    //public static bool dangerCodePuzzleComplete = false;
+    //public static bool libbyCodePuzzleComplete = false;
+    //public static bool finalCodePuzzleComplete = false;
 
     [SerializeField] private TMP_InputField userInput;
     [SerializeField] private Button submitButton;
@@ -27,6 +26,12 @@ public class CodePuzzleManager : MonoBehaviour
         caretColor.a = 0f;
         userInput.caretColor = caretColor;
         userInput.caretPosition = 0;
+
+        if (PuzzleManager.currentPuzzle.GetComponent<Puzzle>().IsSolved())
+        {
+            userInput.text = solution;
+            FoundSolution();
+        }
     }
 
     //  function that triggers when the submit button is entered
@@ -41,6 +46,10 @@ public class CodePuzzleManager : MonoBehaviour
         if (string.Equals(userInput.text, solution, System.StringComparison.OrdinalIgnoreCase) == true)
         {
             Debug.Log("correct");
+
+            PuzzleManager.SolveCurrentPuzzle();
+
+            /*
 
             if (string.Equals(userInput.text, "boat", System.StringComparison.OrdinalIgnoreCase) == true)
             {
@@ -66,6 +75,7 @@ public class CodePuzzleManager : MonoBehaviour
             {
                 Debug.Log("correct answer does not match any of the predetermined cases");
             }
+            */
             
             FoundSolution();
         }
