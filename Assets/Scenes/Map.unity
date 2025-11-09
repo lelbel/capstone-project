@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339834018}
+      - m_Target: {fileID: 1476574040}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -213,8 +213,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339834017}
-        m_TargetAssemblyTypeName: CurrentPuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1476574039}
+        m_TargetAssemblyTypeName: UpdateCurrentPuzzle, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -354,6 +354,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4087531090535182557, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
   m_PrefabInstance: {fileID: 1593767285}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &295860937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5963175379632822539, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 1593767285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295860933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffce70dca945247488b40229432a9cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &295860938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960589759158097799, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 1593767285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295860933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3640989bb536d84c97489e44d2e3420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &301891301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,7 +520,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339834018}
+      - m_Target: {fileID: 759234424}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -510,8 +532,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339834017}
-        m_TargetAssemblyTypeName: CurrentPuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 759234423}
+        m_TargetAssemblyTypeName: UpdateCurrentPuzzle, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -748,6 +770,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4087531090535182557, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
   m_PrefabInstance: {fileID: 1415616191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &759234423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5963175379632822539, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 1415616191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759234419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffce70dca945247488b40229432a9cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &759234424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960589759158097799, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 1415616191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759234419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3640989bb536d84c97489e44d2e3420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &778039530
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +855,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339834018}
+      - m_Target: {fileID: 295860938}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -823,8 +867,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339834017}
-        m_TargetAssemblyTypeName: CurrentPuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 295860937}
+        m_TargetAssemblyTypeName: UpdateCurrentPuzzle, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -1122,7 +1166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339834018}
+      - m_Target: {fileID: 2101468817}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -1134,8 +1178,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339834017}
-        m_TargetAssemblyTypeName: CurrentPuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 2101468816}
+        m_TargetAssemblyTypeName: UpdateCurrentPuzzle, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -1508,6 +1552,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4087531090535182557, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
   m_PrefabInstance: {fileID: 124198832}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476574039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5963175379632822539, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 124198832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476574035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffce70dca945247488b40229432a9cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1476574040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960589759158097799, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 124198832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476574035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3640989bb536d84c97489e44d2e3420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1517513693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1939,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4087531090535182557, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
   m_PrefabInstance: {fileID: 301891301}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2101468816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5963175379632822539, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 301891301}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101468812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffce70dca945247488b40229432a9cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2101468817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960589759158097799, guid: 5cce120778e965d4b9bc4cb660ee70c5, type: 3}
+  m_PrefabInstance: {fileID: 301891301}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101468812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3640989bb536d84c97489e44d2e3420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2107413531
 GameObject:
   m_ObjectHideFlags: 0
