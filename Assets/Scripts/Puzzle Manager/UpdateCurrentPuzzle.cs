@@ -8,19 +8,5 @@ public class UpdateCurrentPuzzle : MonoBehaviour
     public void OnButtonClick()
     {
         PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
-        //Debug.Log(PuzzleManager.currentPuzzleButton);
-        
-        /*
-        if (EventSystem.current.currentSelectedGameObject.CompareTag("PuzzleButton"))
-        {
-            PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
-            Debug.Log(PuzzleManager.currentPuzzleButton);
-        }
-
-        else
-        {
-            Debug.Log("selected object does not have the correct tag");
-        }
-        */
     }
 }

@@ -8,6 +8,11 @@ public class DialogueTrigger : MonoBehaviour
 
     public Dialogue dialogue;
 
+    void Start()
+    {
+        TriggerDialogue();
+    }
+
     //  trigger the dialogue
     public void TriggerDialogue()
     {

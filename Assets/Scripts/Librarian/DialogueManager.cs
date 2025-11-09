@@ -8,9 +8,10 @@ public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    [SerializeField] private LibrarianManager librarianManager;
     private Queue<string> sentences;    //  queue holding all the sentences
 
-    void Start()
+    void Awake()
     {
         //  instantiate sentences
         sentences = new Queue<string>();
@@ -21,14 +22,14 @@ public class DialogueManager : MonoBehaviour
     {
         nameText.text = dialogue.name;
 
-        Debug.Log($"dialogue with {name}");
+        //Debug.Log($"dialogue with {name}");
         //  clear queue
         sentences.Clear();
 
         //  add each sentence to the queue
-        foreach (string sentence in dialogue.sentences)
+        foreach (Sentence sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(sentence.GetText());
         }
 
         DisplayNextSentence();
@@ -51,18 +52,19 @@ public class DialogueManager : MonoBehaviour
 
         //  start letter typing
         StartCoroutine(TypeSentence(sentence));
-        Debug.Log("reached");
+        //Debug.Log("reached");
     }
 
     public void EndDialogue()
     {
-        Debug.Log("dialogue ended");
+        //Debug.Log("dialogue ended");
     }
 
     //  print letters one by one
     IEnumerator TypeSentence(string sentence)
     {
-        Debug.Log("co started");
+        librarianManager.UpdateSprite();
+        //Debug.Log("co started");
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {

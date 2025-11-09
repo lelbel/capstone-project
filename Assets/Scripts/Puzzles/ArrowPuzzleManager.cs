@@ -5,7 +5,7 @@ using UnityEngine.UI;
 //  add a finished state that displays if the current puzzle.IsSolved returns true
 public class ArrowPuzzleManager : MonoBehaviour
 {
-    //  general fields
+    //  general
     private Image[] arrowImages;    //  array that stores the image objects for the puzzle
     private int[] arrowDir;         //  array that tracks the player input for arrow entry
     private int[] solution;         //  array that has the solution input for the puzzle

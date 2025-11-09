@@ -29,14 +29,6 @@ public class PuzzleManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void Start()
-    {
-        //Debug.Log(currentPuzzleButton);
-        //Debug.Log(currentPuzzle);
-
-        //RefreshSprites();
-    }
-
     void Update()
     {
         if (currentPuzzleButton != null)
@@ -92,19 +84,3 @@ public class PuzzleManager : MonoBehaviour
         currentPuzzle.GetComponent<Puzzle>().SolvePuzzle();
     }
 }
-
-/*
-    //  update the current puzzle if correct conditions are met
-    public void UpdateCurrentPuzzle()
-    {
-        //Debug.Log("updating current puzzle...");
-        //  check if currentPuzzle is populated AND is not solved AND that the puzzle was solved
-        if (currentPuzzle != null && !currentPuzzle.GetComponent<Puzzle>().IsSolved() && currentPuzzleSolved == true)
-        {
-            currentPuzzle.GetComponent<Puzzle>().SolvePuzzle();
-            currentPuzzleSolved = false;
-
-            Debug.Log("current puzzle updated");
-        }
-    }
-    */

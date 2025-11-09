@@ -5,11 +5,6 @@ using System.Collections;
 
 public class CodePuzzleManager : MonoBehaviour
 {
-    //public static bool boatCodePuzzleComplete = false;
-    //public static bool dangerCodePuzzleComplete = false;
-    //public static bool libbyCodePuzzleComplete = false;
-    //public static bool finalCodePuzzleComplete = false;
-
     [SerializeField] private TMP_InputField userInput;
     [SerializeField] private Button submitButton;
     [SerializeField] private string solution;
@@ -45,38 +40,7 @@ public class CodePuzzleManager : MonoBehaviour
         
         if (string.Equals(userInput.text, solution, System.StringComparison.OrdinalIgnoreCase) == true)
         {
-            Debug.Log("correct");
-
             PuzzleManager.SolveCurrentPuzzle();
-
-            /*
-
-            if (string.Equals(userInput.text, "boat", System.StringComparison.OrdinalIgnoreCase) == true)
-            {
-                boatCodePuzzleComplete = true;
-            }
-
-            else if (string.Equals(userInput.text, "danger", System.StringComparison.OrdinalIgnoreCase) == true)
-            {
-                dangerCodePuzzleComplete = true;
-            }
-
-            else if (string.Equals(userInput.text, "libby", System.StringComparison.OrdinalIgnoreCase) == true)
-            {
-                libbyCodePuzzleComplete = true;
-            }
-
-            else if (string.Equals(userInput.text, "library", System.StringComparison.OrdinalIgnoreCase) == true)
-            {
-                finalCodePuzzleComplete = true;
-            }
-
-            else
-            {
-                Debug.Log("correct answer does not match any of the predetermined cases");
-            }
-            */
-            
             FoundSolution();
         }
 
