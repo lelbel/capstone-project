@@ -6,15 +6,23 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TMP_Text nameText;
-    public TMP_Text dialogueText;
+    [SerializeField] private TMP_Text nameText;
+    [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private LibrarianManager librarianManager;
-    private Queue<string> sentences;    //  queue holding all the sentences
+    [SerializeField] private float typeDelay = 0.02f;
+    private Queue<Sentence> sentences;
+
+    public Dialogue dialogue;
+
 
     void Awake()
     {
-        //  instantiate sentences
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
+    }
+
+    void Start()
+    {
+        StartDialogue(dialogue);
     }
 
     //  start the dialogue
@@ -29,7 +37,7 @@ public class DialogueManager : MonoBehaviour
         //  add each sentence to the queue
         foreach (Sentence sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence.GetText());
+            sentences.Enqueue(sentence);
         }
 
         DisplayNextSentence();
@@ -45,7 +53,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        Sentence sentence = sentences.Dequeue();
 
         //  stop animating current dialogue letters if player progresses through text fast
         StopAllCoroutines();
@@ -57,22 +65,23 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+
         //Debug.Log("dialogue ended");
     }
 
     //  print letters one by one
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(Sentence sentence)
     {
-        librarianManager.UpdateSprite();
+        librarianManager.UpdateSprite(sentence.GetState());
         //Debug.Log("co started");
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.GetText().ToCharArray())
         {
             //  append letter to end of the string
             dialogueText.text += letter;
 
             //  wait one frame in between each letter
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(typeDelay);
         }
     }
 

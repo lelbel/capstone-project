@@ -2,19 +2,27 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
+[Serializable]
 public class Sentence
 {
     public string text;
-    public LibrarianManager.LibrarianState librarianState = LibrarianManager.LibrarianState.INVISIBLE;
+
+    public enum SpriteState
+    {
+        DEFAULT,
+        INVISIBLE,
+        VISIBLE,
+    }
+
+    public SpriteState currentState = SpriteState.INVISIBLE;
 
     public string GetText()
     {
         return text;
     }
 
-    public void ChangeState(LibrarianManager.LibrarianState state)
+    public SpriteState GetState()
     {
-        LibrarianManager.currentState = state;
+        return currentState;
     }
 }

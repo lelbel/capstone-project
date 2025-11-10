@@ -10,25 +10,26 @@ public class LibrarianManager : MonoBehaviour
     //  sprites
     [SerializeField] private Sprite defaultSprite;
 
-    public enum LibrarianState
-    {
-        DEFAULT,
-        INVISIBLE,
-        VISIBLE,
-    }
 
-    public static LibrarianState currentState = LibrarianState.DEFAULT;
-
-    public void UpdateSprite()
+    public void UpdateSprite(Sentence.SpriteState state)
     {
-        switch (currentState)
+        librarian.enabled = true;
+
+        switch (state)
         {
-            case LibrarianState.DEFAULT:
+            case Sentence.SpriteState.DEFAULT:
                 librarian.GetComponent<Image>().sprite = defaultSprite;
+                //ebug.Log("librarian default");
                 break;
 
-            case LibrarianState.INVISIBLE:
-                librarian.GetComponent<Image>().sprite = null;
+            case Sentence.SpriteState.INVISIBLE:
+                librarian.enabled = false;
+                //Debug.Log("librarian invis");
+                break;
+
+            default:
+                //Debug.Log("switch default");
+                librarian.GetComponent<Image>().sprite = defaultSprite;
                 break;
         }
     }

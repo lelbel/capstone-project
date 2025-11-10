@@ -231,8 +231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 563.93, y: 367}
-  m_SizeDelta: {x: 411.3467, y: 83.279}
+  m_AnchoredPosition: {x: 275.02, y: 156.01}
+  m_SizeDelta: {x: 249.9644, y: 50.6064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249850101
 MonoBehaviour:
@@ -425,8 +425,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -687,8 +687,8 @@ Transform:
   m_GameObject: {fileID: 522285607}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 251, y: 158.0641, z: 0}
+  m_LocalScale: {x: 0.5333, y: 0.46717077, z: 0.5333}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -758,8 +758,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -826,8 +826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000013351, y: -288.98}
-  m_SizeDelta: {x: 1445.2578, y: 240.9587}
+  m_AnchoredPosition: {x: 4.539978, y: -134.98717}
+  m_SizeDelta: {x: 770.6907, y: 112.5601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &534344826
 GameObject:
@@ -894,8 +894,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -962,8 +962,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -343.5434, y: -141}
-  m_SizeDelta: {x: 590.4581, y: 55.01}
+  m_AnchoredPosition: {x: -178.65619, y: -65.8606}
+  m_SizeDelta: {x: 314.8646, y: 25.697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &745845193
 GameObject:
@@ -1001,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 519, y: -347}
-  m_SizeDelta: {x: 118.53, y: 55.2052}
+  m_AnchoredPosition: {x: 281.29926, y: -162.0903}
+  m_SizeDelta: {x: 63.2067, y: 25.7882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745845195
 MonoBehaviour:
@@ -1132,8 +1132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.001, y: 45}
-  m_SizeDelta: {x: 818.8084, y: 615.082}
+  m_AnchoredPosition: {x: 50.137, y: 8.195595}
+  m_SizeDelta: {x: 399.1183, y: 330.5547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860251357
 MonoBehaviour:
@@ -1192,7 +1192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1551041280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1210,8 +1210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 529, y: -25}
-  m_SizeDelta: {x: 228.6857, y: 80.889}
+  m_AnchoredPosition: {x: 314.35, y: 161}
+  m_SizeDelta: {x: 171.2959, y: 60.5895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551041281
 MonoBehaviour:
@@ -1230,13 +1230,13 @@ MonoBehaviour:
     name: The Librarian
     sentences:
     - text: HELLO
-      librarianState: 0
+      currentState: 1
     - text: I AM GOING BYE BYE
-      librarianState: 0
+      currentState: 1
     - text: 
-      librarianState: 1
+      currentState: 1
     - text: TEST
-      librarianState: 1
+      currentState: 1
 --- !u!114 &1551041282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,8 +1415,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1561,7 +1561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1706,8 +1706,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1792,8 +1792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -239.07}
-  m_SizeDelta: {x: 1539.2, y: 399.03}
+  m_AnchoredPosition: {x: 4.539978, y: -111.67248}
+  m_SizeDelta: {x: 820.7859, y: 186.4007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060666533
 MonoBehaviour:
@@ -1865,6 +1865,18 @@ MonoBehaviour:
   nameText: {fileID: 534344827}
   dialogueText: {fileID: 532265963}
   librarianManager: {fileID: 1769640725}
+  typeDelay: 0.02
+  dialogue:
+    name: Librarian
+    sentences:
+    - text: sentence one
+      currentState: 0
+    - text: sentence two
+      currentState: 0
+    - text: changing
+      currentState: 1
+    - text: poo poo
+      currentState: 1
 --- !u!4 &2118138184
 Transform:
   m_ObjectHideFlags: 0
@@ -1886,6 +1898,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 473766215}
   - {fileID: 2118138184}
+  - {fileID: 1769640726}
   - {fileID: 1944650163}
   - {fileID: 522285610}
-  - {fileID: 1769640726}
