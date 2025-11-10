@@ -3,13 +3,14 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 
+//  remove solution length as a field and set dynamically stupid
 public class CodePuzzleManager : MonoBehaviour
 {
     [SerializeField] private TMP_InputField userInput;
     [SerializeField] private Button submitButton;
     [SerializeField] private string solution;
     [SerializeField] private int solutionLength;
-    
+
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class CodePuzzleManager : MonoBehaviour
         userInput.caretColor = caretColor;
         userInput.caretPosition = 0;
 
-        if (PuzzleManager.currentPuzzle.GetComponent<Puzzle>().IsSolved())
+        if (PuzzleManager.IsCurrentPuzzleSolved())
         {
             userInput.text = solution;
             FoundSolution();
@@ -37,7 +38,7 @@ public class CodePuzzleManager : MonoBehaviour
             Debug.Log("Solution string is blank");
             return;
         }
-        
+
         if (string.Equals(userInput.text, solution, System.StringComparison.OrdinalIgnoreCase) == true)
         {
             PuzzleManager.SolveCurrentPuzzle();

@@ -79,6 +79,11 @@ public class PuzzleManager : MonoBehaviour
         puzzle.GetComponent<Puzzle>().GetMapButton().GetComponent<Image>().sprite = puzzle.GetComponent<Puzzle>().GetCompleteSprite();
     }
 
+    public static bool IsCurrentPuzzleSolved()
+    {
+        return currentPuzzle.GetComponent<Puzzle>().IsSolved();
+    }
+
     public static void SolveCurrentPuzzle()
     {   
         currentPuzzle.GetComponent<Puzzle>().SolvePuzzle();
