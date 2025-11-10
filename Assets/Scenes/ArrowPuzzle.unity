@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9411765, b: 0.8901961, a: 0.392}
+  m_Color: {r: 0.745283, g: 0.72833335, b: 0.7136436, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1673,7 +1673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bf83b1546bd1b49b479d879122bfb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleManagerObjectName: PuzzleManager
   blankSprite: {fileID: 6318422603818717340, guid: defdb90f17a5dfd45a6432ac51506643, type: 3}
   leftArrowSprite: {fileID: -9079181869168717973, guid: 0edbf6cad86b0914eb576faadc9c212b, type: 3}
   rightArrowSprite: {fileID: 7541112579435061693, guid: b19854da68dedad40828f386e64a13ba, type: 3}
