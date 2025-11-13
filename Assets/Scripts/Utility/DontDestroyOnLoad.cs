@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DontDestroyPuzzles : MonoBehaviour
+public class DontDestroyOnLoad : MonoBehaviour
 {
-    public static DontDestroyPuzzles Instance;
+    public static DontDestroyOnLoad Instance;
 
     void Awake()
     {        
