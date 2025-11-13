@@ -1,13 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> puzzleList;
-    public static GameObject currentPuzzleButton;
-    public static GameObject currentPuzzle;
+    [SerializeField] private List<PuzzleGroup> activePuzzles;
+    public static PuzzleGroup currentPuzzleGroup;
     public static PuzzleManager Instance;
 
     void Awake()
@@ -29,20 +27,6 @@ public class PuzzleManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void Update()
-    {
-        if (currentPuzzleButton != null)
-        {
-            foreach (GameObject puzzle in puzzleList)
-            {
-                if (puzzle.CompareTag(currentPuzzleButton.tag))
-                {
-                    currentPuzzle = puzzle;
-                }
-            }
-        }
-    }
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         RefreshSprites();
@@ -51,41 +35,41 @@ public class PuzzleManager : MonoBehaviour
     public void RefreshSprites()
     {
         //  set each sprite as incomeplete
-        foreach (GameObject puzzle in puzzleList)
+        foreach (PuzzleGroup group in activePuzzles)
         {
             //  set sprite at complete if solved
-            if (puzzle.GetComponent<Puzzle>().IsSolved())
+            if (group.GetPuzzle().IsSolved())
             {
-                SetSpriteComplete(puzzle);
+                SetSpriteComplete(group);
             }
 
             else
             {
                 //  set sprite as incomplete if not solved
-                SetSpriteIncomplete(puzzle);
+                SetSpriteIncomplete(group);
             }
         }
     }
 
     //  set sprite as incomeplete
-    public void SetSpriteIncomplete(GameObject puzzle)
+    public void SetSpriteIncomplete(PuzzleGroup group)
     {
-        puzzle.GetComponent<Puzzle>().GetMapButton().GetComponent<Image>().sprite = puzzle.GetComponent<Puzzle>().GetIncompleteSprite();
+        group.GetButtonImage().sprite = group.GetPuzzle().GetIncompleteSprite();
     }
 
     //  set sprite as complete
-    public void SetSpriteComplete(GameObject puzzle)
+    public void SetSpriteComplete(PuzzleGroup group)
     {
-        puzzle.GetComponent<Puzzle>().GetMapButton().GetComponent<Image>().sprite = puzzle.GetComponent<Puzzle>().GetCompleteSprite();
+        group.GetButtonImage().sprite = group.GetPuzzle().GetCompleteSprite();
     }
 
     public static bool IsCurrentPuzzleSolved()
     {
-        return currentPuzzle.GetComponent<Puzzle>().IsSolved();
+        return currentPuzzleGroup.GetPuzzle().IsSolved();
     }
 
     public static void SolveCurrentPuzzle()
-    {   
-        currentPuzzle.GetComponent<Puzzle>().SolvePuzzle();
+    {
+        currentPuzzleGroup.GetPuzzle().SolvePuzzle();
     }
 }

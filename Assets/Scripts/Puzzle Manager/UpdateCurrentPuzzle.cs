@@ -2,11 +2,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class UpdateCurrentPuzzle : MonoBehaviour
-{
+{    
     //  THE ONCLICK WORKS YES
     //  get clicked game object
     public void OnButtonClick()
     {
-        PuzzleManager.currentPuzzleButton = EventSystem.current.currentSelectedGameObject;
+        //  set currentPuzzleGroup as the parent of the clicked button
+        PuzzleManager.currentPuzzleGroup = EventSystem.current.currentSelectedGameObject.transform.parent.gameObject.GetComponent<PuzzleGroup>();
     }
 }

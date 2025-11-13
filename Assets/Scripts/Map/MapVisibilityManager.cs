@@ -26,11 +26,6 @@ public class MapVisibilityManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    //void OnDisable()
-    //{
-    //    SceneManager.sceneLoaded -= OnSceneLoaded;
-    //}
-
     //  enable map canvas if player is in the map scene
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {

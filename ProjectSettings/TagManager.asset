@@ -4,12 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - PuzzleButton
-  - ArrowPuzzle
-  - BoatCodePuzzle
-  - DangerCodePuzzle
-  - LibbyCodePuzzle
-  - FinalCodePuzzle
+  - Puzzle
+  - Button
   layers:
   - Default
   - TransparentFX
