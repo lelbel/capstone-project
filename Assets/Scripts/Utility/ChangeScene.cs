@@ -1,7 +1,7 @@
-    using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Navigate : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private string scene;
 
