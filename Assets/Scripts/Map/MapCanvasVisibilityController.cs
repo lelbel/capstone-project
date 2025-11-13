@@ -34,7 +34,7 @@ public class MapVisibilityManager : MonoBehaviour
     //  enable map canvas if player is in the map scene
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (string.Equals(SceneManager.GetActiveScene().name, mapSceneName, System.StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(SceneManager.GetActiveScene().name, mapSceneName, System.StringComparison.OrdinalIgnoreCase) && Instance != null)
         {
             canvas.SetActive(true);
         }

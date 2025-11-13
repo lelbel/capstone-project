@@ -32,7 +32,7 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(PuzzleManager.currentPuzzleButton);
+        //Debug.Log(PuzzleManager.currentPuzzleButton);
 
         puzzleLength = 5;
 
