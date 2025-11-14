@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
+[Serializable]
 public class Puzzle: MonoBehaviour
 {
     [SerializeField] private string sceneName;

@@ -2,11 +2,11 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class PuzzleManager : MonoBehaviour
+public class ActivePuzzleGroupManager : MonoBehaviour
 {
     [SerializeField] private List<PuzzleGroup> activePuzzles;
     public static PuzzleGroup currentPuzzleGroup;
-    public static PuzzleManager Instance;
+    public static ActivePuzzleGroupManager Instance;
 
     void Awake()
     {
