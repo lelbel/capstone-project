@@ -2,11 +2,11 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class ActivePuzzleGroupManager : MonoBehaviour
+public class PuzzleManager : MonoBehaviour
 {
-    [SerializeField] private List<PuzzleGroup> activePuzzles;
-    public static PuzzleGroup currentPuzzleGroup;
-    public static ActivePuzzleGroupManager Instance;
+    [SerializeField] private List<Puzzle> activePuzzles;
+    public static Puzzle currentPuzzle;
+    public static PuzzleManager Instance;
 
     void Awake()
     {
@@ -35,41 +35,41 @@ public class ActivePuzzleGroupManager : MonoBehaviour
     public void RefreshSprites()
     {
         //  set each sprite as incomeplete
-        foreach (PuzzleGroup group in activePuzzles)
+        foreach (Puzzle puzzle in activePuzzles)
         {
             //  set sprite at complete if solved
-            if (group.GetPuzzle().IsSolved())
+            if (puzzle.IsSolved())
             {
-                SetSpriteComplete(group);
+                SetSpriteComplete(puzzle);
             }
 
             else
             {
                 //  set sprite as incomplete if not solved
-                SetSpriteIncomplete(group);
+                SetSpriteIncomplete(puzzle);
             }
         }
     }
 
     //  set sprite as incomeplete
-    public void SetSpriteIncomplete(PuzzleGroup group)
+    public void SetSpriteIncomplete(Puzzle puzzle)
     {
-        group.GetButtonImage().sprite = group.GetPuzzle().GetIncompleteSprite();
+        puzzle.GetButtonImage().sprite = puzzle.GetIncompleteSprite();
     }
 
     //  set sprite as complete
-    public void SetSpriteComplete(PuzzleGroup group)
+    public void SetSpriteComplete(Puzzle puzzle)
     {
-        group.GetButtonImage().sprite = group.GetPuzzle().GetCompleteSprite();
+        puzzle.GetButtonImage().sprite = puzzle.GetCompleteSprite();
     }
 
     public static bool IsCurrentPuzzleSolved()
     {
-        return currentPuzzleGroup.GetPuzzle().IsSolved();
+        return currentPuzzle.IsSolved();
     }
 
     public static void SolveCurrentPuzzle()
     {
-        currentPuzzleGroup.GetPuzzle().SolvePuzzle();
+        currentPuzzle.SolvePuzzle();
     }
 }

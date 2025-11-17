@@ -2,13 +2,12 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class PuzzleSet : MonoBehaviour
+public class PuzzleGroup : MonoBehaviour
 {
-    [SerializeField] private List<PuzzleGroup> puzzleSet;
+    [SerializeField] private List<Puzzle> puzzleGroup;
     [SerializeField] private Button button;
-
-    public static PuzzleSet Instance;
-    private bool isSetCompleted;
+    public static PuzzleGroup Instance;
+    private bool isPuzzleGroupCompleted = false;
 
     void Awake()
     {
@@ -25,9 +24,9 @@ public class PuzzleSet : MonoBehaviour
 
     }
 
-    public List<PuzzleGroup> GetPuzzleSet()
+    public List<Puzzle> GetPuzzleGroup()
     {
-        return puzzleSet;
+        return puzzleGroup;
     }
 
     public Button GetButton()
@@ -40,18 +39,18 @@ public class PuzzleSet : MonoBehaviour
         return button.GetComponent<Image>();
     }
 
-    public bool IsPuzzleSetCompleted()
+    public bool IsPuzzleGroupCompleted()
     {
-        return isSetCompleted;
+        return isPuzzleGroupCompleted;
     }
 
-    public void UpdateSetStatus()
+    public void UpdatePuzzleGroupStatus()
     {
         bool allComplete = true;
 
-        foreach (PuzzleGroup group in puzzleSet)
+        foreach (Puzzle puzzle in puzzleGroup)
         {
-            if (!group.GetPuzzle().IsSolved())
+            if (!puzzle.IsSolved())
             {
                 allComplete = false;
             }
@@ -59,7 +58,7 @@ public class PuzzleSet : MonoBehaviour
 
         if (allComplete)
         {
-            isSetCompleted = true;
+            isPuzzleGroupCompleted = true;
         }
     }
 }

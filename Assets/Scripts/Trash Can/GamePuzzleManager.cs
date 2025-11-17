@@ -1,11 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
 
 public class GamePuzzleManager : MonoBehaviour
 {
-    [SerializeField] private List<PuzzleSet> puzzleSets;
-    public static PuzzleSet currentPuzzleSet;
+    [SerializeField] private List<PuzzleGroup> puzzleGroups;
+    public static PuzzleGroup currentPuzzleGroup;
     public static GamePuzzleManager Instance;
 
     void Awake()

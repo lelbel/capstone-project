@@ -135,7 +135,7 @@ public class ArrowPuzzleManager : MonoBehaviour
     public void CompletePuzzle()
     {
         //  find the game manager object and solve the current puzzle
-        ActivePuzzleGroupManager.SolveCurrentPuzzle();
+        PuzzleManager.SolveCurrentPuzzle();
 
         //  show each arrow sprite as complete
         i = 0;

@@ -7,14 +7,19 @@ using System;
 public class Puzzle: MonoBehaviour
 {
     [SerializeField] private string sceneName;
-    [SerializeField] private Button mapButton;
+    [SerializeField] private Button button;
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private bool isSolved = false;
 
-    public Button GetMapButton()
+    public Button GetButton()
     {
-        return mapButton;
+        return button;
+    }
+
+    public Image GetButtonImage()
+    {
+        return button.GetComponent<Image>();
     }
     
     public bool IsSolved()
@@ -25,11 +30,6 @@ public class Puzzle: MonoBehaviour
     public void SolvePuzzle()
     {
         isSolved = true;
-    }
-
-    public void ResetPuzzle()
-    {
-        isSolved = false;
     }
 
     public Sprite GetCompleteSprite()
@@ -44,7 +44,6 @@ public class Puzzle: MonoBehaviour
 
     public void LoadScene()
     {
-        //  check that the scene string is populated
         if (string.IsNullOrWhiteSpace(sceneName))
         {
             Debug.Log("sceneName string argument is blank");
@@ -54,3 +53,29 @@ public class Puzzle: MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 }
+
+/*
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PuzzleGroup : MonoBehaviour
+{
+    public Puzzle puzzle;
+    public Button button;
+
+    public Puzzle GetPuzzle()
+    {
+        return puzzle;
+    }
+
+    public Button GetButton()
+    {
+        return button;
+    }
+
+    public Image GetButtonImage()
+    {
+        return button.GetComponent<Image>();
+    }
+}
+*/
