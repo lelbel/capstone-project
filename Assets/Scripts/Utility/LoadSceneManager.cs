@@ -24,15 +24,14 @@ public class LoadSceneManager : MonoBehaviour
 
     public static void LoadScene(SceneName sceneName)
     {
-        if (sceneName == SceneName.None)
+        if (sceneName != SceneName.None)
         {
-            Debug.Log("No scene selected");
+            SceneManager.LoadScene(sceneName.ToString());
         }
 
         else
         {
-            Debug.Log("Attempting to load scene");
-            SceneManager.LoadScene(sceneName.ToString());
+            Debug.Log("No scene selected");
         }
     }
 }

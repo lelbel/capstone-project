@@ -12,12 +12,10 @@ public class PuzzleGroupSelectManager : MonoBehaviour
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
-        foreach (PuzzleGroup group in GameManager.puzzleGroups)
+        foreach (PuzzleGroup group in PuzzleGroup.puzzleGroups)
         {
             CreatePuzzleSelectButton(group);
         }
-
-        RefreshSprites();
     }
 
     public void CreatePuzzleSelectButton(PuzzleGroup group)
@@ -56,37 +54,6 @@ public class PuzzleGroupSelectManager : MonoBehaviour
         }
 
         mapButtons.Clear();
-    }
-
-    public void RefreshSprites()
-    {
-        //  set each sprite as incomeplete
-        foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
-        {
-            //  set sprite at complete if solved
-            if (puzzle.IsSolved())
-            {
-                SetSpriteComplete(puzzle);
-            }
-
-            else
-            {
-                //  set sprite as incomplete if not solved
-                SetSpriteIncomplete(puzzle);
-            }
-        }
-    }
-
-    //  set sprite as incomeplete
-    public void SetSpriteIncomplete(Puzzle puzzle)
-    {
-        puzzle.GetButtonImage().sprite = puzzle.GetIncompleteSprite();
-    }
-
-    //  set sprite as complete
-    public void SetSpriteComplete(Puzzle puzzle)
-    {
-        puzzle.GetButtonImage().sprite = puzzle.GetCompleteSprite();
     }
 
     public void DebugCheck()

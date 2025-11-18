@@ -37,8 +37,6 @@ public class MapManager : MonoBehaviour
             //  set the mapButton and puzzle objects to reference each other
             button.GetComponent<MapButton>().SetPuzzle(puzzle);
 
-            Debug.Log($"map button puzzle: {button.GetComponent<MapButton>().GetPuzzle()}");
-
             puzzle.SetButton(button.GetComponent<Button>());
 
             //  add listener for function that updates the current puzzle

@@ -7,6 +7,22 @@ public class GameManager : MonoBehaviour
     public static Puzzle currentPuzzle;
     public List<PuzzleGroup> puzzleGroups;
 
+    public static GameManager Instance;
+
+    void Awake()
+    {        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public static bool IsCurrentPuzzleSolved()
     {
         return currentPuzzle.IsSolved();
