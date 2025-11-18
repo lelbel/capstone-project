@@ -4,29 +4,13 @@ using UnityEngine.UI;
 
 public class PuzzleGroup : MonoBehaviour
 {
-    [SerializeField] private List<Puzzle> puzzleList;
-    [SerializeField] private Button button;
-    public static PuzzleGroup Instance;
+    [SerializeField] private List<Puzzle> puzzleGroup;
+    [SerializeField] private Button button; 
     private bool isPuzzleGroupCompleted = false;
 
-    void Awake()
+    public List<Puzzle> GetPuzzleGroup()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
-        else
-        {
-            Destroy(gameObject);
-        }
-
-    }
-
-    public List<Puzzle> GetPuzzleList()
-    {
-        return puzzleList;
+        return puzzleGroup;
     }
 
     public Button GetButton()
@@ -48,7 +32,7 @@ public class PuzzleGroup : MonoBehaviour
     {
         bool allComplete = true;
 
-        foreach (Puzzle puzzle in puzzleList)
+        foreach (Puzzle puzzle in puzzleGroup)
         {
             if (!puzzle.IsSolved())
             {
@@ -59,6 +43,22 @@ public class PuzzleGroup : MonoBehaviour
         if (allComplete)
         {
             isPuzzleGroupCompleted = true;
+        }
+    }
+
+    public void ButtonOnClick()
+    {
+        PuzzleManager.currentPuzzleGroup = puzzleGroup;
+        GameManager.LoadScene(GameManager.MapSceneName);
+    }
+
+    public void DebugCheck()
+    {
+        Debug.Log("current puzzles");
+        
+        foreach (Puzzle puzzle in PuzzleManager.currentPuzzleGroup)
+        {
+            Debug.Log(puzzle);
         }
     }
 }

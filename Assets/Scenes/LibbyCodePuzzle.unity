@@ -709,6 +709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceholderBackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 7026668906582043116, guid: cee97ffe6fd4a4943807955a0c680e86, type: 3}
+      propertyPath: sceneName
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 8229847251241609585, guid: cee97ffe6fd4a4943807955a0c680e86, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

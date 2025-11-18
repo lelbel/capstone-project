@@ -1,88 +1,58 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PuzzleManager : MonoBehaviour
 {
-    [SerializeField] private List<Puzzle> activePuzzles;
+    public static List<Puzzle> currentPuzzleGroup;
     public static List<GameObject> mapButtons = new();
     public static Puzzle currentPuzzle;
     public static bool mapEnabled;
     [SerializeField] private GameObject canvas;
-    
-    /*
-    public static PuzzleManager Instance;
 
-    void Awake()
+    void Start()
     {
-        if (Instance == null)
+        ResetPuzzleButtons();
+
+        //  create a button for each active puzzle
+        foreach (Puzzle puzzle in currentPuzzleGroup)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            DebugCheck();
+            //  create button
+            GameObject button =  new("MapButton");
+
+            //  add button to button list
+            mapButtons.Add(button);
+
+            //  add all the components to the button
+            button.AddComponent<Button>();
+            button.AddComponent<RectTransform>();
+            button.AddComponent<Image>();
+            button.AddComponent<MapButton>();
+
+            //  set the mapButton and puzzle objects to reference each other
+            button.GetComponent<MapButton>().SetPuzzle(puzzle);
+
+            Debug.Log(button.GetComponent<MapButton>().GetPuzzle());
+
+            puzzle.SetButton(button.GetComponent<Button>());
+
+            //  add listener for function that stores the current button
+            button.GetComponent<Button>().onClick.AddListener(button.GetComponent<MapButton>().OnButtonClick);
+
+            //  set button parent as canvas so it shows up
+            button.transform.SetParent(canvas.transform, false);
+
+            //  move the buttons to the position specified in the puzzle coordinates argument
+            puzzle.UpdateButtonPosition();
         }
 
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-    */
-    
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    //public void OpenMap()
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (mapEnabled)
-        {
-            ResetPuzzleButtons();
-
-            //  create a button for each active puzzle
-            foreach (Puzzle puzzle in activePuzzles)
-            {
-                //  create button
-                GameObject button =  new("MapButton");
-
-                //  add button to button list
-                mapButtons.Add(button);
-
-                //  add all the components to the button
-                button.AddComponent<Button>();
-                button.AddComponent<RectTransform>();
-                button.AddComponent<Image>();
-                button.AddComponent<MapButton>();
-
-                //  set the mapButton and puzzle objects to reference each other
-                button.GetComponent<MapButton>().SetPuzzle(puzzle);
-
-                Debug.Log(button.GetComponent<MapButton>().GetPuzzle());
-
-                puzzle.SetButton(button.GetComponent<Button>());
-
-                //  add listener for function that stores the current button
-                button.GetComponent<Button>().onClick.AddListener(button.GetComponent<MapButton>().OnButtonClick);
-
-                //  set button parent as canvas so it shows up
-                button.transform.SetParent(canvas.transform, false);
-
-                //  move the buttons to the position specified in the puzzle coordinates argument
-                puzzle.UpdateButtonPosition();
-            }
-
-            RefreshSprites();
-        }
+        RefreshSprites();
     }
 
     public void RefreshSprites()
     {
         //  set each sprite as incomeplete
-        foreach (Puzzle puzzle in activePuzzles)
+        foreach (Puzzle puzzle in currentPuzzleGroup)
         {
             //  set sprite at complete if solved
             if (puzzle.IsSolved())
@@ -132,7 +102,7 @@ public class PuzzleManager : MonoBehaviour
 
     public void DebugCheck()
     {
-        if (activePuzzles.Count == 0)
+        if (currentPuzzleGroup.Count == 0)
         {
             Debug.Log("activePuzzles list is empty");
         }

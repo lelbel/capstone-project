@@ -6,13 +6,18 @@ using System;
 [Serializable]
 public class Puzzle: MonoBehaviour
 {
+    [Header("General")]
     [SerializeField] private string sceneName;
-    [SerializeField] Button button;
+    private bool isSolved = false;
+
+    [Header("Sprites")]
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
-    [SerializeField] private bool isSolved = false;
+
+    [Header("Map Button")]
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
+    private Button button;
 
     public Button GetButton()
     {
@@ -39,11 +44,6 @@ public class Puzzle: MonoBehaviour
         return isSolved;
     }
 
-    public void SolvePuzzle()
-    {
-        isSolved = true;
-    }
-
     public Sprite GetCompleteSprite()
     {
         return completeSprite;
@@ -54,6 +54,11 @@ public class Puzzle: MonoBehaviour
         return incompleteSprite;
     }
 
+    public void SolvePuzzle()
+    {
+        isSolved = true;
+    }
+
     public void UpdateButtonPosition()
     {
         if(button != null)
@@ -62,40 +67,8 @@ public class Puzzle: MonoBehaviour
         }
     }
 
-    public void LoadScene()
+    public void OnButtonClick()
     {
-        if (string.IsNullOrWhiteSpace(sceneName))
-        {
-            Debug.Log("sceneName string argument is blank");
-            return;
-        }
-
-        SceneManager.LoadScene(sceneName);
+        GameManager.LoadScene(sceneName);
     }
 }
-
-/*
-using UnityEngine;
-using UnityEngine.UI;
-
-public class PuzzleGroup : MonoBehaviour
-{
-    public Puzzle puzzle;
-    public Button button;
-
-    public Puzzle GetPuzzle()
-    {
-        return puzzle;
-    }
-
-    public Button GetButton()
-    {
-        return button;
-    }
-
-    public Image GetButtonImage()
-    {
-        return button.GetComponent<Image>();
-    }
-}
-*/

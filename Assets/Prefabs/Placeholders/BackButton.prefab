@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5170135271467679893}
   - component: {fileID: 5235837495893915315}
   - component: {fileID: 8899040878280769877}
-  - component: {fileID: 1459754581403448283}
+  - component: {fileID: 7026668906582043116}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1459754581403448283}
-        m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 7026668906582043116}
+        m_TargetAssemblyTypeName: BackButton, Assembly-CSharp
+        m_MethodName: ButtonOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1459754581403448283
+--- !u!114 &7026668906582043116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +143,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2425609523609575895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cd6592f0527e849be05c2d8374063d, type: 3}
+  m_Script: {fileID: 11500000, guid: ef30d0cdce7696249b2f79fcce9ea61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  sceneName: 
 --- !u!1 &4990030870973646583
 GameObject:
   m_ObjectHideFlags: 0
