@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private List<Puzzle> activePuzzles;
-    public static List<GameObject> mapButtons;
+    public static List<GameObject> mapButtons = new();
     public static Puzzle currentPuzzle;
     public static bool mapEnabled;
     [SerializeField] private GameObject canvas;
@@ -41,7 +41,7 @@ public class PuzzleManager : MonoBehaviour
     {
         if (mapEnabled)
         {
-            mapButtons = new List<GameObject>();
+            ResetPuzzleButtons();
 
             //  create a button for each active puzzle
             foreach (Puzzle puzzle in activePuzzles)
@@ -62,7 +62,7 @@ public class PuzzleManager : MonoBehaviour
                 button.GetComponent<MapButton>().SetPuzzle(puzzle);
 
                 Debug.Log(button.GetComponent<MapButton>().GetPuzzle());
-                
+
                 puzzle.SetButton(button.GetComponent<Button>());
 
                 //  add listener for function that stores the current button
@@ -120,7 +120,7 @@ public class PuzzleManager : MonoBehaviour
         currentPuzzle.SolvePuzzle();
     }
 
-    public static void DestroyPuzzleButtons()
+    public static void ResetPuzzleButtons()
     {
         foreach (GameObject button in mapButtons)
         {

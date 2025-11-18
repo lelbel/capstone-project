@@ -21,8 +21,5 @@ public class UpdateCurrentPuzzle : MonoBehaviour
         }
 
         SceneManager.LoadScene(PuzzleManager.currentPuzzle.GetSceneName());
-
-        //  destroy puzzle buttons
-        PuzzleManager.DestroyPuzzleButtons();
     }
 }
