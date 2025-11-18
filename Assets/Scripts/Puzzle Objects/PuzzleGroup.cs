@@ -1,12 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System;
 
-public class PuzzleGroup : MonoBehaviour
+[Serializable]
+public class PuzzleGroup
 {
     [SerializeField] private List<Puzzle> puzzleGroup;
     [SerializeField] private Button button;
     [SerializeField] private LoadSceneManager.SceneName scene;
+    [SerializeField] private float xPos;
+    [SerializeField] private float yPos;
     private bool isPuzzleGroupCompleted = false;
 
     public List<Puzzle> GetPuzzleGroup()
@@ -19,9 +23,20 @@ public class PuzzleGroup : MonoBehaviour
         return button;
     }
 
+    public void SetButton(Button btn)
+    {
+        button = btn;
+        button.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, yPos);
+    }
+
     public Image GetButtonImage()
     {
         return button.GetComponent<Image>();
+    }
+
+    public LoadSceneManager.SceneName GetScene()
+    {
+        return scene;
     }
 
     public bool IsPuzzleGroupCompleted()
@@ -45,13 +60,6 @@ public class PuzzleGroup : MonoBehaviour
         {
             isPuzzleGroupCompleted = true;
         }
-    }
-
-    public void ButtonOnClick()
-    {
-        Debug.Log("button clicked");
-        GameManager.currentPuzzleGroup = puzzleGroup;
-        LoadSceneManager.LoadScene(scene);
     }
 
     public void DebugCheck()
