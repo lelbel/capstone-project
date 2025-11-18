@@ -1,15 +1,24 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class UpdateCurrentPuzzle : MonoBehaviour
-{    
-    //  get clicked game object
+public class MapButton : MonoBehaviour
+{
+    private Puzzle puzzle;
+
+    public void SetPuzzle(Puzzle pzl)
+    {
+        puzzle = pzl;
+    }
+
+    public Puzzle GetPuzzle()
+    {
+        return puzzle;
+    }
+
     public void OnButtonClick()
     {
-        Debug.Log("button clicked");
         //  set currentPuzzleGroup as the parent of the clicked button
-        PuzzleManager.currentPuzzle = EventSystem.current.currentSelectedGameObject.transform.gameObject.GetComponent<Puzzle>();
+        PuzzleManager.currentPuzzle = puzzle;
         
         Debug.Log($"currentPuzzle: {PuzzleManager.currentPuzzle}");
 
@@ -21,8 +30,5 @@ public class UpdateCurrentPuzzle : MonoBehaviour
         }
 
         SceneManager.LoadScene(PuzzleManager.currentPuzzle.GetSceneName());
-
-        //  destroy puzzle buttons
-        PuzzleManager.DestroyPuzzleButtons();
     }
 }

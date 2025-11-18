@@ -32,11 +32,15 @@ public class MapVisibilityManager : MonoBehaviour
         if (string.Equals(SceneManager.GetActiveScene().name, mapSceneName, System.StringComparison.OrdinalIgnoreCase) && Instance != null)
         {
             canvas.SetActive(true);
+            PuzzleManager.mapEnabled = true;
         }
 
         else
         {
             canvas.SetActive(false);
+            PuzzleManager.mapEnabled = false;
         }
     }
+
+    
 }

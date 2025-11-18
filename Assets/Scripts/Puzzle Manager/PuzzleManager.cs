@@ -2,15 +2,17 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Unity.VisualScripting;
 
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private List<Puzzle> activePuzzles;
+    public static List<GameObject> mapButtons;
     public static Puzzle currentPuzzle;
+    public static bool mapEnabled;
+    [SerializeField] private GameObject canvas;
+    
+    /*
     public static PuzzleManager Instance;
-
-    [SerializeField] private Canvas canvas;
 
     void Awake()
     {
@@ -26,26 +28,55 @@ public class PuzzleManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    */
+    
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    //public void OpenMap()
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        //activePuzzles = PuzzleSelectManager.currentPuzzleGroup.GetPuzzleList();
-        foreach (Puzzle puzzle in activePuzzles)
+        if (mapEnabled)
         {
-            Button button =  new GameObject("MapButton").AddComponent<Button>();
-            button.AddComponent<RectTransform>();
-            button.AddComponent<Image>();
-            button.transform.SetParent(canvas.transform, false);
-            puzzle.SetButton(button);
-            puzzle.UpdateButtonPosition();
-        }
+            mapButtons = new List<GameObject>();
 
-        RefreshSprites();
+            //  create a button for each active puzzle
+            foreach (Puzzle puzzle in activePuzzles)
+            {
+                //  create button
+                GameObject button =  new("MapButton");
+
+                //  add button to button list
+                mapButtons.Add(button);
+
+                //  add all the components to the button
+                button.AddComponent<Button>();
+                button.AddComponent<RectTransform>();
+                button.AddComponent<Image>();
+                button.AddComponent<MapButton>();
+
+                //  set the mapButton and puzzle objects to reference each other
+                button.GetComponent<MapButton>().SetPuzzle(puzzle);
+
+                Debug.Log(button.GetComponent<MapButton>().GetPuzzle());
+                
+                puzzle.SetButton(button.GetComponent<Button>());
+
+                //  add listener for function that stores the current button
+                button.GetComponent<Button>().onClick.AddListener(button.GetComponent<MapButton>().OnButtonClick);
+
+                //  set button parent as canvas so it shows up
+                button.transform.SetParent(canvas.transform, false);
+
+                //  move the buttons to the position specified in the puzzle coordinates argument
+                puzzle.UpdateButtonPosition();
+            }
+
+            RefreshSprites();
+        }
     }
 
     public void RefreshSprites()
@@ -87,6 +118,16 @@ public class PuzzleManager : MonoBehaviour
     public static void SolveCurrentPuzzle()
     {
         currentPuzzle.SolvePuzzle();
+    }
+
+    public static void DestroyPuzzleButtons()
+    {
+        foreach (GameObject button in mapButtons)
+        {
+            Destroy(button);
+        }
+
+        mapButtons.Clear();
     }
 
     public void DebugCheck()

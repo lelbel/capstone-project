@@ -29,6 +29,11 @@ public class Puzzle: MonoBehaviour
         return button.GetComponent<Image>();
     }
     
+    public string GetSceneName()
+    {
+        return sceneName;
+    }
+
     public bool IsSolved()
     {
         return isSolved;

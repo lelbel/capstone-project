@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9217595251875042271}
   - component: {fileID: 6646436872389565299}
   - component: {fileID: 1833324040683906034}
+  - component: {fileID: 8949501428874418639}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -50,6 +51,8 @@ MonoBehaviour:
   incompleteSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
   completeSprite: {fileID: -1396009611636782729, guid: 0114a93b4ddf1c547a5ae2c5d9945abb, type: 3}
   isSolved: 0
+  xPos: 0
+  yPos: 0
 --- !u!114 &1833324040683906034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,5 +63,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffce70dca945247488b40229432a9cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8949501428874418639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6307330689073102358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf01a5ae406b0c45885f8ba9968b7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
