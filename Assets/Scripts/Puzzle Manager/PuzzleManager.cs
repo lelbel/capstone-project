@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -8,12 +10,15 @@ public class PuzzleManager : MonoBehaviour
     public static Puzzle currentPuzzle;
     public static PuzzleManager Instance;
 
+    [SerializeField] private Canvas canvas;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            DebugCheck();
         }
 
         else
@@ -29,6 +34,17 @@ public class PuzzleManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        //activePuzzles = PuzzleSelectManager.currentPuzzleGroup.GetPuzzleList();
+        foreach (Puzzle puzzle in activePuzzles)
+        {
+            Button button =  new GameObject("MapButton").AddComponent<Button>();
+            button.AddComponent<RectTransform>();
+            button.AddComponent<Image>();
+            button.transform.SetParent(canvas.transform, false);
+            puzzle.SetButton(button);
+            puzzle.UpdateButtonPosition();
+        }
+
         RefreshSprites();
     }
 
@@ -71,5 +87,13 @@ public class PuzzleManager : MonoBehaviour
     public static void SolveCurrentPuzzle()
     {
         currentPuzzle.SolvePuzzle();
+    }
+
+    public void DebugCheck()
+    {
+        if (activePuzzles.Count == 0)
+        {
+            Debug.Log("activePuzzles list is empty");
+        }
     }
 }

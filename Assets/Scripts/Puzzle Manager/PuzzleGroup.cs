@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PuzzleGroup : MonoBehaviour
 {
-    [SerializeField] private List<Puzzle> puzzleGroup;
+    [SerializeField] private List<Puzzle> puzzleList;
     [SerializeField] private Button button;
     public static PuzzleGroup Instance;
     private bool isPuzzleGroupCompleted = false;
@@ -24,9 +24,9 @@ public class PuzzleGroup : MonoBehaviour
 
     }
 
-    public List<Puzzle> GetPuzzleGroup()
+    public List<Puzzle> GetPuzzleList()
     {
-        return puzzleGroup;
+        return puzzleList;
     }
 
     public Button GetButton()
@@ -48,7 +48,7 @@ public class PuzzleGroup : MonoBehaviour
     {
         bool allComplete = true;
 
-        foreach (Puzzle puzzle in puzzleGroup)
+        foreach (Puzzle puzzle in puzzleList)
         {
             if (!puzzle.IsSolved())
             {

@@ -7,14 +7,21 @@ using System;
 public class Puzzle: MonoBehaviour
 {
     [SerializeField] private string sceneName;
-    [SerializeField] private Button button;
+    [SerializeField] Button button;
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private bool isSolved = false;
+    [SerializeField] private float xPos;
+    [SerializeField] private float yPos;
 
     public Button GetButton()
     {
         return button;
+    }
+
+    public void SetButton(Button btn)
+    {
+        button = btn;
     }
 
     public Image GetButtonImage()
@@ -40,6 +47,14 @@ public class Puzzle: MonoBehaviour
     public Sprite GetIncompleteSprite()
     {
         return incompleteSprite;
+    }
+
+    public void UpdateButtonPosition()
+    {
+        if(button != null)
+        {
+            button.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, yPos);
+        }
     }
 
     public void LoadScene()
