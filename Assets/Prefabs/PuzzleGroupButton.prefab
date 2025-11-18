@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7441548088781696521}
   - component: {fileID: 3061302363196386794}
   - component: {fileID: 7992042301512575571}
-  - component: {fileID: 6805414796554116010}
-  - component: {fileID: 2267622134122559419}
   m_Layer: 5
   m_Name: PuzzleGroupButton
   m_TagString: Untagged
@@ -122,56 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3061302363196386794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6805414796554116010}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2267622134122559419}
-        m_TargetAssemblyTypeName: UpdateCurrentPuzzleSet, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6805414796554116010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33135599735391109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cd6592f0527e849be05c2d8374063d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: Map
---- !u!114 &2267622134122559419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33135599735391109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437fb83575147c3469ac0290a490c11e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls: []
 --- !u!1 &5478214201243185899
 GameObject:
   m_ObjectHideFlags: 0

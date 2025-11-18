@@ -3,9 +3,9 @@ using UnityEngine.UI;
 using System;
 
 [Serializable]
-public class Puzzle: MonoBehaviour
+public class Puzzle
 {
-    [SerializeField] private string sceneName;
+    [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private float xPos;
@@ -31,9 +31,9 @@ public class Puzzle: MonoBehaviour
         return button.GetComponent<Image>();
     }
     
-    public string GetSceneName()
+    public LoadSceneManager.SceneName GetScene()
     {
-        return sceneName;
+        return scene;
     }
 
     public bool IsSolved()
@@ -58,6 +58,6 @@ public class Puzzle: MonoBehaviour
 
     public void OnButtonClick()
     {
-        GameManager.LoadScene(sceneName);
+        LoadSceneManager.LoadScene(scene);
     }
 }

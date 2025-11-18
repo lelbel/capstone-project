@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MapButton : MonoBehaviour
 {
@@ -19,6 +18,6 @@ public class MapButton : MonoBehaviour
     {
         //  set currentPuzzleGroup
         GameManager.currentPuzzle = puzzle;
-        GameManager.LoadScene(GameManager.currentPuzzle.GetSceneName());
+        LoadSceneManager.LoadScene(GameManager.currentPuzzle.GetScene());
     }
 }

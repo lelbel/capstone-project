@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5364447430406008876}
   - component: {fileID: 5684284841866874817}
   - component: {fileID: 2986466059523063836}
-  - component: {fileID: 6271253188582017100}
+  - component: {fileID: 366552498401690930}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6271253188582017100}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 366552498401690930}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ButtonOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6271253188582017100
+--- !u!114 &366552498401690930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +143,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2828611128507837413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cd6592f0527e849be05c2d8374063d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a902058ef15dc6489f1428eaaf30868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  scene: 0
 --- !u!1 &4074873280416840127
 GameObject:
   m_ObjectHideFlags: 0

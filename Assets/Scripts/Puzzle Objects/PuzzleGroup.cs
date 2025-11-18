@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class PuzzleGroup : MonoBehaviour
 {
     [SerializeField] private List<Puzzle> puzzleGroup;
-    [SerializeField] private Button button; 
+    [SerializeField] private Button button;
+    [SerializeField] private LoadSceneManager.SceneName scene;
     private bool isPuzzleGroupCompleted = false;
 
     public List<Puzzle> GetPuzzleGroup()
@@ -48,8 +49,9 @@ public class PuzzleGroup : MonoBehaviour
 
     public void ButtonOnClick()
     {
+        Debug.Log("button clicked");
         GameManager.currentPuzzleGroup = puzzleGroup;
-        GameManager.LoadScene(GameManager.MapSceneName);
+        LoadSceneManager.LoadScene(scene);
     }
 
     public void DebugCheck()

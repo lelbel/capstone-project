@@ -1,21 +1,17 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LibrarianManager : MonoBehaviour
 {
-    //  general
     [SerializeField] private Image librarian;
-
-    //  sprites
     [SerializeField] private Sprite defaultSprite;
-
 
     public void UpdateSprite(Sentence.SpriteState state)
     {
         librarian.enabled = true;
 
         switch (state)
+
         {
             case Sentence.SpriteState.DEFAULT:
                 librarian.GetComponent<Image>().sprite = defaultSprite;
