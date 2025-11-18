@@ -1,22 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System;
 
 [Serializable]
 public class Puzzle: MonoBehaviour
 {
-    [Header("General")]
     [SerializeField] private string sceneName;
-    private bool isSolved = false;
-
-    [Header("Sprites")]
     [SerializeField] private Sprite incompleteSprite;
     [SerializeField] private Sprite completeSprite;
-
-    [Header("Map Button")]
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
+    private bool isSolved = false;
     private Button button;
 
     public Button GetButton()
@@ -27,6 +21,9 @@ public class Puzzle: MonoBehaviour
     public void SetButton(Button btn)
     {
         button = btn;
+
+        //  move button to specified x and y coords
+        button.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, yPos);
     }
 
     public Image GetButtonImage()
@@ -57,14 +54,6 @@ public class Puzzle: MonoBehaviour
     public void SolvePuzzle()
     {
         isSolved = true;
-    }
-
-    public void UpdateButtonPosition()
-    {
-        if(button != null)
-        {
-            button.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, yPos);
-        }
     }
 
     public void OnButtonClick()

@@ -48,7 +48,7 @@ public class PuzzleGroup : MonoBehaviour
 
     public void ButtonOnClick()
     {
-        PuzzleManager.currentPuzzleGroup = puzzleGroup;
+        GameManager.currentPuzzleGroup = puzzleGroup;
         GameManager.LoadScene(GameManager.MapSceneName);
     }
 
@@ -56,7 +56,7 @@ public class PuzzleGroup : MonoBehaviour
     {
         Debug.Log("current puzzles");
         
-        foreach (Puzzle puzzle in PuzzleManager.currentPuzzleGroup)
+        foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
         {
             Debug.Log(puzzle);
         }

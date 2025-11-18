@@ -2,12 +2,9 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class PuzzleManager : MonoBehaviour
+public class MapManager : MonoBehaviour
 {
-    public static List<Puzzle> currentPuzzleGroup;
-    public static List<GameObject> mapButtons = new();
-    public static Puzzle currentPuzzle;
-    public static bool mapEnabled;
+    private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
 
     void Start()
@@ -15,10 +12,18 @@ public class PuzzleManager : MonoBehaviour
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
-        foreach (Puzzle puzzle in currentPuzzleGroup)
+        foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
         {
-            //  create button
-            GameObject button =  new("MapButton");
+            CreateMapButton(puzzle);
+        }
+
+        RefreshSprites();
+    }
+
+    public void CreateMapButton(Puzzle puzzle)
+    {
+        //  create button
+            GameObject button = new("MapButton");
 
             //  add button to button list
             mapButtons.Add(button);
@@ -32,27 +37,31 @@ public class PuzzleManager : MonoBehaviour
             //  set the mapButton and puzzle objects to reference each other
             button.GetComponent<MapButton>().SetPuzzle(puzzle);
 
-            Debug.Log(button.GetComponent<MapButton>().GetPuzzle());
+            Debug.Log($"map button puzzle: {button.GetComponent<MapButton>().GetPuzzle()}");
 
             puzzle.SetButton(button.GetComponent<Button>());
 
-            //  add listener for function that stores the current button
+            //  add listener for function that updates the current puzzle
             button.GetComponent<Button>().onClick.AddListener(button.GetComponent<MapButton>().OnButtonClick);
 
             //  set button parent as canvas so it shows up
             button.transform.SetParent(canvas.transform, false);
+    }
 
-            //  move the buttons to the position specified in the puzzle coordinates argument
-            puzzle.UpdateButtonPosition();
+    private void ResetPuzzleButtons()
+    {
+        foreach (GameObject button in mapButtons)
+        {
+            Destroy(button);
         }
 
-        RefreshSprites();
+        mapButtons.Clear();
     }
 
     public void RefreshSprites()
     {
         //  set each sprite as incomeplete
-        foreach (Puzzle puzzle in currentPuzzleGroup)
+        foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
         {
             //  set sprite at complete if solved
             if (puzzle.IsSolved())
@@ -80,29 +89,9 @@ public class PuzzleManager : MonoBehaviour
         puzzle.GetButtonImage().sprite = puzzle.GetCompleteSprite();
     }
 
-    public static bool IsCurrentPuzzleSolved()
-    {
-        return currentPuzzle.IsSolved();
-    }
-
-    public static void SolveCurrentPuzzle()
-    {
-        currentPuzzle.SolvePuzzle();
-    }
-
-    public static void ResetPuzzleButtons()
-    {
-        foreach (GameObject button in mapButtons)
-        {
-            Destroy(button);
-        }
-
-        mapButtons.Clear();
-    }
-
     public void DebugCheck()
     {
-        if (currentPuzzleGroup.Count == 0)
+        if (GameManager.currentPuzzleGroup.Count == 0)
         {
             Debug.Log("activePuzzles list is empty");
         }

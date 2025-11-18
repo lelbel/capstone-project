@@ -4,11 +4,24 @@ public class MapDebugger : MonoBehaviour
 {
     [SerializeField] PuzzleGroup puzzleGroup;
 
+    public static MapDebugger Instance;
+
     void Awake()
-    {
-        if (PuzzleManager.currentPuzzleGroup == null)
+    {        
+        if (Instance == null)
         {
-            PuzzleManager.currentPuzzleGroup = puzzleGroup.GetPuzzleGroup();
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        if (GameManager.currentPuzzleGroup == null)
+        {
+            GameManager.currentPuzzleGroup = puzzleGroup.GetPuzzleGroup();
         }
     }
 }

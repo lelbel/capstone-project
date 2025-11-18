@@ -23,7 +23,7 @@ public class CodePuzzleManager : MonoBehaviour
         userInput.caretColor = caretColor;
         userInput.caretPosition = 0;
 
-        if (PuzzleManager.IsCurrentPuzzleSolved())
+        if (GameManager.IsCurrentPuzzleSolved())
         {
             userInput.text = solution;
             FoundSolution();
@@ -41,7 +41,7 @@ public class CodePuzzleManager : MonoBehaviour
 
         if (string.Equals(userInput.text, solution, System.StringComparison.OrdinalIgnoreCase) == true)
         {
-            PuzzleManager.SolveCurrentPuzzle();
+            GameManager.SolveCurrentPuzzle();
             FoundSolution();
         }
 
