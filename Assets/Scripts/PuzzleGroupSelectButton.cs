@@ -16,7 +16,6 @@ public class PuzzleGroupSelectButton : MonoBehaviour
 
     public void OnButtonClick()
     {
-        Debug.Log("button clicked");
         GameManager.currentPuzzleGroup = puzzleGroup.GetPuzzleGroup();
         LoadSceneManager.LoadScene(puzzleGroup.GetScene());
     }

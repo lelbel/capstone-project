@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class SelectDebugger : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
-        Debug.Log($"current PuzzleGroups: {PuzzleGroup.puzzleGroups}");
+        //Debug.Log($"current PuzzleGroups: {PuzzleGroup.puzzleGroups}");
+
+        
     }
 }

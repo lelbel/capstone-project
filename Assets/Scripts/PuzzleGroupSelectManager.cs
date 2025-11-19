@@ -6,13 +6,14 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 {
     private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameManager gameManager;
 
     void Start()
     {
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
-        foreach (PuzzleGroup group in PuzzleGroup.puzzleGroups)
+        foreach (PuzzleGroup group in gameManager.puzzleGroups)
         {
             CreatePuzzleSelectButton(group);
         }
@@ -32,10 +33,8 @@ public class PuzzleGroupSelectManager : MonoBehaviour
             button.AddComponent<Image>();
             button.AddComponent<PuzzleGroupSelectButton>();
 
-            //  set the mapButton and puzzle objects to reference each other
+            //  set the button and puzzleGroup objects to reference each other
             button.GetComponent<PuzzleGroupSelectButton>().SetPuzzleGroup(group);
-
-            Debug.Log($"select button puzzle: {button.GetComponent<PuzzleGroupSelectButton>().GetPuzzleGroup()}");
 
             group.SetButton(button.GetComponent<Button>());
 

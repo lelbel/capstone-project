@@ -144,15 +144,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4572476344103160079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8098384be37c9684f88b5839dfb455c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 0}
   xPos: 0
   yPos: -100
   isHorizontallyCentered: 1
   isVerticallyCentered: 0
-  xCenter: 115
-  yCenter: 157.5

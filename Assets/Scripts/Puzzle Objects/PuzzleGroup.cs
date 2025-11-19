@@ -6,18 +6,12 @@ using System;
 [Serializable]
 public class PuzzleGroup
 {
-    public static List<PuzzleGroup> puzzleGroups = new();
     [SerializeField] private List<Puzzle> puzzleGroup;
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
     private Button button;
     private bool isPuzzleGroupCompleted = false;
-
-    public PuzzleGroup()
-    {
-        puzzleGroups.Add(this);
-    }
 
     public List<Puzzle> GetPuzzleGroup()
     {

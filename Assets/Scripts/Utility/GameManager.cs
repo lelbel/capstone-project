@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
     public static List<Puzzle> currentPuzzleGroup;
     public static Puzzle currentPuzzle;
     public List<PuzzleGroup> puzzleGroups;
-
     public static GameManager Instance;
 
     void Awake()
