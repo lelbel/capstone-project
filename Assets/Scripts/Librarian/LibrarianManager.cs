@@ -7,27 +7,24 @@ public class LibrarianManager : MonoBehaviour
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private LoadSceneManager.SceneName scene;
 
-    public void UpdateSprite(Sentence.SpriteState state)
+    public void UpdateSprite(Dialogue.SpriteState state)
     {
-        librarian.enabled = true;
 
         switch (state)
 
         {
-            case Sentence.SpriteState.DEFAULT:
+            case Dialogue.SpriteState.DEFAULT:
                 librarian.GetComponent<Image>().sprite = defaultSprite;
+                librarian.enabled = true;
                 break;
 
-            case Sentence.SpriteState.INVISIBLE:
+            case Dialogue.SpriteState.INVISIBLE:
                 librarian.enabled = false;
-                break;
-
-            case Sentence.SpriteState.CHANGESCENE: 
-                LoadSceneManager.LoadScene(scene);
                 break;
 
             default:
                 librarian.GetComponent<Image>().sprite = defaultSprite;
+                librarian.enabled = true;
                 break;
         }
     }

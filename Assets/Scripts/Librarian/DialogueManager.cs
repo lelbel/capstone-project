@@ -27,9 +27,8 @@ public class DialogueManager : MonoBehaviour
     //  start the dialogue
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.text = dialogue.name;
+        nameText.text = dialogue.GetName().ToString();
 
-        //Debug.Log($"dialogue with {name}");
         //  clear queue
         sentences.Clear();
 
@@ -71,7 +70,6 @@ public class DialogueManager : MonoBehaviour
     //  print letters one by one
     IEnumerator TypeSentence(Sentence sentence)
     {
-        librarianManager.UpdateSprite(sentence.GetState());
         //Debug.Log("co started");
         dialogueText.text = "";
         foreach (char letter in sentence.GetText().ToCharArray())
