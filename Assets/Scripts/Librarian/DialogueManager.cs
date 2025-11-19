@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private LibrarianManager librarianManager;
     [SerializeField] private float typeDelay = 0.02f;
     private Queue<Sentence> sentences;
-
     public Dialogue dialogue;
 
 

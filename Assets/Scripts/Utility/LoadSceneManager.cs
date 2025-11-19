@@ -14,7 +14,7 @@ public class LoadSceneManager : MonoBehaviour
         FinalCodePuzzle,
         HowToPlay,
         InGameMenu,
-        IntroLibrarian,
+        TutorialLibrarian,
         LibbyCodePuzzle,
         MainMenu,
         Map,

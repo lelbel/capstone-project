@@ -5,6 +5,7 @@ public class LibrarianManager : MonoBehaviour
 {
     [SerializeField] private Image librarian;
     [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private LoadSceneManager.SceneName scene;
 
     public void UpdateSprite(Sentence.SpriteState state)
     {
@@ -15,16 +16,17 @@ public class LibrarianManager : MonoBehaviour
         {
             case Sentence.SpriteState.DEFAULT:
                 librarian.GetComponent<Image>().sprite = defaultSprite;
-                //ebug.Log("librarian default");
                 break;
 
             case Sentence.SpriteState.INVISIBLE:
                 librarian.enabled = false;
-                //Debug.Log("librarian invis");
+                break;
+
+            case Sentence.SpriteState.CHANGESCENE: 
+                LoadSceneManager.LoadScene(scene);
                 break;
 
             default:
-                //Debug.Log("switch default");
                 librarian.GetComponent<Image>().sprite = defaultSprite;
                 break;
         }

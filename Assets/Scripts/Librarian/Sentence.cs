@@ -10,6 +10,7 @@ public class Sentence
         DEFAULT,
         INVISIBLE,
         VISIBLE,
+        CHANGESCENE
     }
 
     public SpriteState currentState = SpriteState.INVISIBLE;
