@@ -6,6 +6,8 @@ public class MapManager : MonoBehaviour
 {
     private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
+    [SerializeField] private Sprite incompleteSprite;
+    [SerializeField] private Sprite completeSprite;
 
     void Start()
     {
@@ -59,32 +61,21 @@ public class MapManager : MonoBehaviour
     public void RefreshSprites()
     {
         //  set each sprite as incomeplete
-        foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
+        //foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
+        foreach (GameObject button in mapButtons)
         {
             //  set sprite at complete if solved
-            if (puzzle.IsSolved())
+            if (button.GetComponent<MapButton>().GetPuzzle().IsSolved())
             {
-                SetSpriteComplete(puzzle);
+                button.GetComponent<MapButton>().GetPuzzle().GetButtonImage().sprite = completeSprite;
             }
 
             else
             {
                 //  set sprite as incomplete if not solved
-                SetSpriteIncomplete(puzzle);
+                button.GetComponent<MapButton>().GetPuzzle().GetButtonImage().sprite = incompleteSprite;
             }
         }
-    }
-
-    //  set sprite as incomeplete
-    public void SetSpriteIncomplete(Puzzle puzzle)
-    {
-        puzzle.GetButtonImage().sprite = puzzle.GetIncompleteSprite();
-    }
-
-    //  set sprite as complete
-    public void SetSpriteComplete(Puzzle puzzle)
-    {
-        puzzle.GetButtonImage().sprite = puzzle.GetCompleteSprite();
     }
 
     public void DebugCheck()

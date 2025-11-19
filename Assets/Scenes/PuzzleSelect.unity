@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &973448504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,19 +594,29 @@ MonoBehaviour:
   puzzleGroups:
   - puzzleGroup:
     - scene: 1
-      incompleteSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
-      completeSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
       xPos: -500
       yPos: 11
+      isSolved: 0
     scene: 11
     xPos: -500
     yPos: 220
   - puzzleGroup:
     - scene: 2
-      incompleteSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
-      completeSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
-      xPos: -200
+      xPos: -250
       yPos: 11
+      isSolved: 0
+    - scene: 4
+      xPos: 0
+      yPos: 11
+      isSolved: 0
+    - scene: 9
+      xPos: 250
+      yPos: 11
+      isSolved: 0
+    - scene: 5
+      xPos: 500
+      yPos: 11
+      isSolved: 0
     scene: 11
     xPos: -500
     yPos: -20

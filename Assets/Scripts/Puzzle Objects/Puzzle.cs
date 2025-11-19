@@ -9,11 +9,9 @@ using System.Collections.Generic;
 public class Puzzle
 {
     [SerializeField] private LoadSceneManager.SceneName scene;
-    [SerializeField] private Sprite incompleteSprite;
-    [SerializeField] private Sprite completeSprite;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
-    private bool isSolved = false;
+    [SerializeField] private bool isSolved = false;
     private Button button;
 
     public Button GetButton()
@@ -42,16 +40,6 @@ public class Puzzle
     public bool IsSolved()
     {
         return isSolved;
-    }
-
-    public Sprite GetCompleteSprite()
-    {
-        return completeSprite;
-    }
-
-    public Sprite GetIncompleteSprite()
-    {
-        return incompleteSprite;
     }
 
     public void SolvePuzzle()
