@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &973448504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,7 +546,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 598444656}
-  gameManager: {fileID: 2009790407}
 --- !u!4 &1418991768
 Transform:
   m_ObjectHideFlags: 0
@@ -591,35 +590,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5d828600ad5224a8bfe1837cbdf87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleGroups:
+  createPuzzleGroups:
   - puzzleGroup:
     - scene: 1
       xPos: -500
-      yPos: 11
+      yPos: 10
       isSolved: 0
     scene: 11
     xPos: -500
-    yPos: 220
+    yPos: 10
   - puzzleGroup:
     - scene: 2
       xPos: -250
-      yPos: 11
-      isSolved: 0
-    - scene: 4
-      xPos: 0
-      yPos: 11
-      isSolved: 0
-    - scene: 9
-      xPos: 250
-      yPos: 11
-      isSolved: 0
-    - scene: 5
-      xPos: 500
-      yPos: 11
+      yPos: 10
       isSolved: 0
     scene: 11
     xPos: -500
-    yPos: -20
+    yPos: -210
 --- !u!4 &2009790408
 Transform:
   m_ObjectHideFlags: 0

@@ -9,11 +9,6 @@ public class PuzzleGroupSelectButton : MonoBehaviour
         puzzleGroup = pzlgrp;
     }
 
-    public PuzzleGroup GetPuzzleGroup()
-    {
-        return puzzleGroup;
-    }
-
     public void OnButtonClick()
     {
         GameManager.currentPuzzleGroup = puzzleGroup.GetPuzzleGroup();

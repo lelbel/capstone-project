@@ -6,14 +6,14 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 {
     private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
-    [SerializeField] private GameManager gameManager;
+    //[SerializeField] private GameManager gameManager;
 
     void Start()
     {
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
-        foreach (PuzzleGroup group in gameManager.puzzleGroups)
+        foreach (PuzzleGroup group in GameManager.puzzleGroups)
         {
             CreatePuzzleSelectButton(group);
         }

@@ -5,8 +5,9 @@ public class GameManager : MonoBehaviour
 {
     public static List<Puzzle> currentPuzzleGroup;
     public static Puzzle currentPuzzle;
-    public List<PuzzleGroup> puzzleGroups;
+    public static List<PuzzleGroup> puzzleGroups;
     public static GameManager Instance;
+    public List<PuzzleGroup> createPuzzleGroups;
 
     void Awake()
     {        
@@ -19,6 +20,17 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        //  if the static list has not been populated yet, populate it
+        if (puzzleGroups == null)
+        {
+            puzzleGroups = new();
+            foreach (PuzzleGroup group in createPuzzleGroups)
+            {
+                puzzleGroups.Add(group);
+                Debug.Log(group);
+            }
         }
     }
 

@@ -35,6 +35,6 @@ public class MapDebugger : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log($"is active game puzzle solved: {GameManager.currentPuzzle.IsSolved()}");
+        //Debug.Log($"is active game puzzle solved: {GameManager.currentPuzzle.IsSolved()}");
     }
 }
