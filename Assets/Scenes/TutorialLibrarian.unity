@@ -1270,18 +1270,12 @@ MonoBehaviour:
   librarianManager: {fileID: 1769640725}
   typeDelay: 0.02
   dialogue:
-    name: Librarian
+    name: 0
+    currentState: 0
     sentences:
-    - text: Library description
-      currentState: 1
-    - text: Hello
-      currentState: 0
-    - text: Invisible
-      currentState: 0
-    - text: No one hears a word
-      currentState: 1
-    - text: 
-      currentState: 3
+    - text: blah
+    - text: poop
+    - text: pee
 --- !u!4 &2118138184
 Transform:
   m_ObjectHideFlags: 0
