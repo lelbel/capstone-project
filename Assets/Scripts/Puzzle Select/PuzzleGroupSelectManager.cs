@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class PuzzleGroupSelectManager : MonoBehaviour
 {
     private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
-    //[SerializeField] private GameManager gameManager;
+    [SerializeField] private GameObject buttonPrefab;
 
     void Start()
     {
@@ -22,21 +23,24 @@ public class PuzzleGroupSelectManager : MonoBehaviour
     public void CreatePuzzleSelectButton(PuzzleGroup group)
     {
         //  create button
-            GameObject button = new("SelectButton");
+            GameObject button = Instantiate(buttonPrefab, Vector3.zero, Quaternion.identity);
 
             //  add button to button list
             mapButtons.Add(button);
 
             //  add all the components to the button
-            button.AddComponent<Button>();
-            button.AddComponent<RectTransform>();
-            button.AddComponent<Image>();
-            button.AddComponent<PuzzleGroupSelectButton>();
+            //button.AddComponent<Button>();
+            //button.AddComponent<RectTransform>();
+            //button.AddComponent<Image>();
+            //button.AddComponent<PuzzleGroupSelectButton>();
 
             //  set the button and puzzleGroup objects to reference each other
             button.GetComponent<PuzzleGroupSelectButton>().SetPuzzleGroup(group);
 
             group.SetButton(button.GetComponent<Button>());
+            
+            //  set text
+            button.GetComponent<Button>().GetComponentInChildren<TextMeshProUGUI>().text = group.GetButtonText();
 
             //  add listener for function that updates the current puzzle
             button.GetComponent<Button>().onClick.AddListener(button.GetComponent<PuzzleGroupSelectButton>().OnButtonClick);

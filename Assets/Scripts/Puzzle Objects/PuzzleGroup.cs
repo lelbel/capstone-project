@@ -10,6 +10,8 @@ public class PuzzleGroup
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
+    [SerializeField] private string buttonText;
+
     private Button button;
     private bool isPuzzleGroupCompleted = false;
 
@@ -60,6 +62,11 @@ public class PuzzleGroup
         {
             isPuzzleGroupCompleted = true;
         }
+    }
+    
+    public string GetButtonText()
+    {
+        return buttonText;
     }
 
     public void DebugCheck()
