@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Puzzle puzzle in currentPuzzleGroup)
         {
-            if (puzzle.GetNote().IsVisible())
+            if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
             {
                 currentPuzzleNotes.Add(puzzle.GetNote());
             }

@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1827997673}
     m_Modifications:
+    - target: {fileID: 366552498401690930, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
+      propertyPath: scene
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1837930445575658957, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_text
       value: Continue
@@ -237,6 +241,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1827997673}
     m_Modifications:
+    - target: {fileID: 366552498401690930, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
+      propertyPath: scene
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1837930445575658957, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_text
       value: Main Menu
@@ -347,6 +355,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1827997673}
     m_Modifications:
+    - target: {fileID: 366552498401690930, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
+      propertyPath: scene
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1837930445575658957, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_text
       value: Settings

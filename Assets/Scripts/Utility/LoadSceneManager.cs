@@ -7,6 +7,7 @@ public class LoadSceneManager : MonoBehaviour
     public enum SceneName
     {
         None,
+        Back,
         ArrowPuzzle,
         BoatCodePuzzle,
         Credits,
@@ -23,10 +24,23 @@ public class LoadSceneManager : MonoBehaviour
         SettingsMenu
     }
 
+    public static SceneName currentScene = SceneName.MainMenu;
+    public static SceneName lastScene;
+
     public static void LoadScene(SceneName sceneName)
     {
-        if (sceneName != SceneName.None)
+        if (sceneName == SceneName.Back)
         {
+            SceneName last = lastScene;
+            lastScene = currentScene;
+            currentScene = last;
+            SceneManager.LoadScene(last.ToString());
+        }
+        
+        else if (sceneName != SceneName.None)
+        {
+            lastScene = currentScene;
+            currentScene = sceneName;
             SceneManager.LoadScene(sceneName.ToString());
         }
 
