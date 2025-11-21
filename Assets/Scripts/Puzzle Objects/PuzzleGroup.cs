@@ -11,7 +11,6 @@ public class PuzzleGroup
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
     [SerializeField] private string buttonText;
-
     private Button button;
     private bool isPuzzleGroupCompleted = false;
 

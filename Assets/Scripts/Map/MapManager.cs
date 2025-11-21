@@ -4,13 +4,18 @@ using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
-    private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
-    [SerializeField] private Sprite incompleteSprite;
+    [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private Sprite completeSprite;
+    [SerializeField] private Sprite incompleteSprite;
+    private List<GameObject> mapButtons = new();
 
     void Start()
     {
+        //  update puzzle notes
+        GameManager.UpdatePuzzleNotes();
+
+        //  remove old map buttons
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
@@ -25,16 +30,10 @@ public class MapManager : MonoBehaviour
     public void CreateMapButton(Puzzle puzzle)
     {
         //  create button
-            GameObject button = new("MapButton");
+            GameObject button = Instantiate(buttonPrefab, Vector3.zero, Quaternion.identity);
 
             //  add button to button list
             mapButtons.Add(button);
-
-            //  add all the components to the button
-            button.AddComponent<Button>();
-            button.AddComponent<RectTransform>();
-            button.AddComponent<Image>();
-            button.AddComponent<MapButton>();
 
             //  set the mapButton and puzzle objects to reference each other
             button.GetComponent<MapButton>().SetPuzzle(puzzle);

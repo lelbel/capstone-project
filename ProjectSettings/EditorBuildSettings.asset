@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PuzzleSelect.unity
     guid: d3002371f5f7cce458000c64309a023b
+  - enabled: 1
+    path: Assets/Scenes/PuzzleNotes.unity
+    guid: f0d4799b778bb7b48918a3b40aba0840
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

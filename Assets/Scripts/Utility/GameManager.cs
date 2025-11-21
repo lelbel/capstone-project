@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static List<Puzzle> currentPuzzleGroup;
     public static Puzzle currentPuzzle;
+    public static List<PuzzleNote> currentPuzzleNotes = new();
     public static List<PuzzleGroup> puzzleGroups;
     public static GameManager Instance;
     public List<PuzzleGroup> createPuzzleGroups;
@@ -29,7 +30,6 @@ public class GameManager : MonoBehaviour
             foreach (PuzzleGroup group in createPuzzleGroups)
             {
                 puzzleGroups.Add(group);
-                Debug.Log(group);
             }
         }
     }
@@ -42,5 +42,18 @@ public class GameManager : MonoBehaviour
     public static void SolveCurrentPuzzle()
     {
         currentPuzzle.SolvePuzzle();
+    }
+
+    public static void UpdatePuzzleNotes()
+    {
+        currentPuzzleNotes.Clear();
+
+        foreach (Puzzle puzzle in currentPuzzleGroup)
+        {
+            if (puzzle.GetNote().IsVisible())
+            {
+                currentPuzzleNotes.Add(puzzle.GetNote());
+            }
+        }
     }
 }

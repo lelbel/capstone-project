@@ -1,9 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-
 using System.Collections.Generic;
-
 
 [Serializable]
 public class Puzzle
@@ -12,6 +10,7 @@ public class Puzzle
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
     [SerializeField] private bool isSolved = false;
+    [SerializeField] private PuzzleNote puzzleNote;
     private Button button;
 
     public Button GetButton()
@@ -45,6 +44,12 @@ public class Puzzle
     public void SolvePuzzle()
     {
         isSolved = true;
+        puzzleNote.Visible();
+    }
+
+    public PuzzleNote GetNote()
+    {
+        return puzzleNote;
     }
 
     public void OnButtonClick()

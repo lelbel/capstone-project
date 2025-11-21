@@ -5,9 +5,9 @@ using TMPro;
 
 public class PuzzleGroupSelectManager : MonoBehaviour
 {
-    private List<GameObject> mapButtons = new();
     [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject buttonPrefab;
+    private List<GameObject> groupButtons = new();
 
     void Start()
     {
@@ -22,17 +22,11 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 
     public void CreatePuzzleSelectButton(PuzzleGroup group)
     {
-        //  create button
+        //  create instance of button prefab
             GameObject button = Instantiate(buttonPrefab, Vector3.zero, Quaternion.identity);
 
             //  add button to button list
-            mapButtons.Add(button);
-
-            //  add all the components to the button
-            //button.AddComponent<Button>();
-            //button.AddComponent<RectTransform>();
-            //button.AddComponent<Image>();
-            //button.AddComponent<PuzzleGroupSelectButton>();
+            groupButtons.Add(button);
 
             //  set the button and puzzleGroup objects to reference each other
             button.GetComponent<PuzzleGroupSelectButton>().SetPuzzleGroup(group);
@@ -51,12 +45,12 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 
     private void ResetPuzzleButtons()
     {
-        foreach (GameObject button in mapButtons)
+        foreach (GameObject button in groupButtons)
         {
             Destroy(button);
         }
 
-        mapButtons.Clear();
+        groupButtons.Clear();
     }
 
     public void DebugCheck()

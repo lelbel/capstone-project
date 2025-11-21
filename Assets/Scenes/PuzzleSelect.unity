@@ -601,6 +601,10 @@ MonoBehaviour:
       xPos: -500
       yPos: 10
       isSolved: 0
+      puzzleNote:
+        sprite: {fileID: 0}
+        xPos: 0
+        yPos: 0
     scene: 11
     xPos: -500
     yPos: 150
@@ -610,6 +614,34 @@ MonoBehaviour:
       xPos: -250
       yPos: 10
       isSolved: 0
+      puzzleNote:
+        sprite: {fileID: 1482130972266021247, guid: 088401c4f6f0a1844a7e3da61b3ec4f3, type: 3}
+        xPos: -500
+        yPos: 10
+    - scene: 4
+      xPos: 0
+      yPos: 10
+      isSolved: 0
+      puzzleNote:
+        sprite: {fileID: 1485483161605048486, guid: 5d555777c5f3db242a007abf643cc68d, type: 3}
+        xPos: -250
+        yPos: 10
+    - scene: 9
+      xPos: 250
+      yPos: 10
+      isSolved: 0
+      puzzleNote:
+        sprite: {fileID: -8571605022685636799, guid: 352f106e97a6d774fbb105420145fc9e, type: 3}
+        xPos: 0
+        yPos: 10
+    - scene: 5
+      xPos: 500
+      yPos: 10
+      isSolved: 0
+      puzzleNote:
+        sprite: {fileID: -3931863936771613984, guid: a7da633cd225c6347816549b73705aa4, type: 3}
+        xPos: 250
+        yPos: 10
     scene: 11
     xPos: -500
     yPos: 0

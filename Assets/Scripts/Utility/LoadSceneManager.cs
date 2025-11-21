@@ -18,6 +18,7 @@ public class LoadSceneManager : MonoBehaviour
         LibbyCodePuzzle,
         MainMenu,
         Map,
+        PuzzleNotes,
         PuzzleSelect,
         SettingsMenu
     }
