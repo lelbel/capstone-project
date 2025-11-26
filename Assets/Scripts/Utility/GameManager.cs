@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static List<PuzzleNote> currentPuzzleNotes = new();
     public static List<PuzzleGroup> puzzleGroups;
     public static GameManager Instance;
+    public static bool tutorialActive = false;
     public List<PuzzleGroup> createPuzzleGroups;
 
     void Awake()

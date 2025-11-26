@@ -18,6 +18,11 @@ public class PuzzleGroupSelectManager : MonoBehaviour
         {
             CreatePuzzleSelectButton(group);
         }
+
+        if (GameManager.tutorialActive)
+        {
+            Tutorial();
+        }
     }
 
     public void CreatePuzzleSelectButton(PuzzleGroup group)
@@ -51,6 +56,20 @@ public class PuzzleGroupSelectManager : MonoBehaviour
         }
 
         groupButtons.Clear();
+    }
+
+    // Only enable first puzzle in group
+    public void Tutorial()
+    {
+        if (groupButtons.Count > 1)
+        {
+            int i = 1;
+            while (i < groupButtons.Count)
+            { 
+                groupButtons[i].SetActive(false);
+                i++;
+            }
+        }
     }
 
     public void DebugCheck()

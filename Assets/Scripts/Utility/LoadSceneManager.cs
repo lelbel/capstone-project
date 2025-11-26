@@ -22,7 +22,6 @@ public class LoadSceneManager : MonoBehaviour
         PuzzleNotes,
         PuzzleSelect,
         SettingsMenu,
-        TutorialMap
     }
 
     public static SceneName currentScene = SceneName.MainMenu;
@@ -42,6 +41,13 @@ public class LoadSceneManager : MonoBehaviour
         {
             lastScene = currentScene;
             currentScene = sceneName;
+            
+            if (sceneName == SceneName.TutorialLibrarian)
+            {
+                //  set tutorial state as active
+                GameManager.tutorialActive = true;
+            }
+
             SceneManager.LoadScene(sceneName.ToString());
         }
 

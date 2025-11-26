@@ -14,10 +14,10 @@ public class DialogueManager : MonoBehaviour
         SpriteDefault
     }
     
+    [SerializeField] private Image character;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float typeDelay = 0.02f;
-    [SerializeField] private Image character;
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private Dialogue dialogue;
