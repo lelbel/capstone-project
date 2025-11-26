@@ -21,7 +21,8 @@ public class LoadSceneManager : MonoBehaviour
         Map,
         PuzzleNotes,
         PuzzleSelect,
-        SettingsMenu
+        SettingsMenu,
+        TutorialMap
     }
 
     public static SceneName currentScene = SceneName.MainMenu;

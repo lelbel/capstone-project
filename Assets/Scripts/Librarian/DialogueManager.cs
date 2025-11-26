@@ -6,30 +6,41 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public enum Actions
+    {
+        ShowName,
+        HideName,
+        HideSprite,
+        SpriteDefault
+    }
+    
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private LibrarianManager librarianManager;
     [SerializeField] private float typeDelay = 0.02f;
+    [SerializeField] private Image character;
+    [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private LoadSceneManager.SceneName scene;
+    [SerializeField] private Dialogue dialogue;
+    
     private Queue<Sentence> sentences;
-    public Dialogue dialogue;
-
-
+    
     void Awake()
     {
         sentences = new Queue<Sentence>();
     }
-
+    
     void Start()
     {
+        //  start the dialogue
         StartDialogue(dialogue);
     }
-
-    //  start the dialogue
+    
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.text = dialogue.GetName().ToString();
+        //  set name
+        nameText.text = dialogue.GetName();
 
-        //  clear queue
+        //  clear sentence queue
         sentences.Clear();
 
         //  add each sentence to the queue
@@ -50,29 +61,59 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
+        
         Sentence sentence = sentences.Dequeue();
+        
+        //  perform actions if there are any
+        if (sentence.actions.Count != 0)
+        {
+            foreach (Actions action in sentence.actions)
+            {
+                PerformAction(action);
+            }
+        }
 
         //  stop animating current dialogue letters if player progresses through text fast
         StopAllCoroutines();
 
         //  start letter typing
-        StartCoroutine(TypeSentence(sentence));
-        //Debug.Log("reached");
+        StartCoroutine(TypeSentence(sentence.text));
+    }
+
+    public void PerformAction(Actions action)
+    {
+        switch (action)
+        {
+            case Actions.ShowName:
+                nameText.enabled = true;
+                break;
+            
+            case Actions.HideName:
+                nameText.enabled = false;
+                break;
+            
+            case Actions.HideSprite:
+                character.enabled = false;
+                break;
+            
+            case Actions.SpriteDefault:
+                character.enabled = true;
+                character.GetComponent<Image>().sprite = defaultSprite;
+                break;
+        }
     }
 
     public void EndDialogue()
     {
-
-        //Debug.Log("dialogue ended");
+        LoadSceneManager.LoadScene(scene);
     }
 
     //  print letters one by one
-    IEnumerator TypeSentence(Sentence sentence)
+    IEnumerator TypeSentence(string text)
     {
-        //Debug.Log("co started");
         dialogueText.text = "";
-        foreach (char letter in sentence.GetText().ToCharArray())
+        
+        foreach (char letter in text)
         {
             //  append letter to end of the string
             dialogueText.text += letter;
@@ -81,5 +122,4 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typeDelay);
         }
     }
-
 }

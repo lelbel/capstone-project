@@ -1118,53 +1118,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758737110}
   m_CullTransparentMesh: 1
---- !u!1 &1769640724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1769640726}
-  - component: {fileID: 1769640725}
-  m_Layer: 0
-  m_Name: LibrarianManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1769640725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769640724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f927f69b9eba4149a1734d4d29a5846, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  librarian: {fileID: 860251357}
-  defaultSprite: {fileID: -2377354517791324197, guid: 4d9f57f25461ad54a8b97ac1a725d36e, type: 3}
-  scene: 11
---- !u!4 &1769640726
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769640724}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1008.2073, y: 512.62146, z: 2.0331244}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060666531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,15 +1224,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 534344827}
   dialogueText: {fileID: 532265963}
-  librarianManager: {fileID: 1769640725}
   typeDelay: 0.02
+  character: {fileID: 860251357}
+  defaultSprite: {fileID: -2377354517791324197, guid: 4d9f57f25461ad54a8b97ac1a725d36e, type: 3}
+  scene: 0
   dialogue:
-    name: 0
-    currentState: 0
+    name: Librarian
     sentences:
-    - text: blah
-    - text: poop
-    - text: pee
+    - text: This is the library
+      actions: 0100000002000000
+    - text: Hellllloooooo
+      actions: 0000000003000000
+    - text: Test
+      actions: 
 --- !u!4 &2118138184
 Transform:
   m_ObjectHideFlags: 0
@@ -1301,5 +1258,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 473766215}
   - {fileID: 2118138184}
-  - {fileID: 1769640726}
   - {fileID: 1319988500}
