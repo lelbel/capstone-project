@@ -1,5 +1,5 @@
 using UnityEngine;
-public class MenuButton : MonoBehaviour
+public class NavButton : MonoBehaviour
 {
     [SerializeField] private LoadSceneManager.SceneName scene;
 

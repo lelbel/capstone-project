@@ -123,7 +123,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 366552498401690930}
-        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: NavButton, Assembly-CSharp
         m_MethodName: ButtonOnClick
         m_Mode: 1
         m_Arguments:
