@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Windows.Speech;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static List<PuzzleGroup> puzzleGroups;
     public static GameManager Instance;
     public static bool tutorialActive = false;
+    public static bool hasEnteredTutorial = false;
     public List<PuzzleGroup> createPuzzleGroups;
 
     void Awake()

@@ -40,6 +40,7 @@ public class LoadSceneManager : MonoBehaviour
             {
                 //  set tutorial state as active
                 GameManager.tutorialActive = true;
+                GameManager.hasEnteredTutorial = true;
             }
             
             lastScene = currentScene;
