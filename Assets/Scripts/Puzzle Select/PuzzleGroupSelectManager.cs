@@ -7,6 +7,7 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 {
     [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject buttonPrefab;
+    [SerializeField] private GameObject dialogueManager;
     private List<GameObject> groupButtons = new();
 
     void Start()
@@ -21,6 +22,7 @@ public class PuzzleGroupSelectManager : MonoBehaviour
 
         if (GameManager.tutorialActive)
         {
+            dialogueManager.SetActive(true);
             Tutorial();
         }
     }
@@ -66,7 +68,7 @@ public class PuzzleGroupSelectManager : MonoBehaviour
             int i = 1;
             while (i < groupButtons.Count)
             { 
-                groupButtons[i].SetActive(false);
+                groupButtons[i].GetComponent<Button>().enabled = false;
                 i++;
             }
         }

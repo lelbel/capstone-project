@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class NotificationManager : MonoBehaviour
 {
-
     void Start()
     {
         if (GameManager.currentPuzzle.GetNote() != null && !GameManager.currentPuzzle.GetNote().IsVisible())
@@ -16,10 +15,5 @@ public class NotificationManager : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-    }
-
-    public void ButtonOnClick()
-    {
-        Destroy(gameObject);
     }
 }

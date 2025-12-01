@@ -541,6 +541,51 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6653292191281189945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7196156158304752941}
+  - component: {fileID: 5858134449511702684}
+  m_Layer: 0
+  m_Name: TutorialArrowManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7196156158304752941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6653292191281189945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4319120054611648190}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5858134449511702684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6653292191281189945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8655aaaf83485f8c62b7a02049d44b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialArrows: []
 --- !u!1 &7197985869105765958
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +696,7 @@ Transform:
   - {fileID: 5787461594102191429}
   - {fileID: 8519955722756974844}
   - {fileID: 6914782997388972527}
+  - {fileID: 7196156158304752941}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &198918707818700350
@@ -670,7 +716,10 @@ MonoBehaviour:
   dialogueText: {fileID: 5132496801910645046}
   typeDelay: 0.02
   defaultSprite: {fileID: -2377354517791324197, guid: 4d9f57f25461ad54a8b97ac1a725d36e, type: 3}
+  continueButton: {fileID: 3157595855914016861}
+  dialogueBox: {fileID: 7197985869105765958}
   scene: 0
+  tutorialArrowManager: {fileID: 5858134449511702684}
   dialogue:
     name: Name
     sentences: []

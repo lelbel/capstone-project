@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ArrowPuzzleManager : MonoBehaviour
 {
     //  general
+    [SerializeField] private GameObject dialogueManager;
     private Image[] arrowImages;    //  array that stores the image objects for the puzzle
     private int[] arrowDir;         //  array that tracks the player input for arrow entry
     private int[] solution;         //  array that has the solution input for the puzzle
@@ -32,7 +33,10 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     void Start()
     {
-        //Debug.Log(PuzzleManager.currentPuzzleButton);
+        if (GameManager.tutorialActive)
+        {
+            dialogueManager.SetActive(true);
+        }
 
         puzzleLength = 5;
 

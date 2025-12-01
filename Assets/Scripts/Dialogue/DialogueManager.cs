@@ -11,7 +11,11 @@ public class DialogueManager : MonoBehaviour
         ShowName,
         HideName,
         HideSprite,
-        SpriteDefault
+        SpriteDefault,
+        NextArrow,
+        LoadScene,
+        HideDialogue,
+        DisableContinue
     }
     
     [SerializeField] private Image character;
@@ -19,7 +23,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float typeDelay = 0.02f;
     [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private GameObject continueButton;
+    [SerializeField] private GameObject dialogueBox;
     [SerializeField] private LoadSceneManager.SceneName scene;
+    [SerializeField] private TutorialArrowManager tutorialArrowManager;
     [SerializeField] private Dialogue dialogue;
     
     private Queue<Sentence> sentences;
@@ -61,7 +68,12 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        
+
+        if (sentences.Count == 1)
+        {
+            continueButton.SetActive(false);
+        }
+
         Sentence sentence = sentences.Dequeue();
         
         //  perform actions if there are any
@@ -100,12 +112,29 @@ public class DialogueManager : MonoBehaviour
                 character.enabled = true;
                 character.GetComponent<Image>().sprite = defaultSprite;
                 break;
+            
+            case Actions.NextArrow:
+                tutorialArrowManager.NextArrow(); 
+                break;
+            
+            case Actions.LoadScene:
+                LoadSceneManager.LoadScene(scene);
+                break;
+            case Actions.HideDialogue:
+                this.character.enabled = false;
+                this.dialogueText.enabled = false;
+                this.continueButton.SetActive(false);
+                this.dialogueBox.SetActive(false);
+                this.nameText.enabled = false;
+                break;
+            case Actions.DisableContinue:
+                this.continueButton.SetActive(false);
+                break;
         }
     }
 
     public void EndDialogue()
     {
-        LoadSceneManager.LoadScene(scene);
     }
 
     //  print letters one by one

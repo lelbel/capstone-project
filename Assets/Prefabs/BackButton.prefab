@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitNotificationPrefab: {fileID: 1070174347895893899, guid: d45a015661c65c0448cfc9ea8b2dde0f, type: 3}
-  scene: 1
+  scene: 8
 --- !u!1 &4990030870973646583
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,54 +6,46 @@ public class LoadSceneManager : MonoBehaviour
 {
     public enum SceneName
     {
-        None,
+        MainMenu,
+        Map,
+        PuzzleSelect,
+        PuzzleNotes,
+        Credits,
+        InGameMenu,
+        SettingsMenu,
+        TutorialLibrarian,
         Back,
         ArrowPuzzle,
         BoatCodePuzzle,
-        Credits,
         DangerCodePuzzle,
-        FinalCodePuzzle,
-        HowToPlay,
-        InGameMenu,
-        TutorialLibrarian,
         LibbyCodePuzzle,
-        MainMenu,
-        Map,
-        PuzzleNotes,
-        PuzzleSelect,
-        SettingsMenu,
+        FinalCodePuzzle,
     }
 
-    public static SceneName currentScene = SceneName.MainMenu;
-    public static SceneName lastScene;
+    //  set to mainMenu for debugging
+    public static SceneName currentScene;
+    public static SceneName lastScene = SceneName.MainMenu;
 
     public static void LoadScene(SceneName sceneName)
     {
         if (sceneName == SceneName.Back)
         {
-            SceneName last = lastScene;
-            lastScene = currentScene;
-            currentScene = last;
-            SceneManager.LoadScene(last.ToString());
+            //  set current scene as the last scene and set the last scene as the current scene
+            (currentScene, lastScene) = (lastScene, currentScene);
         }
         
-        else if (sceneName != SceneName.None)
+        else
         {
-            lastScene = currentScene;
-            currentScene = sceneName;
-            
             if (sceneName == SceneName.TutorialLibrarian)
             {
                 //  set tutorial state as active
                 GameManager.tutorialActive = true;
             }
-
-            SceneManager.LoadScene(sceneName.ToString());
+            
+            lastScene = currentScene;
+            currentScene = sceneName;
         }
-
-        else
-        {
-            Debug.Log("No scene selected");
-        }
+        
+        SceneManager.LoadScene(currentScene.ToString());
     }
 }

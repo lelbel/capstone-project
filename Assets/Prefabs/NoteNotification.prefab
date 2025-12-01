@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5074080857589509537}
   - component: {fileID: 6345762869640719499}
   - component: {fileID: 8735725002620447608}
-  - component: {fileID: 2801672893556324103}
+  - component: {fileID: 7109156837947865514}
+  - component: {fileID: 4085638674553321557}
   m_Layer: 5
   m_Name: NoteNotification
   m_TagString: Untagged
@@ -80,7 +81,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2801672893556324103
+--- !u!114 &7109156837947865514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070174347895893899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802d11f1f2864a99be9a7e8a85da5103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnButton: {fileID: 9178931422184380604}
+--- !u!114 &4085638674553321557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,14 +345,14 @@ PrefabInstance:
     - target: {fileID: 2986466059523063836, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2801672893556324103}
+      objectReference: {fileID: 7109156837947865514}
     - target: {fileID: 2986466059523063836, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonOnClick
       objectReference: {fileID: 0}
     - target: {fileID: 2986466059523063836, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: NotificationManager, Assembly-CSharp
+      value: NotificationButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5391563688499701082, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_Pivot.x
@@ -431,6 +445,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5391563688499701082, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
   m_PrefabInstance: {fileID: 6201476967579687072}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9178931422184380604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2986466059523063836, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
+  m_PrefabInstance: {fileID: 6201476967579687072}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8759738075895186643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,7 +466,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 366552498401690930, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: scene
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1837930445575658957, guid: 9ae992fa45283b445b3a93d6491c405f, type: 3}
       propertyPath: m_text

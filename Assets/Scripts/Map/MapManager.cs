@@ -8,10 +8,14 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private Sprite incompleteSprite;
+    [SerializeField] private GameObject dialogueManager;
     private List<GameObject> mapButtons = new();
 
     void Start()
     {
+        //  deactivate dialogue manager
+        dialogueManager.SetActive(false);
+        
         //  update puzzle notes
         GameManager.UpdatePuzzleNotes();
 
@@ -25,6 +29,11 @@ public class MapManager : MonoBehaviour
         }
 
         RefreshSprites();
+
+        if (GameManager.tutorialActive)
+        {
+            dialogueManager.SetActive(true);
+        }
     }
 
     public void CreateMapButton(Puzzle puzzle)
@@ -85,37 +94,3 @@ public class MapManager : MonoBehaviour
         }
     }
 }
-
-/*
-    [SerializeField] private List<GameObject> tutorialArrows;
-    private Queue<GameObject> tutorialArrowQueue;
-    private GameObject currentTutorialArrow;
-    
-    if (GameManager.tutorialActive)
-        {
-            Tutorial();
-        }
-    
- public void Tutorial()
-    {
-        //  queue tutorial arrows to be displayed
-        tutorialArrowQueue = new Queue<GameObject>();
-
-        foreach (GameObject arrow in tutorialArrows)
-        {
-            arrow.SetActive(false);
-            tutorialArrowQueue.Enqueue(arrow);
-        }
-    }
-    
-public void ShowNextArrow()
-    {
-        currentTutorialArrow = tutorialArrowQueue.Dequeue();
-        currentTutorialArrow.SetActive(true);
-    }
-
-    public void HideCurrentArrow()
-    {
-        currentTutorialArrow.SetActive(false);
-    }
-*/
