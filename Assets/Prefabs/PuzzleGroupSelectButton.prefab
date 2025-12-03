@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7441548088781696521}
   - component: {fileID: 3061302363196386794}
   - component: {fileID: 7992042301512575571}
-  - component: {fileID: 1263541959419878758}
+  - component: {fileID: 1730223542851636267}
   m_Layer: 5
   m_Name: PuzzleGroupSelectButton
   m_TagString: Untagged
@@ -121,8 +121,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3061302363196386794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1263541959419878758
+      m_Calls:
+      - m_Target: {fileID: 1730223542851636267}
+        m_TargetAssemblyTypeName: PuzzleGroupSelectButton, Assembly-CSharp
+        m_MethodName: ButtonOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1730223542851636267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b53f7a5cc4cb9343be8d88995a58237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleName: 0
 --- !u!1 &5478214201243185899
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,23 +1,21 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Windows.Speech;
 
 public class GameManager : MonoBehaviour
 {
-    public static List<Puzzle> currentPuzzleGroup;
-    public static Puzzle currentPuzzle;
-    public static List<PuzzleNote> currentPuzzleNotes = new();
-    public static List<PuzzleGroup> puzzleGroups;
-    public static GameManager Instance;
-    public static bool tutorialActive = false;
-    public static bool hasEnteredTutorial = false;
-    public List<PuzzleGroup> createPuzzleGroups;
-
-    void Awake()
-    {        
-        if (Instance == null)
+    public List<Puzzle> createPuzzles;
+    public static List<Puzzle> PuzzleList;
+    public static Puzzle CurrentPuzzle;
+    public static List<PuzzleNote> CurrentPuzzleNotes;
+    public static bool TutorialActive = false;
+    public static bool HasEnteredTutorial = false;
+    private static GameManager _instance;
+    
+    private void Awake()
+    {
+        if (_instance == null)
         {
-            Instance = this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
         }
 
@@ -27,36 +25,67 @@ public class GameManager : MonoBehaviour
         }
 
         //  if the static list has not been populated yet, populate it
-        if (puzzleGroups == null)
+        if (PuzzleList == null)
         {
-            puzzleGroups = new();
-            foreach (PuzzleGroup group in createPuzzleGroups)
+            PuzzleList = new();
+            foreach (Puzzle puzzle in createPuzzles)
             {
-                puzzleGroups.Add(group);
+                PuzzleList.Add(puzzle);
+            }
+        }
+        
+        CurrentPuzzleNotes = new();
+    }
+
+    public static Puzzle GetPuzzle(Puzzle.PuzzleName puzzleName)
+    {
+        foreach (Puzzle puzzle in PuzzleList)
+        {
+            if (puzzle.GetName() == puzzleName)
+            {
+                return puzzle;
+            }
+        }
+
+        Debug.Log("no puzzle found");
+        return null;
+    }
+
+    public static void UpdateCurrentPuzzle(Puzzle.PuzzleName puzzleName)
+    {
+        foreach (Puzzle puzzle in PuzzleList)
+        {
+            if (puzzle.GetName() == puzzleName)
+            {
+                CurrentPuzzle = puzzle;
+                LoadSceneManager.LoadScene(CurrentPuzzle.GetScene());
+                return;
             }
         }
     }
 
     public static bool IsCurrentPuzzleSolved()
     {
-        return currentPuzzle.IsSolved();
+        return CurrentPuzzle.IsSolved();
     }
 
     public static void SolveCurrentPuzzle()
     {
-        currentPuzzle.SolvePuzzle();
+        CurrentPuzzle.SolvePuzzle();
     }
 
     public static void UpdatePuzzleNotes()
     {
-        currentPuzzleNotes.Clear();
+        CurrentPuzzleNotes.Clear();
 
-        foreach (Puzzle puzzle in currentPuzzleGroup)
+        foreach (Puzzle puzzle in PuzzleList)
         {
             if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
             {
-                currentPuzzleNotes.Add(puzzle.GetNote());
+                CurrentPuzzleNotes.Add(puzzle.GetNote());
             }
         }
     }
+
+    
 }

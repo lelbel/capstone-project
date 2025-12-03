@@ -7,7 +7,7 @@ public class NotificationButtons : MonoBehaviour
 
     void Start()
     {
-        if (GameManager.tutorialActive)
+        if (GameManager.TutorialActive)
         {
             returnButton.enabled = false;
         }

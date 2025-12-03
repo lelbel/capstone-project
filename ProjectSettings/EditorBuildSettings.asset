@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Other Screens/SettingsMenu.unity
     guid: 37925a003c302fc47950b6e1952294bc
   - enabled: 1
-    path: Assets/Scenes/HowToPlay.unity
-    guid: db5217eb40217f0479e993767af301f0
-  - enabled: 1
     path: Assets/Scenes/InGameMenu.unity
     guid: cb934c18e5a9dbd4680ac8eb5894bf8b
   - enabled: 1
@@ -48,8 +45,8 @@ EditorBuildSettings:
     path: Assets/Scenes/PuzzleNotes.unity
     guid: f0d4799b778bb7b48918a3b40aba0840
   - enabled: 1
-    path: Assets/Scenes/TutorialMap.unity
-    guid: c5229963679aa5f4097b3426212226cd
+    path: Assets/Scenes/Puzzles/MapPuzzle.unity
+    guid: baae8bb88b1970f44932ab592b1190ba
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

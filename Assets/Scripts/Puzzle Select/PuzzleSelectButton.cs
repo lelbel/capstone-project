@@ -1,5 +1,21 @@
-using UnityEngine;
+namespace puzzle_select
+{
+    using UnityEngine;
 
+    public class PuzzleSelectButton : MonoBehaviour
+    {
+        [SerializeField] private Puzzle.PuzzleName puzzleName;
+    
+        //  update current puzzle when puzzle is selected
+        public void ButtonOnClick()
+        {
+            GameManager.UpdateCurrentPuzzle(puzzleName);
+        }
+    }
+
+}
+
+/*
 public class PuzzleGroupSelectButton : MonoBehaviour
 {
     private PuzzleGroup puzzleGroup;
@@ -15,3 +31,4 @@ public class PuzzleGroupSelectButton : MonoBehaviour
         LoadSceneManager.LoadScene(puzzleGroup.GetScene());
     }
 }
+*/

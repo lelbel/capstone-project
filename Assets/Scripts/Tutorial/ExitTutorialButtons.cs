@@ -6,7 +6,7 @@ namespace Utility
     {
         public void YesButton()
         {
-            GameManager.tutorialActive = false;
+            GameManager.TutorialActive = false;
             LoadSceneManager.LoadScene(LoadSceneManager.SceneName.MainMenu);
             Destroy(gameObject);
         }

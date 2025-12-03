@@ -6,12 +6,28 @@ using System.Collections.Generic;
 [Serializable]
 public class Puzzle
 {
+    public enum PuzzleName
+    {
+        ArrowPuzzle,
+        BoatCodePuzzle,
+        DangerCodePuzzle,
+        LibbyCodePuzzle,
+        FinalCodePuzzle,
+        MapPuzzle,
+    }
+    
+    [SerializeField] private PuzzleName puzzleName;
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
     [SerializeField] private bool isSolved = false;
     [SerializeField] private PuzzleNote puzzleNote;
     private Button button;
+
+    public PuzzleName GetName()
+    {
+        return puzzleName;
+    }
 
     public Button GetButton()
     {

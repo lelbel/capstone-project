@@ -11,7 +11,7 @@ namespace Utility
         
         public void ButtonOnClick()
         {
-            if (GameManager.tutorialActive)
+            if (GameManager.TutorialActive)
             {
                 if (this.transform.parent != null)
                 {

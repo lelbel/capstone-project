@@ -4,10 +4,10 @@ public class NotificationManager : MonoBehaviour
 {
     void Start()
     {
-        if (GameManager.currentPuzzle.GetNote() != null && !GameManager.currentPuzzle.GetNote().IsVisible())
+        if (GameManager.CurrentPuzzle.GetNote() != null && !GameManager.CurrentPuzzle.GetNote().IsVisible())
         {
             gameObject.SetActive(true);
-            GameManager.currentPuzzle.GetNote().Visible();
+            GameManager.CurrentPuzzle.GetNote().Visible();
             GameManager.UpdatePuzzleNotes();
         }
 

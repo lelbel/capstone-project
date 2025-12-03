@@ -33,7 +33,7 @@ public class ArrowPuzzleManager : MonoBehaviour
 
     void Start()
     {
-        if (GameManager.tutorialActive)
+        if (GameManager.TutorialActive)
         {
             dialogueManager.SetActive(true);
         }

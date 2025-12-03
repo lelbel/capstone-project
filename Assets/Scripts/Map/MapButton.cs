@@ -17,7 +17,7 @@ public class MapButton : MonoBehaviour
     public void OnButtonClick()
     {
         //  set currentPuzzleGroup
-        GameManager.currentPuzzle = puzzle;
-        LoadSceneManager.LoadScene(GameManager.currentPuzzle.GetScene());
+        GameManager.CurrentPuzzle = puzzle;
+        LoadSceneManager.LoadScene(GameManager.CurrentPuzzle.GetScene());
     }
 }

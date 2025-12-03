@@ -1,5 +1,31 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
+
+[Serializable]
+public class PuzzleGroup
+{
+    [SerializeField] private List<Puzzle> puzzleGroup;
+
+    public List<Puzzle> GetPuzzleGroup()
+    {
+        return puzzleGroup;
+    }
+
+    public void DebugCheck()
+    {
+        Debug.Log("current puzzles");
+        
+        foreach (Puzzle puzzle in GameManager.PuzzleList)
+        {
+            Debug.Log(puzzle);
+        }
+    }
+}
+
+/*
+using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 
@@ -78,3 +104,4 @@ public class PuzzleGroup
         }
     }
 }
+*/

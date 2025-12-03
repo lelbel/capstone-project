@@ -12,7 +12,7 @@ public class TutorialArrowManager : MonoBehaviour
     {
         gameObject.SetActive(false);
         
-        if (GameManager.tutorialActive)
+        if (GameManager.TutorialActive)
         {
             Tutorial();
         }

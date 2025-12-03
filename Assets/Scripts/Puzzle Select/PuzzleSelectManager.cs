@@ -1,3 +1,31 @@
+namespace puzzle_select
+{
+    using UnityEngine;
+    using System.Collections.Generic;
+
+    public class PuzzleSelectManager : MonoBehaviour
+    {
+        [SerializeField] private GameObject dialogueManager;
+        [SerializeField] private List<PuzzleSelectSprite> puzzleSelectSprites;
+
+        void Start()
+        {
+            //  update puzzle select sprites
+            foreach (PuzzleSelectSprite sprite in puzzleSelectSprites)
+            {
+                sprite.UpdateSprite();
+            }
+
+            //  activate dialogue manager if tutorial is active
+            if (GameManager.TutorialActive)
+            {
+                dialogueManager.SetActive(true);
+            }
+        }
+    }
+}
+
+/*
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -82,3 +110,4 @@ public class PuzzleGroupSelectManager : MonoBehaviour
         }
     }
 }
+*/

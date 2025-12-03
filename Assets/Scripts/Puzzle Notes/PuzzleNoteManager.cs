@@ -10,12 +10,12 @@ public class PuzzleNoteManager : MonoBehaviour
 
     void Start()
     {
-        if (GameManager.currentPuzzleNotes != null)
+        if (GameManager.CurrentPuzzleNotes != null)
         {
             ResetNotes();
 
             //  create a note for each puzzleNote object
-            foreach (PuzzleNote note in GameManager.currentPuzzleNotes)
+            foreach (PuzzleNote note in GameManager.CurrentPuzzleNotes)
             {
                 CreateNote(note);
             }

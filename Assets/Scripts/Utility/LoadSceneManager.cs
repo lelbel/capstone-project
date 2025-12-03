@@ -20,18 +20,19 @@ public class LoadSceneManager : MonoBehaviour
         DangerCodePuzzle,
         LibbyCodePuzzle,
         FinalCodePuzzle,
+        MapPuzzle
     }
 
     //  set to mainMenu for debugging
-    public static SceneName currentScene;
-    public static SceneName lastScene = SceneName.MainMenu;
+    public static SceneName CurrentScene;
+    public static SceneName LastScene = SceneName.MainMenu;
 
     public static void LoadScene(SceneName sceneName)
     {
         if (sceneName == SceneName.Back)
         {
             //  set current scene as the last scene and set the last scene as the current scene
-            (currentScene, lastScene) = (lastScene, currentScene);
+            (CurrentScene, LastScene) = (LastScene, CurrentScene);
         }
         
         else
@@ -39,14 +40,14 @@ public class LoadSceneManager : MonoBehaviour
             if (sceneName == SceneName.TutorialLibrarian)
             {
                 //  set tutorial state as active
-                GameManager.tutorialActive = true;
-                GameManager.hasEnteredTutorial = true;
+                GameManager.TutorialActive = true;
+                GameManager.HasEnteredTutorial = true;
             }
             
-            lastScene = currentScene;
-            currentScene = sceneName;
+            LastScene = CurrentScene;
+            CurrentScene = sceneName;
         }
         
-        SceneManager.LoadScene(currentScene.ToString());
+        SceneManager.LoadScene(CurrentScene.ToString());
     }
 }
