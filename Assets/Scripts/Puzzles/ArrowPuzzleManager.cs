@@ -1,6 +1,148 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public class ArrowPuzzleManager : MonoBehaviour
+{
+    public enum ArrowDirection
+    {
+        None,
+        Right,
+        Left
+    }
+
+    [SerializeField] private GameObject dialogueManager;
+    [SerializeField] private Image[] inputImages;
+    
+    [Header("Buttons")]
+    [SerializeField] private Button leftButton;
+    [SerializeField] private Button rightButton;
+    
+    [Header("Sprites")]
+    [SerializeField] private Sprite blankSprite;
+    [SerializeField] private Sprite leftArrowSprite;
+    [SerializeField] private Sprite rightArrowSprite;
+    [SerializeField] private Sprite completedLeftArrowSprite;
+    [SerializeField] private Sprite completedRightArrowSprite;
+    
+    private ArrowDirection[] userInput;
+    private ArrowDirection[] solution;
+    private int i = 0;
+
+    private void Start()
+    {
+        if (GameManager.TutorialActive)
+        {
+            dialogueManager.SetActive(true);
+        }
+        
+        //  reset player input
+        ResetPlayerInput();
+
+        //  instantiate solution array
+        solution = new ArrowDirection[5] { ArrowDirection.Left , ArrowDirection.Right, ArrowDirection.Right , ArrowDirection.Left , ArrowDirection.Right };
+    }
+
+    public void InputArrow(ArrowDirection dir)
+    {
+        userInput[i] = dir;
+            
+        //  set left sprite
+        if (dir == ArrowDirection.Left)
+        {
+            inputImages[i].sprite = leftArrowSprite;
+        }
+
+        //  set right sprite
+        else
+        {
+            inputImages[i].sprite = rightArrowSprite;
+        }
+
+        i++;
+        
+        //  check solution if user input array is full
+        if (i >= userInput.Length)
+        {
+            CheckAnswer();
+        }
+    }
+    
+    public void CheckAnswer()
+    {
+        i = 0;
+
+        while (i < userInput.Length)
+        {
+            // if player answer is wrong, call incorrect function
+            if (userInput[i] != solution[i])
+            {
+                IncorrectGuess();
+                return;
+            }
+
+            i++;
+        }
+
+        //  player answer is correct, call complete function
+        CompletePuzzle();
+    }
+    
+    public void IncorrectGuess()
+    {
+        ResetPlayerInput();
+    }
+
+    public void CompletePuzzle()
+    {
+        //  solve the current puzzle
+        GameManager.SolveCurrentPuzzle();
+
+        //  show each arrow sprite as complete
+        i = 0;
+
+        while (i <  userInput.Length)
+        {
+            //  completed left arrow
+            if (userInput[i] == ArrowDirection.Left)
+            {
+                inputImages[i].sprite = completedLeftArrowSprite;
+            }
+
+            //  completed right arrow
+            else
+            {
+                inputImages[i].sprite = completedRightArrowSprite;
+            }
+
+            //  increment counter
+            i++;
+        }
+
+        leftButton.interactable = false;
+        rightButton.interactable = false;
+    }
+    
+    public void ResetPlayerInput()
+    {
+        userInput = new ArrowDirection[5];
+        
+        i = 0;
+        
+        while (i < userInput.Length)
+        {
+            userInput[i] = ArrowDirection.None;
+            inputImages[i].sprite = blankSprite;
+            i++;
+        }
+
+        i = 0;
+    }
+}
+
+/*
+using UnityEngine;
+using UnityEngine.UI;
+
 //  redo this using enums at some point
 //  add a finished state that displays if the current puzzle.IsSolved returns true
 public class ArrowPuzzleManager : MonoBehaviour
@@ -169,5 +311,5 @@ public class ArrowPuzzleManager : MonoBehaviour
 
         //  navigate back to the menu
     }
-
-}
+} 
+*/

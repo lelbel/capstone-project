@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class NotificationButtons : MonoBehaviour
+public class NotificationButton : MonoBehaviour
 {
     [SerializeField] private Button returnButton;
 
