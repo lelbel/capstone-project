@@ -1,18 +1,22 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Windows.Speech;
 
 public class GameManager : MonoBehaviour
 {
-    public List<Puzzle> createPuzzles;
-    public static List<Puzzle> PuzzleList;
+    public List<PuzzleGroup> createPuzzleGroups;
+    
+    private static List<PuzzleGroup> _puzzleGroups;
+    public static List<Puzzle> CurrentPuzzleGroup;
     public static Puzzle CurrentPuzzle;
     public static List<PuzzleNote> CurrentPuzzleNotes;
     public static bool TutorialActive = false;
     public static bool HasEnteredTutorial = false;
-    private static GameManager _instance;
     
+    private static GameManager _instance;
+
     private void Awake()
-    {
+    {        
         if (_instance == null)
         {
             _instance = this;
@@ -25,25 +29,28 @@ public class GameManager : MonoBehaviour
         }
 
         //  if the static list has not been populated yet, populate it
-        if (PuzzleList == null)
+        if (_puzzleGroups == null)
         {
-            PuzzleList = new();
-            foreach (Puzzle puzzle in createPuzzles)
+            _puzzleGroups = new();
+            foreach (PuzzleGroup group in createPuzzleGroups)
             {
-                PuzzleList.Add(puzzle);
+                _puzzleGroups.Add(group);
             }
         }
-        
+
         CurrentPuzzleNotes = new();
     }
-
+    
     public static Puzzle GetPuzzle(Puzzle.PuzzleName puzzleName)
     {
-        foreach (Puzzle puzzle in PuzzleList)
+        foreach (PuzzleGroup group in _puzzleGroups)
         {
-            if (puzzle.GetName() == puzzleName)
+            foreach (Puzzle puzzle in group.GetPuzzleList())
             {
-                return puzzle;
+                if (puzzle.GetName() == puzzleName)
+                {
+                    return puzzle;
+                }
             }
         }
 
@@ -51,15 +58,35 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    public static PuzzleGroup GetPuzzleGroup(PuzzleGroup.GroupName groupName)
+    {
+        foreach (PuzzleGroup group in _puzzleGroups)
+        {
+            if (group.GetName() == groupName)
+            {
+                return group;
+            }
+        }
+        
+        Debug.Log("no group found");
+        return null;
+    }
+
     public static void UpdateCurrentPuzzle(Puzzle.PuzzleName puzzleName)
     {
-        foreach (Puzzle puzzle in PuzzleList)
+        foreach (PuzzleGroup group in _puzzleGroups)
         {
-            if (puzzle.GetName() == puzzleName)
+            foreach (Puzzle puzzle in group.GetPuzzleList())
             {
-                CurrentPuzzle = puzzle;
-                LoadSceneManager.LoadScene(CurrentPuzzle.GetScene());
-                return;
+                if (puzzle.GetName() == puzzleName)
+                {
+                    CurrentPuzzle = puzzle;
+                    CurrentPuzzleGroup = group.GetPuzzleList();
+                    Debug.Log(CurrentPuzzle);
+                    Debug.Log(CurrentPuzzleGroup);
+                    LoadSceneManager.LoadScene(CurrentPuzzle.GetScene());
+                    return;
+                }
             }
         }
     }
@@ -78,7 +105,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentPuzzleNotes.Clear();
 
-        foreach (Puzzle puzzle in PuzzleList)
+        foreach (Puzzle puzzle in CurrentPuzzleGroup)
         {
             if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
             {
@@ -86,6 +113,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    
 }
+                

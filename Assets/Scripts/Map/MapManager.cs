@@ -23,7 +23,7 @@ public class MapManager : MonoBehaviour
         ResetPuzzleButtons();
 
         //  create a button for each active puzzle
-        foreach (Puzzle puzzle in GameManager.PuzzleList)
+        foreach (Puzzle puzzle in GameManager.CurrentPuzzleGroup)
         {
             CreateMapButton(puzzle);
         }
@@ -88,7 +88,7 @@ public class MapManager : MonoBehaviour
 
     public void DebugCheck()
     {
-        if (GameManager.PuzzleList.Count == 0)
+        if (GameManager.CurrentPuzzleGroup.Count == 0)
         {
             Debug.Log("activePuzzles list is empty");
         }

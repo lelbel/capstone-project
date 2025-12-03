@@ -5,21 +5,37 @@ using System;
 [Serializable]
 public class PuzzleGroup
 {
-    [SerializeField] private List<Puzzle> puzzleGroup;
-
-    public List<Puzzle> GetPuzzleGroup()
+    public enum GroupName
     {
-        return puzzleGroup;
+        Arrow,
+        Code,
+        Map
+    }
+    
+    [SerializeField] private GroupName groupName;
+    [SerializeField] private List<Puzzle> puzzleList;
+
+    public GroupName GetName()
+    {
+        return groupName;
     }
 
-    public void DebugCheck()
+    public List<Puzzle> GetPuzzleList()
     {
-        Debug.Log("current puzzles");
-        
-        foreach (Puzzle puzzle in GameManager.PuzzleList)
+        return puzzleList;
+    }
+    
+    public bool IsPuzzleGroupCompleted()
+    {
+        foreach (Puzzle puzzle in puzzleList)
         {
-            Debug.Log(puzzle);
+            if (!puzzle.IsSolved())
+            {
+                return false;
+            }
         }
+
+        return true;
     }
 }
 
