@@ -33,6 +33,8 @@ public class ArrowPuzzleManager : MonoBehaviour
         if (GameManager.TutorialActive)
         {
             dialogueManager.SetActive(true);
+            leftButton.enabled = false;
+            rightButton.enabled = false;
         }
         
         //  reset player input

@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour
         NextArrow,
         LoadScene,
         HideDialogue,
-        DisableContinue
+        TutorialEnding,
+        EndTutorial
     }
     
     [SerializeField] private Image character;
@@ -120,6 +121,7 @@ public class DialogueManager : MonoBehaviour
             case Actions.LoadScene:
                 LoadSceneManager.LoadScene(scene);
                 break;
+            
             case Actions.HideDialogue:
                 this.character.enabled = false;
                 this.dialogueText.enabled = false;
@@ -127,8 +129,13 @@ public class DialogueManager : MonoBehaviour
                 this.dialogueBox.SetActive(false);
                 this.nameText.enabled = false;
                 break;
-            case Actions.DisableContinue:
-                this.continueButton.SetActive(false);
+            
+            case Actions.TutorialEnding:
+                SwitchDialogueManager.EndingTutorial = true;
+                break;
+            
+            case Actions.EndTutorial:
+                GameManager.TutorialActive = false;
                 break;
         }
     }

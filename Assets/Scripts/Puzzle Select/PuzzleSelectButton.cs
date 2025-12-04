@@ -13,7 +13,7 @@ public class PuzzleSelectButton : MonoBehaviour
     }
 
     //  update puzzle select sprites depending on puzzle completion status
-    public void UpdateSprite()
+    private void UpdateSprite()
     {
         if (GameManager.GetPuzzle(puzzleName).IsSolved())
         {
@@ -24,6 +24,11 @@ public class PuzzleSelectButton : MonoBehaviour
         else
         {
             this.GetComponent<Image>().sprite = puzzleIncompleteSprite;
+        }
+
+        if (GameManager.TutorialActive)
+        {
+            this.GetComponent<Button>().enabled = false;
         }
     }
         
