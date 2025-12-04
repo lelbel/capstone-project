@@ -9,7 +9,8 @@ public class PuzzleGroup
     {
         Arrow,
         Code,
-        Map
+        Map,
+        Final
     }
     
     [SerializeField] private GroupName groupName;
@@ -29,7 +30,7 @@ public class PuzzleGroup
     {
         foreach (Puzzle puzzle in puzzleList)
         {
-            if (!puzzle.IsSolved())
+            if (puzzle.IsSolved() == false)
             {
                 return false;
             }

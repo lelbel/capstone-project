@@ -9,9 +9,6 @@ public class PuzzleGroupSprite : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(GameManager.GetPuzzleGroup(groupName).GetName().ToString());
-        Debug.Log(GameManager.GetPuzzleGroup(groupName).IsPuzzleGroupCompleted());
-        
         if (GameManager.GetPuzzleGroup(groupName).IsPuzzleGroupCompleted())
         {
             GetComponent<Image>().sprite = completeSprite;

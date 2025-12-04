@@ -1,18 +1,17 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Windows.Speech;
 
 public class GameManager : MonoBehaviour
 {
     public List<PuzzleGroup> createPuzzleGroups;
     
-    private static List<PuzzleGroup> _puzzleGroups;
     public static List<Puzzle> CurrentPuzzleGroup;
     public static Puzzle CurrentPuzzle;
     public static List<PuzzleNote> CurrentPuzzleNotes;
     public static bool TutorialActive = false;
     public static bool HasEnteredTutorial = false;
     
+    private static List<PuzzleGroup> _puzzleGroups;
     private static GameManager _instance;
 
     private void Awake()
@@ -82,8 +81,6 @@ public class GameManager : MonoBehaviour
                 {
                     CurrentPuzzle = puzzle;
                     CurrentPuzzleGroup = group.GetPuzzleList();
-                    Debug.Log(CurrentPuzzle);
-                    Debug.Log(CurrentPuzzleGroup);
                     LoadSceneManager.LoadScene(CurrentPuzzle.GetScene());
                     return;
                 }
@@ -113,5 +110,17 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public static bool FinalPuzzleCheck()
+    {
+        foreach (PuzzleGroup group in _puzzleGroups)
+        {
+            if (group.IsPuzzleGroupCompleted() == false)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
-                

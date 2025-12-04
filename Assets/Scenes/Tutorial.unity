@@ -287,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: -2693251145244340911, guid: 051473f57ddffe44690ffa73fba04a1f, type: 3}
     - target: {fileID: 3889731296702859183, guid: 0070304558da72245a82ad7a140680e7, type: 3}
       propertyPath: scene
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7022494611175422459, guid: 0070304558da72245a82ad7a140680e7, type: 3}
       propertyPath: m_Sprite

@@ -7,7 +7,7 @@ namespace Utility
         public void YesButton()
         {
             GameManager.TutorialActive = false;
-            LoadSceneManager.LoadScene(LoadSceneManager.SceneName.MainMenu);
+            LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleSelect);
             Destroy(gameObject);
         }
 

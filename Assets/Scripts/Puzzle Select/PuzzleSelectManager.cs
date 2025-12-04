@@ -1,27 +1,32 @@
-namespace puzzle_select
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PuzzleSelectManager : MonoBehaviour
 {
-    using UnityEngine;
-    using System.Collections.Generic;
+    [SerializeField] private GameObject dialogueManager;
+    //[SerializeField] private List<PuzzleSelectButton> puzzleSelectSprites;
+    [SerializeField] private Button finalPuzzleButton;
 
-    public class PuzzleSelectManager : MonoBehaviour
+    private void Start()
     {
-        [SerializeField] private GameObject dialogueManager;
-        [SerializeField] private List<PuzzleSelectSprite> puzzleSelectSprites;
-
-        void Start()
+        finalPuzzleButton.enabled = false;
+        
+        //  check if final puzzle is ready
+        if (GameManager.FinalPuzzleCheck())
         {
-            //  update puzzle select sprites
-            foreach (PuzzleSelectSprite sprite in puzzleSelectSprites)
-            {
-                sprite.UpdateSprite();
-            }
-
-            //  activate dialogue manager if tutorial is active
-            if (GameManager.TutorialActive)
-            {
-                dialogueManager.SetActive(true);
-            }
+            FinalPuzzle();
         }
+        
+        //  activate dialogue manager if tutorial is active
+        if (GameManager.TutorialActive)
+        {
+            dialogueManager.SetActive(true);
+        }
+    }
+
+    private void FinalPuzzle()
+    {
+        finalPuzzleButton.enabled = true;
     }
 }
 

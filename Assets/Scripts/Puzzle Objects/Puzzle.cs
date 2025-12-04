@@ -14,6 +14,7 @@ public class Puzzle
         LibbyCodePuzzle,
         FinalCodePuzzle,
         MapPuzzle,
+        FinalPuzzle
     }
     
     [SerializeField] private PuzzleName puzzleName;

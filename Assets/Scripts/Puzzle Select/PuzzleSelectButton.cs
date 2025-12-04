@@ -1,18 +1,38 @@
-namespace puzzle_select
-{
-    using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
 
-    public class PuzzleSelectButton : MonoBehaviour
+public class PuzzleSelectButton : MonoBehaviour
+{
+    [SerializeField] private Puzzle.PuzzleName puzzleName;
+    [SerializeField] private Sprite puzzleCompleteSprite;
+    [SerializeField] private Sprite puzzleIncompleteSprite;
+
+    private void Start()
     {
-        [SerializeField] private Puzzle.PuzzleName puzzleName;
-    
-        //  update current puzzle when puzzle is selected
-        public void ButtonOnClick()
-        {
-            GameManager.UpdateCurrentPuzzle(puzzleName);
-        }
+        UpdateSprite();
     }
 
+    //  update puzzle select sprites depending on puzzle completion status
+    public void UpdateSprite()
+    {
+        if (GameManager.GetPuzzle(puzzleName).IsSolved())
+        {
+            this.GetComponent<Image>().sprite = puzzleCompleteSprite;
+            this.GetComponent<Button>().enabled = false;
+        }
+
+        else
+        {
+            this.GetComponent<Image>().sprite = puzzleIncompleteSprite;
+        }
+    }
+        
+    //  update current puzzle when puzzle is selected
+    public void ButtonOnClick()
+    {
+        GameManager.UpdateCurrentPuzzle(puzzleName);
+    }
+        
 }
 
 /*

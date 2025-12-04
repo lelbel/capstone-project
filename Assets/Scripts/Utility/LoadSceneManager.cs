@@ -13,14 +13,17 @@ public class LoadSceneManager : MonoBehaviour
         Credits,
         InGameMenu,
         SettingsMenu,
-        TutorialLibrarian,
+        Tutorial,
         Back,
         ArrowPuzzle,
         BoatCodePuzzle,
         DangerCodePuzzle,
         LibbyCodePuzzle,
         FinalCodePuzzle,
-        MapPuzzle
+        MapPuzzle,
+        Win,
+        End,
+        FinalPuzzle
     }
 
     //  set to mainMenu for debugging
@@ -37,7 +40,7 @@ public class LoadSceneManager : MonoBehaviour
         
         else
         {
-            if (sceneName == SceneName.TutorialLibrarian)
+            if (sceneName == SceneName.Tutorial)
             {
                 //  set tutorial state as active
                 GameManager.TutorialActive = true;

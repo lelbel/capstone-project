@@ -55,7 +55,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33135599735391109}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -123,7 +123,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1730223542851636267}
-        m_TargetAssemblyTypeName: PuzzleGroupSelectButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: puzzle_select.PuzzleSelectButton, Assembly-CSharp
         m_MethodName: ButtonOnClick
         m_Mode: 1
         m_Arguments:
@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleName: 0
+  puzzleCompleteSprite: {fileID: -1396009611636782729, guid: 0114a93b4ddf1c547a5ae2c5d9945abb, type: 3}
+  puzzleIncompleteSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
 --- !u!1 &5478214201243185899
 GameObject:
   m_ObjectHideFlags: 0
