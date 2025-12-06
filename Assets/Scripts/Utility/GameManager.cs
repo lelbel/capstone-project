@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        Debug.Log("no puzzle found");
+        //Debug.Log("no puzzle found");
         return null;
     }
 
