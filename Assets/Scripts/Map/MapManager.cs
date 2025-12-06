@@ -5,6 +5,40 @@ using UnityEngine.UI;
 public class MapManager : MonoBehaviour
 {
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject mapMarkerPrefab;
+
+    private void Start()
+    {
+        if (GameManager.CurrentPuzzle == null)
+        {
+            Debug.Log("no current puzzle");
+            return;
+        }
+
+        //  check that current puzzle has a map marker
+        if (GameManager.CurrentPuzzle.GetMapMarker().HasMapMarker())
+        {
+            //  create marker
+            GameObject marker = Instantiate(mapMarkerPrefab, Vector3.zero, Quaternion.identity);
+            
+            //  set position
+            marker.GetComponent<RectTransform>().anchoredPosition = new Vector2(GameManager.CurrentPuzzle.GetMapMarker().GetX(), GameManager.CurrentPuzzle.GetMapMarker().GetY());
+            
+            //  set button parent as canvas so it shows up
+            marker.transform.SetParent(canvas.transform, false);
+        }
+    }
+}
+
+/*
+ *
+ * using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.UI;
+
+public class MapManager : MonoBehaviour
+{
+    [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private Sprite incompleteSprite;
@@ -76,3 +110,4 @@ public class MapManager : MonoBehaviour
         }
     }
 }
+ */

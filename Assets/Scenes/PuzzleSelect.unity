@@ -575,11 +575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44
+      value: 0.0000038147
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33
+      value: 0.000015259
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1144,11 +1144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 532
+      value: 589
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -183
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 4833624464679274995, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1989,27 +1989,42 @@ MonoBehaviour:
       scene: 9
       isSolved: 0
       puzzleNote:
+        hasPuzzleNote: 0
         sprite: {fileID: 0}
         xPos: 0
         yPos: 0
+      mapMarker:
+        hasMapMarker: 1
+        x: 450
+        y: -250
   - groupName: 1
     puzzleList:
     - puzzleName: 1
       scene: 10
       isSolved: 0
       puzzleNote:
+        hasPuzzleNote: 0
         sprite: {fileID: 0}
         xPos: 0
         yPos: 0
+      mapMarker:
+        hasMapMarker: 0
+        x: 0
+        y: 0
   - groupName: 2
     puzzleList:
     - puzzleName: 5
       scene: 14
       isSolved: 0
       puzzleNote:
+        hasPuzzleNote: 0
         sprite: {fileID: 0}
         xPos: 0
         yPos: 0
+      mapMarker:
+        hasMapMarker: 0
+        x: 0
+        y: 0
 --- !u!4 &2009790408
 Transform:
   m_ObjectHideFlags: 0

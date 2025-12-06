@@ -4,6 +4,7 @@ using System;
 [Serializable]
 public class PuzzleNote
 {
+    [SerializeField] private bool hasPuzzleNote = false;
     [SerializeField] private Sprite sprite;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
@@ -37,5 +38,10 @@ public class PuzzleNote
     public void Invisible()
     {
         isVisible = false;
+    }
+
+    public bool HasPuzzleNote()
+    {
+        return hasPuzzleNote;
     }
 }

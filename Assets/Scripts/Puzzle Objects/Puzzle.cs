@@ -21,6 +21,7 @@ public class Puzzle
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private bool isSolved = false;
     [SerializeField] private PuzzleNote puzzleNote;
+    [SerializeField] private MapMarker mapMarker;
     private Button button;
 
     public PuzzleName GetName()
@@ -62,6 +63,11 @@ public class Puzzle
     public PuzzleNote GetNote()
     {
         return puzzleNote;
+    }
+
+    public MapMarker GetMapMarker()
+    {
+        return mapMarker;
     }
 
     public void OnButtonClick()
