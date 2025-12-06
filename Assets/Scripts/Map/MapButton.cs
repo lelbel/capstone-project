@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//  REVIEW (implementation has changed now that the map is not the puzzle select screen)
 public class MapButton : MonoBehaviour
 {
     private Puzzle puzzle;
@@ -14,9 +15,9 @@ public class MapButton : MonoBehaviour
         return puzzle;
     }
 
+    //  set currentPuzzleGroup
     public void OnButtonClick()
     {
-        //  set currentPuzzleGroup
         GameManager.CurrentPuzzle = puzzle;
         LoadSceneManager.LoadScene(GameManager.CurrentPuzzle.GetScene());
     }

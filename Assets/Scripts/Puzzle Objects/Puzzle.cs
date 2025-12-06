@@ -8,19 +8,17 @@ public class Puzzle
 {
     public enum PuzzleName
     {
-        ArrowPuzzle,
+        ArrowPuzzleDVD,
         BoatCodePuzzle,
         DangerCodePuzzle,
         LibbyCodePuzzle,
-        FinalCodePuzzle,
+        LibraryCodePuzzle,
         MapPuzzle,
-        FinalPuzzle
+        WizardPuzzle
     }
     
     [SerializeField] private PuzzleName puzzleName;
     [SerializeField] private LoadSceneManager.SceneName scene;
-    [SerializeField] private float xPos;
-    [SerializeField] private float yPos;
     [SerializeField] private bool isSolved = false;
     [SerializeField] private PuzzleNote puzzleNote;
     private Button button;
@@ -38,9 +36,6 @@ public class Puzzle
     public void SetButton(Button btn)
     {
         button = btn;
-
-        //  move button to specified x and y coords
-        button.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, yPos);
     }
 
     public Image GetButtonImage()

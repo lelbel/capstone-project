@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class TutorialDialogueManager : MonoBehaviour
 {
     public enum Actions
     {
@@ -12,10 +12,8 @@ public class DialogueManager : MonoBehaviour
         HideName,
         HideSprite,
         SpriteDefault,
-        NextArrow,
         LoadScene,
-        HideDialogue,
-        TutorialEnding,
+        AdvanceTutorial,
         EndTutorial
     }
     
@@ -24,20 +22,21 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float typeDelay = 0.02f;
     [SerializeField] private Sprite defaultSprite;
-    [SerializeField] private GameObject continueButton;
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private LoadSceneManager.SceneName scene;
-    [SerializeField] private TutorialArrowManager tutorialArrowManager;
     [SerializeField] private Dialogue dialogue;
+    
+    //[SerializeField] private TutorialArrowManager tutorialArrowManager;
+    
     
     private Queue<Sentence> sentences;
     
-    void Awake()
+    private void Awake()
     {
         sentences = new Queue<Sentence>();
     }
     
-    void Start()
+    private void Start()
     {
         //  start the dialogue
         StartDialogue(dialogue);
@@ -68,11 +67,6 @@ public class DialogueManager : MonoBehaviour
             //  end dialogue
             EndDialogue();
             return;
-        }
-
-        if (sentences.Count == 1)
-        {
-            continueButton.SetActive(false);
         }
 
         Sentence sentence = sentences.Dequeue();
@@ -114,28 +108,18 @@ public class DialogueManager : MonoBehaviour
                 character.GetComponent<Image>().sprite = defaultSprite;
                 break;
             
-            case Actions.NextArrow:
-                tutorialArrowManager.NextArrow(); 
-                break;
-            
             case Actions.LoadScene:
                 LoadSceneManager.LoadScene(scene);
                 break;
             
-            case Actions.HideDialogue:
-                this.character.enabled = false;
-                this.dialogueText.enabled = false;
-                this.continueButton.SetActive(false);
-                this.dialogueBox.SetActive(false);
-                this.nameText.enabled = false;
-                break;
-            
-            case Actions.TutorialEnding:
-                SwitchDialogueManager.EndingTutorial = true;
+            case Actions.AdvanceTutorial:
+                SwitchDialogueManager.AdvancedTutorial = true;
+                LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleSelect);
                 break;
             
             case Actions.EndTutorial:
                 GameManager.TutorialActive = false;
+                LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleSelect);
                 break;
         }
     }
@@ -159,3 +143,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 }
+
+/*            case Actions.NextArrow:
+                tutorialArrowManager.NextArrow(); 
+                break; 
+*/

@@ -8,14 +8,10 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private Sprite completeSprite;
     [SerializeField] private Sprite incompleteSprite;
-    [SerializeField] private GameObject dialogueManager;
     private List<GameObject> mapButtons = new();
 
-    void Start()
+    private void Start()
     {
-        //  deactivate dialogue manager
-        dialogueManager.SetActive(false);
-        
         //  update puzzle notes
         GameManager.UpdatePuzzleNotes();
 
@@ -29,14 +25,9 @@ public class MapManager : MonoBehaviour
         }
 
         RefreshSprites();
-
-        if (GameManager.TutorialActive)
-        {
-            dialogueManager.SetActive(true);
-        }
     }
 
-    public void CreateMapButton(Puzzle puzzle)
+    private void CreateMapButton(Puzzle puzzle)
     {
         //  create button
             GameObject button = Instantiate(buttonPrefab, Vector3.zero, Quaternion.identity);
@@ -66,10 +57,9 @@ public class MapManager : MonoBehaviour
         mapButtons.Clear();
     }
 
-    public void RefreshSprites()
+    private void RefreshSprites()
     {
-        //  set each sprite as incomeplete
-        //foreach (Puzzle puzzle in GameManager.currentPuzzleGroup)
+        //  set each sprite as incomplete
         foreach (GameObject button in mapButtons)
         {
             //  set sprite at complete if solved
@@ -83,14 +73,6 @@ public class MapManager : MonoBehaviour
                 //  set sprite as incomplete if not solved
                 button.GetComponent<MapButton>().GetPuzzle().GetButtonImage().sprite = incompleteSprite;
             }
-        }
-    }
-
-    public void DebugCheck()
-    {
-        if (GameManager.CurrentPuzzleGroup.Count == 0)
-        {
-            Debug.Log("activePuzzles list is empty");
         }
     }
 }

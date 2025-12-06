@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotesButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1118228553758143312, guid: 71795196080287e45813c34f2a93b503, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5220987740314557454, guid: 71795196080287e45813c34f2a93b503, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -257,6 +261,10 @@ PrefabInstance:
     - target: {fileID: 1118228553758143312, guid: 71795196080287e45813c34f2a93b503, type: 3}
       propertyPath: m_Name
       value: MapSelectButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118228553758143312, guid: 71795196080287e45813c34f2a93b503, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2734631712414638246, guid: 71795196080287e45813c34f2a93b503, type: 3}
       propertyPath: m_text
@@ -1165,11 +1173,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3610247525897753049, guid: fa114f28af8cb4143a067ef37b5b74ad, type: 3}
   m_PrefabInstance: {fileID: 1669698665}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1794387492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7802317883221951977, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
-  m_PrefabInstance: {fileID: 1314806167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1794387493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4319120054611648190, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
@@ -1213,7 +1216,6 @@ MonoBehaviour:
   buttonPrefab: {fileID: 6310550006179180058, guid: 173557ea74820a24a83826b543e9c6e7, type: 3}
   completeSprite: {fileID: -1396009611636782729, guid: 0114a93b4ddf1c547a5ae2c5d9945abb, type: 3}
   incompleteSprite: {fileID: 5302719294533704627, guid: 0fa63a309fdfedc4e92ae2c642f429cc, type: 3}
-  dialogueManager: {fileID: 1794387492}
 --- !u!4 &2107413533
 Transform:
   m_ObjectHideFlags: 0

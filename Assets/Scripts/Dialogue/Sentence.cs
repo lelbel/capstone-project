@@ -5,5 +5,5 @@ using System.Collections.Generic;
 public class Sentence
 {
     public string text;
-    public List<DialogueManager.Actions> actions;
+    public List<TutorialDialogueManager.Actions> actions;
 }

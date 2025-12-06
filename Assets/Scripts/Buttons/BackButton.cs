@@ -9,6 +9,7 @@ namespace Utility
         
         private GameObject notification;
         
+        //  create instance of the tutorial exit notification if tutorial is active
         public void ButtonOnClick()
         {
             if (GameManager.TutorialActive)
@@ -23,6 +24,7 @@ namespace Utility
 
                 Debug.Log("tutorial exit but no canvas selected");
             }
+            
             else
             {
                 LoadSceneManager.LoadScene(scene);

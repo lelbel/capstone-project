@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 526.52167, y: 368.83417}
-  m_SizeDelta: {x: 314.8646, y: 25.697}
+  m_AnchoredPosition: {x: 415.58405, y: 305}
+  m_SizeDelta: {x: 331.2144, y: 25.697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2811074197371161688
 CanvasRenderer:
@@ -308,7 +308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1620.6406, y: 139.92773}
+  m_AnchoredPosition: {x: 1740, y: 90}
   m_SizeDelta: {x: 63.2067, y: 25.7882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4173665345072012076
@@ -439,8 +439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 962.29956, y: 204.39935}
-  m_SizeDelta: {x: 770.6907, y: 112.5601}
+  m_AnchoredPosition: {x: 953.4336, y: 153.98557}
+  m_SizeDelta: {x: 894.1375, y: 83.383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4294354727734578865
 CanvasRenderer:
@@ -535,57 +535,12 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 2.4346313, z: 1.1681519, w: 0}
+  m_margin: {x: 0, y: 0.44524387, z: 1.1681519, w: -1.9893607}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &6653292191281189945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7196156158304752941}
-  - component: {fileID: 5858134449511702684}
-  m_Layer: 0
-  m_Name: TutorialArrowManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7196156158304752941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6653292191281189945}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4319120054611648190}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5858134449511702684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6653292191281189945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce8655aaaf83485f8c62b7a02049d44b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialArrows: []
 --- !u!1 &7197985869105765958
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +575,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 962.29956, y: 259.85907}
-  m_SizeDelta: {x: 820.7859, y: 186.4007}
+  m_AnchoredPosition: {x: 954, y: 202}
+  m_SizeDelta: {x: 938.7451, y: 168.2394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6415138347570640286
 CanvasRenderer:
@@ -696,7 +651,6 @@ Transform:
   - {fileID: 5787461594102191429}
   - {fileID: 8519955722756974844}
   - {fileID: 6914782997388972527}
-  - {fileID: 7196156158304752941}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &198918707818700350
@@ -715,11 +669,9 @@ MonoBehaviour:
   nameText: {fileID: 7104066617485082777}
   dialogueText: {fileID: 5132496801910645046}
   typeDelay: 0.02
-  defaultSprite: {fileID: -2377354517791324197, guid: 4d9f57f25461ad54a8b97ac1a725d36e, type: 3}
-  continueButton: {fileID: 3157595855914016861}
+  defaultSprite: {fileID: 1148465270101066530, guid: 4d71cd1324b6c754a8b773862703e442, type: 3}
   dialogueBox: {fileID: 7197985869105765958}
   scene: 0
-  tutorialArrowManager: {fileID: 5858134449511702684}
   dialogue:
     name: Name
     sentences: []
@@ -757,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1070.7635, y: 544.99536}
+  m_AnchoredPosition: {x: 967, y: 544}
   m_SizeDelta: {x: 399.1183, y: 330.5547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7951565784263840097
@@ -788,7 +740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2377354517791324197, guid: 4d9f57f25461ad54a8b97ac1a725d36e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

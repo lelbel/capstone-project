@@ -21,19 +21,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Other Screens/Credits.unity
     guid: c0467993fb0198c478882de0a2fc7ff0
   - enabled: 1
-    path: Assets/Scenes/Puzzles/ArrowPuzzle.unity
+    path: Assets/Scenes/Puzzles/Arrow Puzzles/ArrowPuzzleDVD.unity
     guid: 589fc8c509090054fafbfdfdc0f776b2
   - enabled: 1
-    path: Assets/Scenes/Puzzles/BoatCodePuzzle.unity
+    path: Assets/Scenes/Puzzles/Code Puzzles/BoatCodePuzzle.unity
     guid: 18a30eb3a201aaf4c9f711e7d278656f
   - enabled: 1
-    path: Assets/Scenes/Puzzles/DangerCodePuzzle.unity
+    path: Assets/Scenes/Puzzles/Code Puzzles/DangerCodePuzzle.unity
     guid: 842ce876b3a31d8409ec421e081b2d9c
   - enabled: 1
-    path: Assets/Scenes/Puzzles/LibbyCodePuzzle.unity
+    path: Assets/Scenes/Puzzles/Code Puzzles/LibbyCodePuzzle.unity
     guid: e73e4a904eb09444280e705d206af1aa
   - enabled: 1
-    path: Assets/Scenes/Puzzles/FinalCodePuzzle.unity
+    path: Assets/Scenes/Puzzles/Code Puzzles/LibraryCodePuzzle.unity
     guid: 7f5fd0c2db52f6d48b3521630b4cad51
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/End.unity
     guid: 201fe05d63fe17d4ba7bcbb318235992
   - enabled: 1
-    path: Assets/Scenes/Puzzles/FinalPuzzle.unity
+    path: Assets/Scenes/Puzzles/WizardPuzzle.unity
     guid: d3f49d9113207174c88f23e3990b9fc0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

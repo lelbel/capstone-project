@@ -15,10 +15,15 @@ public class PuzzleSelectButton : MonoBehaviour
     //  update puzzle select sprites depending on puzzle completion status
     private void UpdateSprite()
     {
+        //  debug - puzzle not created in game manager but reference to the enum is in a select buton
+        if (GameManager.GetPuzzle(puzzleName) == null)
+        {
+            return;
+        }
+        
         if (GameManager.GetPuzzle(puzzleName).IsSolved())
         {
             this.GetComponent<Image>().sprite = puzzleCompleteSprite;
-            this.GetComponent<Button>().enabled = false;
         }
 
         else
@@ -37,23 +42,4 @@ public class PuzzleSelectButton : MonoBehaviour
     {
         GameManager.UpdateCurrentPuzzle(puzzleName);
     }
-        
 }
-
-/*
-public class PuzzleGroupSelectButton : MonoBehaviour
-{
-    private PuzzleGroup puzzleGroup;
-
-    public void SetPuzzleGroup(PuzzleGroup pzlgrp)
-    {
-        puzzleGroup = pzlgrp;
-    }
-
-    public void OnButtonClick()
-    {
-        GameManager.currentPuzzleGroup = puzzleGroup.GetPuzzleGroup();
-        LoadSceneManager.LoadScene(puzzleGroup.GetScene());
-    }
-}
-*/
