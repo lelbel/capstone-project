@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class ArrowPuzzleManager : MonoBehaviour
 {
@@ -28,8 +29,9 @@ public class ArrowPuzzleManager : MonoBehaviour
     [SerializeField] private Sprite incorrectLeftArrowSprite;
     [SerializeField] private Sprite incorrectRightArrowSprite;
     
+    [SerializeField] private ArrowDirection[] solution = new ArrowDirection[5];
+    
     private ArrowDirection[] playerInput;
-    private ArrowDirection[] solution;
     private int i = 0;
 
     private void Start()
@@ -43,8 +45,12 @@ public class ArrowPuzzleManager : MonoBehaviour
 
         //  instantiate input and solution array
         playerInput = new ArrowDirection[5] { ArrowDirection.None, ArrowDirection.None, ArrowDirection.None, ArrowDirection.None, ArrowDirection.None};
-        solution = new ArrowDirection[5] { ArrowDirection.Left , ArrowDirection.Right, ArrowDirection.Right , ArrowDirection.Left , ArrowDirection.Right };
-        
+
+        if (solution == null)
+        {
+            Debug.Log("solution not set");
+        }
+
         //  set i
         i = 0;
         
@@ -168,19 +174,39 @@ public class ArrowPuzzleManager : MonoBehaviour
         }
     }
 
-    //  incorrect answer indicator
-    IEnumerator Incorrect()
+    private void UpdateAllSprite(Sprite left, Sprite right)
     {
         i = 0;
 
         while (i < playerInput.Length)
         {
-            UpdateSprite(incorrectLeftArrowSprite, incorrectRightArrowSprite);
+            UpdateSprite(left, right);
             i++;
         }
 
-        yield return new WaitForSeconds(1f);
+        i = 0;
+    }
+
+    //  incorrect answer indicator
+    IEnumerator Incorrect()
+    {
+        leftButton.enabled = false;
+        rightButton.enabled = false;
+        
+        i = 0;
+
+        UpdateAllSprite(incorrectLeftArrowSprite, incorrectRightArrowSprite);
+        yield return new WaitForSeconds(0.15f);
+        UpdateAllSprite(leftArrowSprite, rightArrowSprite);
+        yield return new WaitForSeconds(0.15f);
+        UpdateAllSprite(incorrectLeftArrowSprite, incorrectRightArrowSprite);
+        yield return new WaitForSeconds(0.15f);
+        UpdateAllSprite(leftArrowSprite, rightArrowSprite);
+        yield return new WaitForSeconds(0.15f);
         
         ResetPlayerInput();
+        
+        leftButton.enabled = true;
+        rightButton.enabled = true;
     }
 }

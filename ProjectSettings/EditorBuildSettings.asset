@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Other Screens/Credits.unity
     guid: c0467993fb0198c478882de0a2fc7ff0
   - enabled: 1
-    path: Assets/Scenes/Puzzles/Arrow Puzzles/ArrowPuzzleDVD.unity
+    path: Assets/Scenes/Puzzles/Arrow Puzzles/ArrowPuzzle1.unity
     guid: 589fc8c509090054fafbfdfdc0f776b2
   - enabled: 1
     path: Assets/Scenes/Puzzles/Code Puzzles/BoatCodePuzzle.unity
@@ -50,6 +50,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 8028e55d5d7d77d48b37aa76541e9ba7
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Arrow Puzzles/ArrowPuzzle2.unity
+    guid: 4d29d33d196b3d4459e1f3974c2c8528
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Arrow Puzzles/ArrowPuzzle3.unity
+    guid: 64e7a558aa31ddc4095abb9eb0553abf
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 201fe05d63fe17d4ba7bcbb318235992

@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 
 public class NotificationManager : MonoBehaviour
@@ -17,3 +18,4 @@ public class NotificationManager : MonoBehaviour
         }
     }
 }
+*/

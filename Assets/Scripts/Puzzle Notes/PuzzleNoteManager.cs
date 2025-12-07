@@ -4,7 +4,28 @@ using UnityEngine.UI;
 
 public class PuzzleNoteManager : MonoBehaviour
 {
-    [SerializeField] private GameObject canvas;
+    private void Start()
+    {
+        if (GameManager.CurrentPuzzle == null)
+        {
+            Debug.Log("no current puzzle");
+            return;
+        }
+
+        if (GameManager.CurrentPuzzle.GetNote() != null)
+        {
+            this.GetComponent<Image>().sprite = GameManager.CurrentPuzzle.GetNote();
+        }
+
+        else
+        {
+            this.GetComponent<Image>().enabled = false;
+        }
+    }
+}
+
+/*
+ * [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject notePrefab;
     private List<GameObject> notes = new();
 
@@ -48,4 +69,4 @@ public class PuzzleNoteManager : MonoBehaviour
 
         notes.Clear();
     }
-}
+ */

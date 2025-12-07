@@ -1,0 +1,4589 @@
+fileFormatVersion: 2
+guid: eb8b8bb4750ab78489adecd6ad2966a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7764101268330325414
+    second: arrowPuzzle1Note_0
+  - first:
+      213: 4326983668316050167
+    second: arrowPuzzle1Note_1
+  - first:
+      213: 7652252590411442483
+    second: arrowPuzzle1Note_2
+  - first:
+      213: 907705522013641870
+    second: arrowPuzzle1Note_3
+  - first:
+      213: 2720956113052078074
+    second: arrowPuzzle1Note_4
+  - first:
+      213: -247829310648359137
+    second: arrowPuzzle1Note_5
+  - first:
+      213: 2219252047458889127
+    second: arrowPuzzle1Note_6
+  - first:
+      213: -8985875506990629412
+    second: arrowPuzzle1Note_7
+  - first:
+      213: 7082877801119514465
+    second: arrowPuzzle1Note_8
+  - first:
+      213: 1655413447973048370
+    second: arrowPuzzle1Note_9
+  - first:
+      213: 3046384583018841685
+    second: arrowPuzzle1Note_10
+  - first:
+      213: -8111936968881285425
+    second: arrowPuzzle1Note_11
+  - first:
+      213: -7400761848434924276
+    second: arrowPuzzle1Note_12
+  - first:
+      213: 2203363131966897650
+    second: arrowPuzzle1Note_13
+  - first:
+      213: 729087950374800483
+    second: arrowPuzzle1Note_14
+  - first:
+      213: 5337680886188485370
+    second: arrowPuzzle1Note_15
+  - first:
+      213: 8777086002550902111
+    second: arrowPuzzle1Note_16
+  - first:
+      213: 498095948578134193
+    second: arrowPuzzle1Note_17
+  - first:
+      213: 857357476713671773
+    second: arrowPuzzle1Note_18
+  - first:
+      213: -8829750706063169657
+    second: arrowPuzzle1Note_19
+  - first:
+      213: 3178577935587536541
+    second: arrowPuzzle1Note_20
+  - first:
+      213: 2775302102553090364
+    second: arrowPuzzle1Note_21
+  - first:
+      213: -8022560938383938241
+    second: arrowPuzzle1Note_22
+  - first:
+      213: 836377442237270093
+    second: arrowPuzzle1Note_23
+  - first:
+      213: -3897856608638237848
+    second: arrowPuzzle1Note_24
+  - first:
+      213: 2014833116882912876
+    second: arrowPuzzle1Note_25
+  - first:
+      213: -4693345017234958083
+    second: arrowPuzzle1Note_26
+  - first:
+      213: -4881840940871577355
+    second: arrowPuzzle1Note_27
+  - first:
+      213: -862249400611036609
+    second: arrowPuzzle1Note_28
+  - first:
+      213: 1785305120002706826
+    second: arrowPuzzle1Note_29
+  - first:
+      213: 4383161503895612332
+    second: arrowPuzzle1Note_30
+  - first:
+      213: 2386888119647253720
+    second: arrowPuzzle1Note_31
+  - first:
+      213: -6277183421311125321
+    second: arrowPuzzle1Note_32
+  - first:
+      213: 6719000810286460008
+    second: arrowPuzzle1Note_33
+  - first:
+      213: 4556798478893795904
+    second: arrowPuzzle1Note_34
+  - first:
+      213: -5323276507007143639
+    second: arrowPuzzle1Note_35
+  - first:
+      213: -6649388496595880600
+    second: arrowPuzzle1Note_36
+  - first:
+      213: 4021051863030301834
+    second: arrowPuzzle1Note_37
+  - first:
+      213: 1541660995413665010
+    second: arrowPuzzle1Note_38
+  - first:
+      213: 1635243706332178895
+    second: arrowPuzzle1Note_39
+  - first:
+      213: 976522774510748701
+    second: arrowPuzzle1Note_40
+  - first:
+      213: -6079156281063702200
+    second: arrowPuzzle1Note_41
+  - first:
+      213: 5275787456718682927
+    second: arrowPuzzle1Note_42
+  - first:
+      213: 999316101346528804
+    second: arrowPuzzle1Note_43
+  - first:
+      213: -4736379983040190575
+    second: arrowPuzzle1Note_44
+  - first:
+      213: -8416163115716886391
+    second: arrowPuzzle1Note_45
+  - first:
+      213: 1381970797948009992
+    second: arrowPuzzle1Note_46
+  - first:
+      213: 5788392534968305129
+    second: arrowPuzzle1Note_47
+  - first:
+      213: -5636040612456007229
+    second: arrowPuzzle1Note_48
+  - first:
+      213: -2033067437166771030
+    second: arrowPuzzle1Note_49
+  - first:
+      213: -1084568051068155386
+    second: arrowPuzzle1Note_50
+  - first:
+      213: -3571056562620804186
+    second: arrowPuzzle1Note_51
+  - first:
+      213: 3870204718479903668
+    second: arrowPuzzle1Note_52
+  - first:
+      213: -6860069719665996407
+    second: arrowPuzzle1Note_53
+  - first:
+      213: -7058923422865008606
+    second: arrowPuzzle1Note_54
+  - first:
+      213: 5530536512705739639
+    second: arrowPuzzle1Note_55
+  - first:
+      213: -8946112789124377752
+    second: arrowPuzzle1Note_56
+  - first:
+      213: -472215508149070770
+    second: arrowPuzzle1Note_57
+  - first:
+      213: -492265888999595253
+    second: arrowPuzzle1Note_58
+  - first:
+      213: -2786677465941206426
+    second: arrowPuzzle1Note_59
+  - first:
+      213: -798274886705956230
+    second: arrowPuzzle1Note_60
+  - first:
+      213: 6963046360678514770
+    second: arrowPuzzle1Note_61
+  - first:
+      213: 1349100625519358476
+    second: arrowPuzzle1Note_62
+  - first:
+      213: -8274849598206162449
+    second: arrowPuzzle1Note_63
+  - first:
+      213: 6706130976102111497
+    second: arrowPuzzle1Note_64
+  - first:
+      213: -7944847201455519965
+    second: arrowPuzzle1Note_65
+  - first:
+      213: -9136243846342292279
+    second: arrowPuzzle1Note_66
+  - first:
+      213: 5626501075767238474
+    second: arrowPuzzle1Note_67
+  - first:
+      213: 2589541114035149732
+    second: arrowPuzzle1Note_68
+  - first:
+      213: 3340900619742627693
+    second: arrowPuzzle1Note_69
+  - first:
+      213: -446253400897773700
+    second: arrowPuzzle1Note_70
+  - first:
+      213: 3335739918781469619
+    second: arrowPuzzle1Note_71
+  - first:
+      213: 2749246955249613987
+    second: arrowPuzzle1Note_72
+  - first:
+      213: -1258435388234750610
+    second: arrowPuzzle1Note_73
+  - first:
+      213: 2894874444470874280
+    second: arrowPuzzle1Note_74
+  - first:
+      213: 3153104629027647599
+    second: arrowPuzzle1Note_75
+  - first:
+      213: -771538136124154296
+    second: arrowPuzzle1Note_76
+  - first:
+      213: 5349272360781047301
+    second: arrowPuzzle1Note_77
+  - first:
+      213: 6843338568581982285
+    second: arrowPuzzle1Note_78
+  - first:
+      213: -6827030174578975694
+    second: arrowPuzzle1Note_79
+  - first:
+      213: 3345785577470507127
+    second: arrowPuzzle1Note_80
+  - first:
+      213: -7241800171775298736
+    second: arrowPuzzle1Note_81
+  - first:
+      213: 6091610992097888787
+    second: arrowPuzzle1Note_82
+  - first:
+      213: -368196892655164372
+    second: arrowPuzzle1Note_83
+  - first:
+      213: 5816082644509626543
+    second: arrowPuzzle1Note_84
+  - first:
+      213: -5451315039237935863
+    second: arrowPuzzle1Note_85
+  - first:
+      213: -8599306903069516222
+    second: arrowPuzzle1Note_86
+  - first:
+      213: -2682252895084289398
+    second: arrowPuzzle1Note_87
+  - first:
+      213: -1990637410577992338
+    second: arrowPuzzle1Note_88
+  - first:
+      213: 7127578219555932054
+    second: arrowPuzzle1Note_89
+  - first:
+      213: 2109972514017937822
+    second: arrowPuzzle1Note_90
+  - first:
+      213: 7724890276923157939
+    second: arrowPuzzle1Note_91
+  - first:
+      213: -2027835902067847086
+    second: arrowPuzzle1Note_92
+  - first:
+      213: 1743599268932879146
+    second: arrowPuzzle1Note_93
+  - first:
+      213: 3895644884480319427
+    second: arrowPuzzle1Note_94
+  - first:
+      213: -5894190906992422745
+    second: arrowPuzzle1Note_95
+  - first:
+      213: 7324769399874995745
+    second: arrowPuzzle1Note_96
+  - first:
+      213: 7309406018459744848
+    second: arrowPuzzle1Note_97
+  - first:
+      213: -1752458343848162619
+    second: arrowPuzzle1Note_98
+  - first:
+      213: -3364127704924215604
+    second: arrowPuzzle1Note_99
+  - first:
+      213: -2268921281050767458
+    second: arrowPuzzle1Note_100
+  - first:
+      213: -5192810716025724082
+    second: arrowPuzzle1Note_101
+  - first:
+      213: -335410033560009542
+    second: arrowPuzzle1Note_102
+  - first:
+      213: -3579919709322551924
+    second: arrowPuzzle1Note_103
+  - first:
+      213: -3457728242301770633
+    second: arrowPuzzle1Note_104
+  - first:
+      213: 7146090695640494034
+    second: arrowPuzzle1Note_105
+  - first:
+      213: 1569104097571234915
+    second: arrowPuzzle1Note_106
+  - first:
+      213: 3691011256774784236
+    second: arrowPuzzle1Note_107
+  - first:
+      213: 3135439518336660554
+    second: arrowPuzzle1Note_108
+  - first:
+      213: 105978348696554725
+    second: arrowPuzzle1Note_109
+  - first:
+      213: 5332447666846042647
+    second: arrowPuzzle1Note_110
+  - first:
+      213: -8630689266633235973
+    second: arrowPuzzle1Note_111
+  - first:
+      213: 409186339483362813
+    second: arrowPuzzle1Note_112
+  - first:
+      213: -7028759315039266333
+    second: arrowPuzzle1Note_113
+  - first:
+      213: -6132112958450860704
+    second: arrowPuzzle1Note_114
+  - first:
+      213: 6195881123983259135
+    second: arrowPuzzle1Note_115
+  - first:
+      213: 3156254450867022279
+    second: arrowPuzzle1Note_116
+  - first:
+      213: -8988470707475687093
+    second: arrowPuzzle1Note_117
+  - first:
+      213: 8685806331128512711
+    second: arrowPuzzle1Note_118
+  - first:
+      213: -8117644652056209579
+    second: arrowPuzzle1Note_119
+  - first:
+      213: -1134674656904834115
+    second: arrowPuzzle1Note_120
+  - first:
+      213: -7748461208267528990
+    second: arrowPuzzle1Note_121
+  - first:
+      213: 3186858193217282379
+    second: arrowPuzzle1Note_122
+  - first:
+      213: 4849438838636614861
+    second: arrowPuzzle1Note_123
+  - first:
+      213: -364031544571464713
+    second: arrowPuzzle1Note_124
+  - first:
+      213: 7893967840974253396
+    second: arrowPuzzle1Note_125
+  - first:
+      213: 3275930228894612179
+    second: arrowPuzzle1Note_126
+  - first:
+      213: 4377611902300103925
+    second: arrowPuzzle1Note_127
+  - first:
+      213: 5206617588513498291
+    second: arrowPuzzle1Note_128
+  - first:
+      213: 7244600232829541353
+    second: arrowPuzzle1Note_129
+  - first:
+      213: 7248236358149059823
+    second: arrowPuzzle1Note_130
+  - first:
+      213: -4431614003153288467
+    second: arrowPuzzle1Note_131
+  - first:
+      213: 4813447191808160156
+    second: arrowPuzzle1Note_132
+  - first:
+      213: 7817649157889387066
+    second: arrowPuzzle1Note_133
+  - first:
+      213: 6988960536349251932
+    second: arrowPuzzle1Note_134
+  - first:
+      213: 261888597833875237
+    second: arrowPuzzle1Note_135
+  - first:
+      213: -1945490449133802209
+    second: arrowPuzzle1Note_136
+  - first:
+      213: 3314818989435279954
+    second: arrowPuzzle1Note_137
+  - first:
+      213: 8906634315537954080
+    second: arrowPuzzle1Note_138
+  - first:
+      213: 4283540153507109301
+    second: arrowPuzzle1Note_139
+  - first:
+      213: 8156168196733767403
+    second: arrowPuzzle1Note_140
+  - first:
+      213: -2258893718954208763
+    second: arrowPuzzle1Note_141
+  - first:
+      213: 3773996193284207320
+    second: arrowPuzzle1Note_142
+  - first:
+      213: -3988280066838936090
+    second: arrowPuzzle1Note_143
+  - first:
+      213: 9008679372126089620
+    second: arrowPuzzle1Note_144
+  - first:
+      213: 3742509634962586707
+    second: arrowPuzzle1Note_145
+  - first:
+      213: 2472894028848579835
+    second: arrowPuzzle1Note_146
+  - first:
+      213: -4783953198033587198
+    second: arrowPuzzle1Note_147
+  - first:
+      213: -6295089346083202640
+    second: arrowPuzzle1Note_148
+  - first:
+      213: 1632042384199778462
+    second: arrowPuzzle1Note_149
+  - first:
+      213: -7122491248980870890
+    second: arrowPuzzle1Note_150
+  - first:
+      213: -8396306599301321124
+    second: arrowPuzzle1Note_151
+  - first:
+      213: 7678072660048343547
+    second: arrowPuzzle1Note_152
+  - first:
+      213: -5393113969656941667
+    second: arrowPuzzle1Note_153
+  - first:
+      213: -2022756576432886956
+    second: arrowPuzzle1Note_154
+  - first:
+      213: -4725305692201061537
+    second: arrowPuzzle1Note_155
+  - first:
+      213: -301232857191701273
+    second: arrowPuzzle1Note_156
+  - first:
+      213: 1221531408308844636
+    second: arrowPuzzle1Note_157
+  - first:
+      213: 3718737795490301618
+    second: arrowPuzzle1Note_158
+  - first:
+      213: -534808635901889171
+    second: arrowPuzzle1Note_159
+  - first:
+      213: -2141506043386464508
+    second: arrowPuzzle1Note_160
+  - first:
+      213: -1398849730523212690
+    second: arrowPuzzle1Note_161
+  - first:
+      213: -2462729968579951023
+    second: arrowPuzzle1Note_162
+  - first:
+      213: 3145484468645286222
+    second: arrowPuzzle1Note_163
+  - first:
+      213: 4781852305190488153
+    second: arrowPuzzle1Note_164
+  - first:
+      213: -1493489035826528117
+    second: arrowPuzzle1Note_165
+  - first:
+      213: 7569435890089899658
+    second: arrowPuzzle1Note_166
+  - first:
+      213: 2940518437548369120
+    second: arrowPuzzle1Note_167
+  - first:
+      213: 2960682373120525876
+    second: arrowPuzzle1Note_168
+  - first:
+      213: -7936034868882910873
+    second: arrowPuzzle1Note_169
+  - first:
+      213: 3046662858387866885
+    second: arrowPuzzle1Note_170
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_0
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 750
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a52df2b7f0afbb60800000000000000
+      internalID: 7764101268330325414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 750
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f215e298b88c0c30800000000000000
+      internalID: 4326983668316050167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33969070033423a60800000000000000
+      internalID: 7652252590411442483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 750
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c9840fc51d89c00800000000000000
+      internalID: 907705522013641870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff85e72b27c2c520800000000000000
+      internalID: 2720956113052078074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17efd51e888f8cf0800000000000000
+      internalID: -247829310648359137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 741
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad68d3aafd5cce10800000000000000
+      internalID: 2219252047458889127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddb0f9e5d1cb4380800000000000000
+      internalID: -8985875506990629412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_8
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 750
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7a3b55df6b4260800000000000000
+      internalID: 7082877801119514465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_9
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 750
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23096da92c539f610800000000000000
+      internalID: 1655413447973048370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_10
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556801843aee64a20800000000000000
+      internalID: 3046384583018841685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 750
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6d8714e4c9c6f80800000000000000
+      internalID: -8111936968881285425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05e5cc4f463b4990800000000000000
+      internalID: -7400761848434924276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 750
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd3418381be39e10800000000000000
+      internalID: 2203363131966897650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_14
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 750
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c8b14c0ad3e1a00800000000000000
+      internalID: 729087950374800483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_15
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa28a95c70431a40800000000000000
+      internalID: 5337680886188485370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_16
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d891167397ec970800000000000000
+      internalID: 8777086002550902111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_17
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b89f0f40a799e600800000000000000
+      internalID: 498095948578134193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_18
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c2b052512f5eb00800000000000000
+      internalID: 857357476713671773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_19
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787a9ddc38c667580800000000000000
+      internalID: -8829750706063169657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_20
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ee695aac39c1c20800000000000000
+      internalID: 3178577935587536541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_21
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 750
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39521fde8ad38620800000000000000
+      internalID: 2775302102553090364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_22
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d63b6f4532aa090800000000000000
+      internalID: -8022560938383938241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_23
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 750
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48c3b63ad86b9b00800000000000000
+      internalID: 836377442237270093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_24
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 750
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86385b0f01808e9c0800000000000000
+      internalID: -3897856608638237848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_25
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 778
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66cf757b0026fb10800000000000000
+      internalID: 2014833116882912876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_26
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 750
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df85c5fb293eddeb0800000000000000
+      internalID: -4693345017234958083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_27
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f014658787304cb0800000000000000
+      internalID: -4881840940871577355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_28
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 750
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3229c01dbca804f0800000000000000
+      internalID: -862249400611036609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_29
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 750
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d82753c8da6c810800000000000000
+      internalID: 1785305120002706826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_30
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 750
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab6dd03a2e14dc30800000000000000
+      internalID: 4383161503895612332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_31
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 750
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4bc2a391eef1120800000000000000
+      internalID: 2386888119647253720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_32
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 778
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b877ceafe6f2e8a0800000000000000
+      internalID: -6277183421311125321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_33
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 750
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cafae53afae3d50800000000000000
+      internalID: 6719000810286460008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_34
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a4187d2100d3f30800000000000000
+      internalID: 4556798478893795904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_35
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 750
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92138a6883cef16b0800000000000000
+      internalID: -5323276507007143639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_36
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86575de6460a8b3a0800000000000000
+      internalID: -6649388496595880600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_37
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 750
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84085f6d55adc730800000000000000
+      internalID: 4021051863030301834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_38
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 750
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4e4bbd184156510800000000000000
+      internalID: 1541660995413665010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_39
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 762
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc96f1dac7d81b610800000000000000
+      internalID: 1635243706332178895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_40
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 764
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14cac12a4e4d8d00800000000000000
+      internalID: 976522774510748701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_41
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 749
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8410d15329f72aba0800000000000000
+      internalID: -6079156281063702200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_42
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 634
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bbd245dbc573940800000000000000
+      internalID: 5275787456718682927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 634
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e861713b84edd00800000000000000
+      internalID: 999316101346528804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_44
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1976e95ff7ff44eb0800000000000000
+      internalID: -4736379983040190575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 634
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98043fbac38c33b80800000000000000
+      internalID: -8416163115716886391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_46
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 634
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e77a56e1fbd2310800000000000000
+      internalID: 1381970797948009992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_47
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e50f43a750845050800000000000000
+      internalID: 5788392534968305129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_48
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 634
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c972ea8ce2c8c1b0800000000000000
+      internalID: -5636040612456007229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_49
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 634
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4c24300f719c3e0800000000000000
+      internalID: -2033067437166771030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_50
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 634
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a48559a17d2f0f0800000000000000
+      internalID: -1084568051068155386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_51
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 625
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3d8200afe017ec0800000000000000
+      internalID: -3571056562620804186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_52
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 662
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb090dafaab5b530800000000000000
+      internalID: 3870204718479903668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_53
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 634
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d05e8afe22cc0a0800000000000000
+      internalID: -6860069719665996407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_54
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 634
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2285273fb8aa90e90800000000000000
+      internalID: -7058923422865008606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_55
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b372108a960cc40800000000000000
+      internalID: 5530536512705739639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_56
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 634
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86399ab11d509d380800000000000000
+      internalID: -8946112789124377752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_57
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44185b4f7a5279f0800000000000000
+      internalID: -472215508149070770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_58
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 634
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03232738ce1b29f0800000000000000
+      internalID: -492265888999595253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_59
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 634
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a1df2fb9bb359d0800000000000000
+      internalID: -2786677465941206426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_60
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 634
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ab6c05835fbe4f0800000000000000
+      internalID: -798274886705956230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_61
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 634
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250c1d2f5c5b1a060800000000000000
+      internalID: 6963046360678514770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_62
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02b65efed7f8b210800000000000000
+      internalID: 1349100625519358476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_63
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 634
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe94329e124d92d80800000000000000
+      internalID: -8274849598206162449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_64
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 634
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9095fc79796f01d50800000000000000
+      internalID: 6706130976102111497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_65
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327cc7a509b3eb190800000000000000
+      internalID: -7944847201455519965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_66
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 625
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc4b6da0aa853180800000000000000
+      internalID: -9136243846342292279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_67
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 634
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f957dfae8551e40800000000000000
+      internalID: 5626501075767238474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_68
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 634
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab95595ce5efe320800000000000000
+      internalID: 2589541114035149732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_69
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 634
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6744ada9634d5e20800000000000000
+      internalID: 3340900619742627693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_70
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 634
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f9daf65e69ec9f0800000000000000
+      internalID: -446253400897773700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_71
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 646
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b35f0a58cdea4e20800000000000000
+      internalID: 3335739918781469619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_72
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 648
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac3a772a89472620800000000000000
+      internalID: 2749246955249613987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_73
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 648
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65ac7f8ea3298ee0800000000000000
+      internalID: -1258435388234750610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_74
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 633
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0fa0438f8ac2820800000000000000
+      internalID: 2894874444470874280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_75
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 518
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6035d844f312cb20800000000000000
+      internalID: 3153104629027647599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_76
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 518
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e17a92722fa45f0800000000000000
+      internalID: -771538136124154296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_77
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5066b27dede6c3a40800000000000000
+      internalID: 5349272360781047301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_78
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 518
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d482f0aab2c68fe50800000000000000
+      internalID: 6843338568581982285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_79
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cd8553a348141a0800000000000000
+      internalID: -6827030174578975694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_80
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77831c7814e9e6e20800000000000000
+      internalID: 3345785577470507127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_81
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05378facc15ff7b90800000000000000
+      internalID: -7241800171775298736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_82
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 518
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a0cdd2cefb98450800000000000000
+      internalID: 6091610992097888787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_83
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 518
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24e2ed70e6e3eaf0800000000000000
+      internalID: -368196892655164372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_84
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 518
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa09f4aa950e6b050800000000000000
+      internalID: 5816082644509626543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_85
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 518
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d6a77aad90954b0800000000000000
+      internalID: -5451315039237935863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_86
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e1af7ceef19a880800000000000000
+      internalID: -8599306903069516222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_87
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 518
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82ecbef339b6cad0800000000000000
+      internalID: -2682252895084289398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_88
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 518
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6535e962d5df54e0800000000000000
+      internalID: -1990637410577992338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_89
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697417d80ae3ae260800000000000000
+      internalID: 7127578219555932054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_90
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 518
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9980e782d0284d10800000000000000
+      internalID: 2109972514017937822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_91
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdafd457c2543b60800000000000000
+      internalID: 7724890276923157939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_92
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 518
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2505672bdfdabd3e0800000000000000
+      internalID: -2027835902067847086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_93
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 518
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23006f0c42823810800000000000000
+      internalID: 1743599268932879146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_94
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf5486e16c101630800000000000000
+      internalID: 3895644884480319427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_95
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 518
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0116e4990a33ea0800000000000000
+      internalID: -5894190906992422745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_96
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 518
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126433df5fec6a560800000000000000
+      internalID: 7324769399874995745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_97
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 518
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a35610c0a307560800000000000000
+      internalID: 7309406018459744848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_98
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cac243db640ea7e0800000000000000
+      internalID: -1752458343848162619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_99
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 518
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc621f02da73051d0800000000000000
+      internalID: -3364127704924215604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_100
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 518
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f05abbd1c2380e0800000000000000
+      internalID: -2268921281050767458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_101
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 518
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43e17d9a2e6fe7b0800000000000000
+      internalID: -5192810716025724082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_102
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 518
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4cd8ff952685bf0800000000000000
+      internalID: -335410033560009542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_103
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 546
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dd869ddf1915ec0800000000000000
+      internalID: -3579919709322551924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_104
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 518
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77464c3cb7ea300d0800000000000000
+      internalID: -3457728242301770633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_105
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df206640a30c2360800000000000000
+      internalID: 7146090695640494034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_106
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 518
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364e75ffcd396c510800000000000000
+      internalID: 1569104097571234915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_107
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce47706ae2b193330800000000000000
+      internalID: 3691011256774784236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_108
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 518
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44bd2131a1538b20800000000000000
+      internalID: 3135439518336660554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_109
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 518
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecc0f32fb2887100800000000000000
+      internalID: 105978348696554725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_110
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 530
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a08b586e8a00a40800000000000000
+      internalID: 5332447666846042647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_111
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 532
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1ac8fd6d1a93880800000000000000
+      internalID: -8630689266633235973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_112
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 517
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df529dbcec8bda500800000000000000
+      internalID: 409186339483362813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_113
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 402
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9dd5794a4d47e90800000000000000
+      internalID: -7028759315039266333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_114
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 430
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d77fce0cb56eaa0800000000000000
+      internalID: -6132112958450860704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_115
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 402
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5f1991e013cf550800000000000000
+      internalID: 6195881123983259135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_116
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 402
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9aca453b44dcb20800000000000000
+      internalID: 3156254450867022279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_117
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4958e6b389824380800000000000000
+      internalID: -8988470707475687093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_118
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 402
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c001cab6de2a8870800000000000000
+      internalID: 8685806331128512711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_119
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 402
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5571755b235585f80800000000000000
+      internalID: -8117644652056209579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_120
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 402
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db39c8b4963d040f0800000000000000
+      internalID: -1134674656904834115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_121
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4e15d859fe77490800000000000000
+      internalID: -7748461208267528990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_122
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 402
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41624c54aef93c20800000000000000
+      internalID: 3186858193217282379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_123
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 402
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc41be82eeaac4340800000000000000
+      internalID: 4849438838636614861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_124
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 402
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3f7ca2d33b2faf0800000000000000
+      internalID: -364031544571464713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_125
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45da0a56de10d8d60800000000000000
+      internalID: 7893967840974253396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_126
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 430
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da3a32cf21767d20800000000000000
+      internalID: 3275930228894612179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_127
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 402
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4ae11e4d660cc30800000000000000
+      internalID: 4377611902300103925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_128
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 393
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4e5a46c1f914840800000000000000
+      internalID: 5206617588513498291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_129
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 402
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb5489378df98460800000000000000
+      internalID: 7244600232829541353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_130
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 402
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4bb8f9098e69460800000000000000
+      internalID: 7248236358149059823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_131
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2c6683b8ebf72c0800000000000000
+      internalID: -4431614003153288467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_132
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 402
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91b3dcd7bcccc240800000000000000
+      internalID: 4813447191808160156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_133
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 402
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ae0aa4d7edd7c60800000000000000
+      internalID: 7817649157889387066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_134
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 402
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5912562496cdf060800000000000000
+      internalID: 6988960536349251932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_135
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 393
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ffc9cca4a62a300800000000000000
+      internalID: 261888597833875237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_136
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1de6718eba3005e0800000000000000
+      internalID: -1945490449133802209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_137
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 402
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a5208ee4a900e20800000000000000
+      internalID: 3314818989435279954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_138
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 402
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025b1f978b8ba9b70800000000000000
+      internalID: 8906634315537954080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_139
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 402
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9d9ee0311327b30800000000000000
+      internalID: 4283540153507109301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_140
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 430
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee87aef2c7803170800000000000000
+      internalID: 8156168196733767403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_141
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 402
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5029f58712cc6a0e0800000000000000
+      internalID: -2258893718954208763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_142
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2b164da8def5430800000000000000
+      internalID: 3773996193284207320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_143
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 402
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e54b47f868c6a8c0800000000000000
+      internalID: -3988280066838936090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_144
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f6fea822450d70800000000000000
+      internalID: 9008679372126089620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_145
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 402
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cfb603fa010f330800000000000000
+      internalID: 3742509634962586707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_146
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 402
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf444bc640c715220800000000000000
+      internalID: 2472894028848579835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_147
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 414
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2043d11b9ebfb9db0800000000000000
+      internalID: -4783953198033587198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_148
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 416
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b95d51b79953a8a0800000000000000
+      internalID: -6295089346083202640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_149
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 401
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e900c98c6ed26a610800000000000000
+      internalID: 1632042384199778462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_150
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 286
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619baa412f3d72d90800000000000000
+      internalID: -7122491248980870890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_151
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 277
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e606b22a35a7b80800000000000000
+      internalID: -8396306599301321124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_152
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 286
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1f1d5776efd8a60800000000000000
+      internalID: 7678072660048343547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_153
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 286
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93b6652b6fc725b0800000000000000
+      internalID: -5393113969656941667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_154
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 314
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45be1aa5c99bde3e0800000000000000
+      internalID: -2022756576432886956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_155
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 286
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53793932875c6eb0800000000000000
+      internalID: -4725305692201061537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_156
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 277
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4a968ff4ec1dbf0800000000000000
+      internalID: -301232857191701273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_157
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 286
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c583b3a0850c3f010800000000000000
+      internalID: 1221531408308844636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_158
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 286
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6c401825c9b9330800000000000000
+      internalID: 3718737795490301618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_159
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 286
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65b142116af398f0800000000000000
+      internalID: -534808635901889171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_160
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 286
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407f8978997d742e0800000000000000
+      internalID: -2141506043386464508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_161
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 286
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64530ed499469ce0800000000000000
+      internalID: -1398849730523212690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_162
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 286
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15645154420a2ddd0800000000000000
+      internalID: -2462729968579951023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_163
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 286
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e415c10757107ab20800000000000000
+      internalID: 3145484468645286222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_164
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 286
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9580343165d8c5240800000000000000
+      internalID: 4781852305190488153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_165
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 286
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b808e9f72af064be0800000000000000
+      internalID: -1493489035826528117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_166
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 286
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86b6e266d90c0960800000000000000
+      internalID: 7569435890089899658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_167
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 286
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4ae8d70f1dec820800000000000000
+      internalID: 2940518437548369120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_168
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 286
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4360c969ee4761920800000000000000
+      internalID: 2960682373120525876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_169
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 286
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761de1b655a8dd190800000000000000
+      internalID: -7936034868882910873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowPuzzle1Note_170
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 300
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505c5905abbe74a20800000000000000
+      internalID: 3046662858387866885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arrowPuzzle1Note_0: 7764101268330325414
+      arrowPuzzle1Note_1: 4326983668316050167
+      arrowPuzzle1Note_10: 3046384583018841685
+      arrowPuzzle1Note_100: -2268921281050767458
+      arrowPuzzle1Note_101: -5192810716025724082
+      arrowPuzzle1Note_102: -335410033560009542
+      arrowPuzzle1Note_103: -3579919709322551924
+      arrowPuzzle1Note_104: -3457728242301770633
+      arrowPuzzle1Note_105: 7146090695640494034
+      arrowPuzzle1Note_106: 1569104097571234915
+      arrowPuzzle1Note_107: 3691011256774784236
+      arrowPuzzle1Note_108: 3135439518336660554
+      arrowPuzzle1Note_109: 105978348696554725
+      arrowPuzzle1Note_11: -8111936968881285425
+      arrowPuzzle1Note_110: 5332447666846042647
+      arrowPuzzle1Note_111: -8630689266633235973
+      arrowPuzzle1Note_112: 409186339483362813
+      arrowPuzzle1Note_113: -7028759315039266333
+      arrowPuzzle1Note_114: -6132112958450860704
+      arrowPuzzle1Note_115: 6195881123983259135
+      arrowPuzzle1Note_116: 3156254450867022279
+      arrowPuzzle1Note_117: -8988470707475687093
+      arrowPuzzle1Note_118: 8685806331128512711
+      arrowPuzzle1Note_119: -8117644652056209579
+      arrowPuzzle1Note_12: -7400761848434924276
+      arrowPuzzle1Note_120: -1134674656904834115
+      arrowPuzzle1Note_121: -7748461208267528990
+      arrowPuzzle1Note_122: 3186858193217282379
+      arrowPuzzle1Note_123: 4849438838636614861
+      arrowPuzzle1Note_124: -364031544571464713
+      arrowPuzzle1Note_125: 7893967840974253396
+      arrowPuzzle1Note_126: 3275930228894612179
+      arrowPuzzle1Note_127: 4377611902300103925
+      arrowPuzzle1Note_128: 5206617588513498291
+      arrowPuzzle1Note_129: 7244600232829541353
+      arrowPuzzle1Note_13: 2203363131966897650
+      arrowPuzzle1Note_130: 7248236358149059823
+      arrowPuzzle1Note_131: -4431614003153288467
+      arrowPuzzle1Note_132: 4813447191808160156
+      arrowPuzzle1Note_133: 7817649157889387066
+      arrowPuzzle1Note_134: 6988960536349251932
+      arrowPuzzle1Note_135: 261888597833875237
+      arrowPuzzle1Note_136: -1945490449133802209
+      arrowPuzzle1Note_137: 3314818989435279954
+      arrowPuzzle1Note_138: 8906634315537954080
+      arrowPuzzle1Note_139: 4283540153507109301
+      arrowPuzzle1Note_14: 729087950374800483
+      arrowPuzzle1Note_140: 8156168196733767403
+      arrowPuzzle1Note_141: -2258893718954208763
+      arrowPuzzle1Note_142: 3773996193284207320
+      arrowPuzzle1Note_143: -3988280066838936090
+      arrowPuzzle1Note_144: 9008679372126089620
+      arrowPuzzle1Note_145: 3742509634962586707
+      arrowPuzzle1Note_146: 2472894028848579835
+      arrowPuzzle1Note_147: -4783953198033587198
+      arrowPuzzle1Note_148: -6295089346083202640
+      arrowPuzzle1Note_149: 1632042384199778462
+      arrowPuzzle1Note_15: 5337680886188485370
+      arrowPuzzle1Note_150: -7122491248980870890
+      arrowPuzzle1Note_151: -8396306599301321124
+      arrowPuzzle1Note_152: 7678072660048343547
+      arrowPuzzle1Note_153: -5393113969656941667
+      arrowPuzzle1Note_154: -2022756576432886956
+      arrowPuzzle1Note_155: -4725305692201061537
+      arrowPuzzle1Note_156: -301232857191701273
+      arrowPuzzle1Note_157: 1221531408308844636
+      arrowPuzzle1Note_158: 3718737795490301618
+      arrowPuzzle1Note_159: -534808635901889171
+      arrowPuzzle1Note_16: 8777086002550902111
+      arrowPuzzle1Note_160: -2141506043386464508
+      arrowPuzzle1Note_161: -1398849730523212690
+      arrowPuzzle1Note_162: -2462729968579951023
+      arrowPuzzle1Note_163: 3145484468645286222
+      arrowPuzzle1Note_164: 4781852305190488153
+      arrowPuzzle1Note_165: -1493489035826528117
+      arrowPuzzle1Note_166: 7569435890089899658
+      arrowPuzzle1Note_167: 2940518437548369120
+      arrowPuzzle1Note_168: 2960682373120525876
+      arrowPuzzle1Note_169: -7936034868882910873
+      arrowPuzzle1Note_17: 498095948578134193
+      arrowPuzzle1Note_170: 3046662858387866885
+      arrowPuzzle1Note_18: 857357476713671773
+      arrowPuzzle1Note_19: -8829750706063169657
+      arrowPuzzle1Note_2: 7652252590411442483
+      arrowPuzzle1Note_20: 3178577935587536541
+      arrowPuzzle1Note_21: 2775302102553090364
+      arrowPuzzle1Note_22: -8022560938383938241
+      arrowPuzzle1Note_23: 836377442237270093
+      arrowPuzzle1Note_24: -3897856608638237848
+      arrowPuzzle1Note_25: 2014833116882912876
+      arrowPuzzle1Note_26: -4693345017234958083
+      arrowPuzzle1Note_27: -4881840940871577355
+      arrowPuzzle1Note_28: -862249400611036609
+      arrowPuzzle1Note_29: 1785305120002706826
+      arrowPuzzle1Note_3: 907705522013641870
+      arrowPuzzle1Note_30: 4383161503895612332
+      arrowPuzzle1Note_31: 2386888119647253720
+      arrowPuzzle1Note_32: -6277183421311125321
+      arrowPuzzle1Note_33: 6719000810286460008
+      arrowPuzzle1Note_34: 4556798478893795904
+      arrowPuzzle1Note_35: -5323276507007143639
+      arrowPuzzle1Note_36: -6649388496595880600
+      arrowPuzzle1Note_37: 4021051863030301834
+      arrowPuzzle1Note_38: 1541660995413665010
+      arrowPuzzle1Note_39: 1635243706332178895
+      arrowPuzzle1Note_4: 2720956113052078074
+      arrowPuzzle1Note_40: 976522774510748701
+      arrowPuzzle1Note_41: -6079156281063702200
+      arrowPuzzle1Note_42: 5275787456718682927
+      arrowPuzzle1Note_43: 999316101346528804
+      arrowPuzzle1Note_44: -4736379983040190575
+      arrowPuzzle1Note_45: -8416163115716886391
+      arrowPuzzle1Note_46: 1381970797948009992
+      arrowPuzzle1Note_47: 5788392534968305129
+      arrowPuzzle1Note_48: -5636040612456007229
+      arrowPuzzle1Note_49: -2033067437166771030
+      arrowPuzzle1Note_5: -247829310648359137
+      arrowPuzzle1Note_50: -1084568051068155386
+      arrowPuzzle1Note_51: -3571056562620804186
+      arrowPuzzle1Note_52: 3870204718479903668
+      arrowPuzzle1Note_53: -6860069719665996407
+      arrowPuzzle1Note_54: -7058923422865008606
+      arrowPuzzle1Note_55: 5530536512705739639
+      arrowPuzzle1Note_56: -8946112789124377752
+      arrowPuzzle1Note_57: -472215508149070770
+      arrowPuzzle1Note_58: -492265888999595253
+      arrowPuzzle1Note_59: -2786677465941206426
+      arrowPuzzle1Note_6: 2219252047458889127
+      arrowPuzzle1Note_60: -798274886705956230
+      arrowPuzzle1Note_61: 6963046360678514770
+      arrowPuzzle1Note_62: 1349100625519358476
+      arrowPuzzle1Note_63: -8274849598206162449
+      arrowPuzzle1Note_64: 6706130976102111497
+      arrowPuzzle1Note_65: -7944847201455519965
+      arrowPuzzle1Note_66: -9136243846342292279
+      arrowPuzzle1Note_67: 5626501075767238474
+      arrowPuzzle1Note_68: 2589541114035149732
+      arrowPuzzle1Note_69: 3340900619742627693
+      arrowPuzzle1Note_7: -8985875506990629412
+      arrowPuzzle1Note_70: -446253400897773700
+      arrowPuzzle1Note_71: 3335739918781469619
+      arrowPuzzle1Note_72: 2749246955249613987
+      arrowPuzzle1Note_73: -1258435388234750610
+      arrowPuzzle1Note_74: 2894874444470874280
+      arrowPuzzle1Note_75: 3153104629027647599
+      arrowPuzzle1Note_76: -771538136124154296
+      arrowPuzzle1Note_77: 5349272360781047301
+      arrowPuzzle1Note_78: 6843338568581982285
+      arrowPuzzle1Note_79: -6827030174578975694
+      arrowPuzzle1Note_8: 7082877801119514465
+      arrowPuzzle1Note_80: 3345785577470507127
+      arrowPuzzle1Note_81: -7241800171775298736
+      arrowPuzzle1Note_82: 6091610992097888787
+      arrowPuzzle1Note_83: -368196892655164372
+      arrowPuzzle1Note_84: 5816082644509626543
+      arrowPuzzle1Note_85: -5451315039237935863
+      arrowPuzzle1Note_86: -8599306903069516222
+      arrowPuzzle1Note_87: -2682252895084289398
+      arrowPuzzle1Note_88: -1990637410577992338
+      arrowPuzzle1Note_89: 7127578219555932054
+      arrowPuzzle1Note_9: 1655413447973048370
+      arrowPuzzle1Note_90: 2109972514017937822
+      arrowPuzzle1Note_91: 7724890276923157939
+      arrowPuzzle1Note_92: -2027835902067847086
+      arrowPuzzle1Note_93: 1743599268932879146
+      arrowPuzzle1Note_94: 3895644884480319427
+      arrowPuzzle1Note_95: -5894190906992422745
+      arrowPuzzle1Note_96: 7324769399874995745
+      arrowPuzzle1Note_97: 7309406018459744848
+      arrowPuzzle1Note_98: -1752458343848162619
+      arrowPuzzle1Note_99: -3364127704924215604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

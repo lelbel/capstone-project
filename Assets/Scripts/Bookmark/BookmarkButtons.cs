@@ -6,35 +6,48 @@ public class BookmarkButtons : MonoBehaviour
     [SerializeField] private Button backButton;
     [SerializeField] private Button mapButton;
     [SerializeField] private Button noteButton;
+    
+    [SerializeField] private GameObject map;
+    [SerializeField] private GameObject note;
+    
     private void Start()
     {
         backButton.onClick.AddListener(Back);
         mapButton.onClick.AddListener(OpenMap);
         noteButton.onClick.AddListener(OpenNotes);
         
-        if (!GameManager.CurrentPuzzle.GetMapMarker().HasMapMarker())
-        {
-            mapButton.enabled = false;
-        }
-
-        if (!GameManager.CurrentPuzzle.GetNote().HasPuzzleNote())
-        {
-            noteButton.enabled = false;
-        }
+        //  set map to show by default
+        map.SetActive(true);
+        note.SetActive(false);
     }
 
     public void OpenMap()
     {
-        LoadSceneManager.LoadScene(LoadSceneManager.SceneName.Map);
+        map.SetActive(true);
+        note.SetActive(false);
     }
     
     public void OpenNotes()
     {
-        LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleNotes);
+        map.SetActive(false);
+        note.SetActive(true);
     }
 
     public void Back()
     {
         Destroy(gameObject);
     }
+    
+    
 }
+/*
+    if (!GameManager.CurrentPuzzle.GetMapMarker().HasMapMarker())
+        {
+            mapButton.enabled = false;
+        }
+
+    if (GameManager.CurrentPuzzle.GetNote() != null)
+    {
+        noteButton.enabled = false;
+    }
+*/

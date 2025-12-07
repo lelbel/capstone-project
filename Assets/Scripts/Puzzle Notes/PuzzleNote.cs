@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using System;
 
@@ -8,7 +9,7 @@ public class PuzzleNote
     [SerializeField] private Sprite sprite;
     [SerializeField] private float xPos;
     [SerializeField] private float yPos;
-    private bool isVisible;
+    //private bool isVisible;
 
     public Sprite GetSprite()
     {
@@ -25,23 +26,11 @@ public class PuzzleNote
         return yPos;
     }
 
-    public bool IsVisible()
-    {
-        return isVisible;
-    }
-
-    public void Visible()
-    {
-        isVisible = true;
-    }
-
-    public void Invisible()
-    {
-        isVisible = false;
-    }
-
     public bool HasPuzzleNote()
     {
         return hasPuzzleNote;
     }
 }
+
+ 
+*/

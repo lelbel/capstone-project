@@ -773,6 +773,10 @@ PrefabInstance:
       value: ArrowPuzzle3
       objectReference: {fileID: 0}
     - target: {fileID: 1730223542851636267, guid: 5698884fab360e54191b6171e9acde50, type: 3}
+      propertyPath: puzzleName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730223542851636267, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: puzzleCompleteSprite
       value: 
       objectReference: {fileID: 1390997553041840596, guid: 72976f846f0ddf5409704fde8e14635c, type: 3}
@@ -1519,6 +1523,10 @@ PrefabInstance:
       value: ArrowPuzzle2
       objectReference: {fileID: 0}
     - target: {fileID: 1730223542851636267, guid: 5698884fab360e54191b6171e9acde50, type: 3}
+      propertyPath: puzzleName
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730223542851636267, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: puzzleCompleteSprite
       value: 
       objectReference: {fileID: 7989520804731963137, guid: 03a31507f96c7e745afc4a1d2c2bbefa, type: 3}
@@ -1987,26 +1995,30 @@ MonoBehaviour:
     puzzleList:
     - puzzleName: 0
       scene: 9
-      isSolved: 0
-      puzzleNote:
-        hasPuzzleNote: 0
-        sprite: {fileID: 0}
-        xPos: 0
-        yPos: 0
+      puzzleNote: {fileID: 21300000, guid: eb8b8bb4750ab78489adecd6ad2966a2, type: 3}
       mapMarker:
         hasMapMarker: 1
-        x: 450
-        y: -250
+        x: 340
+        y: 60
+    - puzzleName: 7
+      scene: 18
+      puzzleNote: {fileID: 21300000, guid: c66e21431713a6f499a1515fb3cbe186, type: 3}
+      mapMarker:
+        hasMapMarker: 1
+        x: -140
+        y: 7
+    - puzzleName: 8
+      scene: 19
+      puzzleNote: {fileID: 21300000, guid: cc85176699c2ac34480eb7596b9caa55, type: 3}
+      mapMarker:
+        hasMapMarker: 1
+        x: 620
+        y: 8
   - groupName: 1
     puzzleList:
     - puzzleName: 1
       scene: 10
-      isSolved: 0
-      puzzleNote:
-        hasPuzzleNote: 0
-        sprite: {fileID: 0}
-        xPos: 0
-        yPos: 0
+      puzzleNote: {fileID: 0}
       mapMarker:
         hasMapMarker: 0
         x: 0
@@ -2015,12 +2027,7 @@ MonoBehaviour:
     puzzleList:
     - puzzleName: 5
       scene: 14
-      isSolved: 0
-      puzzleNote:
-        hasPuzzleNote: 0
-        sprite: {fileID: 0}
-        xPos: 0
-        yPos: 0
+      puzzleNote: {fileID: 0}
       mapMarker:
         hasMapMarker: 0
         x: 0

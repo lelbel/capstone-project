@@ -8,20 +8,23 @@ public class Puzzle
 {
     public enum PuzzleName
     {
-        ArrowPuzzleDVD,
+        ArrowPuzzle1,
         BoatCodePuzzle,
         DangerCodePuzzle,
         LibbyCodePuzzle,
         LibraryCodePuzzle,
         MapPuzzle,
-        WizardPuzzle
+        WizardPuzzle,
+        ArrowPuzzle2,
+        ArrowPuzzle3
     }
     
     [SerializeField] private PuzzleName puzzleName;
     [SerializeField] private LoadSceneManager.SceneName scene;
-    [SerializeField] private bool isSolved = false;
-    [SerializeField] private PuzzleNote puzzleNote;
+    [SerializeField] private Sprite puzzleNote;
     [SerializeField] private MapMarker mapMarker;
+    
+    private bool isSolved = false;
     private Button button;
 
     public PuzzleName GetName()
@@ -57,10 +60,10 @@ public class Puzzle
     public void SolvePuzzle()
     {
         isSolved = true;
-        puzzleNote.Visible();
+        //puzzleNote.Visible();
     }
 
-    public PuzzleNote GetNote()
+    public Sprite GetNote()
     {
         return puzzleNote;
     }

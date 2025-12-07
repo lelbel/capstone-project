@@ -15,7 +15,7 @@ public class LoadSceneManager : MonoBehaviour
         SettingsMenu,
         Tutorial,
         Back,
-        ArrowPuzzleDVD,
+        ArrowPuzzle1,
         BoatCodePuzzle,
         DangerCodePuzzle,
         LibbyCodePuzzle,
@@ -23,7 +23,9 @@ public class LoadSceneManager : MonoBehaviour
         MapPuzzle,
         Win,
         End,
-        WizardPuzzle
+        WizardPuzzle,
+        ArrowPuzzle2,
+        ArrowPuzzle3
     }
 
     //  set to mainMenu for debugging

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
-    [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject mapMarkerPrefab;
 
     private void Start()
@@ -25,7 +24,7 @@ public class MapManager : MonoBehaviour
             marker.GetComponent<RectTransform>().anchoredPosition = new Vector2(GameManager.CurrentPuzzle.GetMapMarker().GetX(), GameManager.CurrentPuzzle.GetMapMarker().GetY());
             
             //  set button parent as canvas so it shows up
-            marker.transform.SetParent(canvas.transform, false);
+            marker.transform.SetParent(this.transform, false);
         }
     }
 }

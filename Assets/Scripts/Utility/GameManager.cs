@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     
     public static List<Puzzle> CurrentPuzzleGroup;
     public static Puzzle CurrentPuzzle;
-    public static List<PuzzleNote> CurrentPuzzleNotes;
+    //public static List<PuzzleNote> CurrentPuzzleNotes;
     public static bool TutorialActive = false;
     public static bool HasEnteredTutorial = false;
     
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        CurrentPuzzleNotes = new();
+        //CurrentPuzzleNotes = new();
     }
     
     public static Puzzle GetPuzzle(Puzzle.PuzzleName puzzleName)
@@ -98,18 +98,7 @@ public class GameManager : MonoBehaviour
         CurrentPuzzle.SolvePuzzle();
     }
 
-    public static void UpdatePuzzleNotes()
-    {
-        CurrentPuzzleNotes.Clear();
-
-        foreach (Puzzle puzzle in CurrentPuzzleGroup)
-        {
-            if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
-            {
-                CurrentPuzzleNotes.Add(puzzle.GetNote());
-            }
-        }
-    }
+    
 
     public static bool FinalPuzzleCheck()
     {
@@ -124,3 +113,18 @@ public class GameManager : MonoBehaviour
         return true;
     }
 }
+
+/*
+public static void UpdatePuzzleNotes()
+    {
+        CurrentPuzzleNotes.Clear();
+
+        foreach (Puzzle puzzle in CurrentPuzzleGroup)
+        {
+            if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
+            {
+                CurrentPuzzleNotes.Add(puzzle.GetNote());
+            }
+        }
+    }
+*/
