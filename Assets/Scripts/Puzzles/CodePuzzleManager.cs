@@ -9,19 +9,29 @@ public class CodePuzzleManager : MonoBehaviour
     [SerializeField] private TMP_InputField userInput;
     [SerializeField] private Button submitButton;
     [SerializeField] private string solution;
-    [SerializeField] private int solutionLength;
+    //[SerializeField] private int solutionLength;
+
+    private Color32 correctColor = Color.white; //new Color32(131, 184, 114, 255);
+    private Color32 incorrectColor = new Color32(195, 67, 110, 255);
 
 
     void Start()
     {
         //  set character limit
-        userInput.characterLimit = solutionLength;
+        userInput.characterLimit = solution.Length;
+        userInput.text = "";
 
         // set carat as invisible
-        Color caretColor = userInput.caretColor;
-        caretColor.a = 0f;
-        userInput.caretColor = caretColor;
-        userInput.caretPosition = 0;
+        //Color caretColor = userInput.caretColor;
+        //caretColor.a = 0f;
+        //userInput.caretColor = caretColor;
+        //userInput.caretPosition = 0;
+
+        if (GameManager.CurrentPuzzle == null)
+        {
+            Debug.Log("no current puzzle");
+            return;
+        }
 
         if (GameManager.IsCurrentPuzzleSolved())
         {
@@ -53,7 +63,7 @@ public class CodePuzzleManager : MonoBehaviour
 
     public void FoundSolution()
     {
-        userInput.textComponent.color = Color.green;
+        userInput.textComponent.color = correctColor;
         userInput.interactable = false;
         submitButton.interactable = false;
     }
@@ -62,11 +72,11 @@ public class CodePuzzleManager : MonoBehaviour
     IEnumerator Incorrect()
     {
         Debug.Log("incorrect");
-        userInput.textComponent.color = Color.red;
+        userInput.textComponent.color = incorrectColor;
         yield return new WaitForSeconds(0.15f);
         userInput.textComponent.color = Color.black;
         yield return new WaitForSeconds(0.15f);
-        userInput.textComponent.color = Color.red;
+        userInput.textComponent.color = incorrectColor;
         yield return new WaitForSeconds(0.15f);
         userInput.textComponent.color = Color.black;
 
