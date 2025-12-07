@@ -137,19 +137,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[0].text
-      value: This is the puzzle select screen
+      value: This is the puzzle select screen.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].text
-      value: Clicking an icon will take you to a puzzle
+      value: Clicking on any of these runes icons will take you to a puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[2].text
-      value: 
+      value: The final rune in the middle will activate once all the other puzzles
+        have been completed.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].actions.Array.size
@@ -157,6 +158,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[2].actions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].actions.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
@@ -169,6 +174,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[2].actions.Array.data[0]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[3].actions.Array.data[0]'
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3938881969563705034, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
@@ -604,14 +613,14 @@ PrefabInstance:
     - target: {fileID: 7992042301512575571, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1688548476}
     - target: {fileID: 7992042301512575571, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonOnClick
       objectReference: {fileID: 0}
     - target: {fileID: 7992042301512575571, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: NavButton, Assembly-CSharp
+      value: WizardPuzzleButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9184819407407693964, guid: 5698884fab360e54191b6171e9acde50, type: 3}
       propertyPath: m_text
@@ -2010,7 +2019,7 @@ MonoBehaviour:
       puzzleNote: {fileID: 21300000, guid: eb8b8bb4750ab78489adecd6ad2966a2, type: 3}
       mapMarker:
         hasMapMarker: 1
-        x: 340
+        x: -340
         y: 60
     - puzzleName: 7
       scene: 18
@@ -2024,38 +2033,38 @@ MonoBehaviour:
       puzzleNote: {fileID: 21300000, guid: cc85176699c2ac34480eb7596b9caa55, type: 3}
       mapMarker:
         hasMapMarker: 1
-        x: 620
-        y: 8
+        x: 206
+        y: 43
   - groupName: 1
     puzzleList:
     - puzzleName: 1
       scene: 10
       puzzleNote: {fileID: 0}
       mapMarker:
-        hasMapMarker: 0
-        x: 0
-        y: 0
+        hasMapMarker: 1
+        x: 248
+        y: 71
     - puzzleName: 2
       scene: 11
       puzzleNote: {fileID: 0}
       mapMarker:
         hasMapMarker: 1
-        x: 200
-        y: 200
+        x: -253
+        y: 98
     - puzzleName: 3
       scene: 12
       puzzleNote: {fileID: 0}
       mapMarker:
         hasMapMarker: 1
-        x: -200
-        y: -200
+        x: 140
+        y: 122
     - puzzleName: 4
       scene: 13
       puzzleNote: {fileID: 0}
       mapMarker:
         hasMapMarker: 1
         x: -200
-        y: -200
+        y: 122
   - groupName: 2
     puzzleList:
     - puzzleName: 5

@@ -3,18 +3,12 @@ using System.Collections.Generic;
 
 public class LabelSpot : MonoBehaviour
 {
-    public static List<GameObject> LabelSpots = new List<GameObject>();
     public static float dropDistance = 100f;
     
     [SerializeField] private Label correctLabel;
     
     private Label currentLabel;
     private bool isCorrect = false;
-
-    private void Awake()
-    {
-        LabelSpots.Add(gameObject);
-    }
 
     public Label GetCurrentLabel()
     {
@@ -30,6 +24,11 @@ public class LabelSpot : MonoBehaviour
             isCorrect = true;
             //Debug.Log("correct label spot");
         }
+    }
+
+    public Label GetCorrectLabel()
+    {
+        return correctLabel;
     }
 
     public bool IsCorrect()

@@ -22,11 +22,11 @@ public class WizardPuzzleButton : MonoBehaviour
         }
     }
 
-    void ButtonOnClick()
+    public void ButtonOnClick()
     {
         if (this.enabled)
         {
-            LoadSceneManager.LoadScene(LoadSceneManager.SceneName.WizardPuzzle);
+            LoadSceneManager.LoadScene(LoadSceneManager.SceneName.End);
         }
     }
 }

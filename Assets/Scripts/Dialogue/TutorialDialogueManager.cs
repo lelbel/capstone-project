@@ -14,7 +14,8 @@ public class TutorialDialogueManager : MonoBehaviour
         SpriteDefault,
         LoadScene,
         AdvanceTutorial,
-        EndTutorial
+        EndTutorial,
+        ShowBookmark
     }
     
     [SerializeField] private Image character;
@@ -25,6 +26,7 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private LoadSceneManager.SceneName scene;
     [SerializeField] private Dialogue dialogue;
+    [SerializeField] private Image bookmark;
     
     //[SerializeField] private TutorialArrowManager tutorialArrowManager;
     
@@ -120,6 +122,10 @@ public class TutorialDialogueManager : MonoBehaviour
             case Actions.EndTutorial:
                 GameManager.TutorialActive = false;
                 LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleSelect);
+                break;
+            
+            case Actions.ShowBookmark:
+                bookmark.enabled = true;
                 break;
         }
     }

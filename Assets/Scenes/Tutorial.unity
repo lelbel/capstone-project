@@ -283,22 +283,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[0].text
-      value: This is the end of the tutorial good luck
+      value: Now you are ready to begin your journey.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].text
+      value: When the final rune is activated, click it to come see me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].text
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].text
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].actions.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[2].actions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].actions.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
@@ -311,7 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[2].actions.Array.data[0]'
-      value: 5
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[3].actions.Array.data[0]'
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2240070240503557809, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: m_SizeDelta.x
@@ -616,27 +632,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[0].text
-      value: You look around and there are books wow
+      value: Hello and welcome to the library!
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].text
-      value: Hello I am the librarian
+      value: If you have come seeking riddles and challenges, then you are in the
+        right place.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[2].text
-      value: I will show you how to play the game
+      value: Allow me to show you how the within the library work.
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[3].text
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4].text
+      value: Allow me to show you how the within the library work.
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[0].actions.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[1].actions.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.sentences.Array.data[2].actions.Array.size
@@ -647,12 +668,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
-      propertyPath: 'dialogue.sentences.Array.data[0].actions.Array.data[0]'
+      propertyPath: dialogue.sentences.Array.data[4].actions.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[0].actions.Array.data[0]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[0].actions.Array.data[1]'
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[1].actions.Array.data[0]'
@@ -663,11 +688,23 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[2].actions.Array.data[0]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[2].actions.Array.data[1]'
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[3].actions.Array.data[0]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[3].actions.Array.data[1]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[4].actions.Array.data[0]'
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2240070240503557809, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
