@@ -6,6 +6,7 @@ public class NavButton : MonoBehaviour
     //  navigate to specified scene
     public void ButtonOnClick()
     {
+        AudioManager.PlayPageTurn();
         LoadSceneManager.LoadScene(scene);
     }
 }

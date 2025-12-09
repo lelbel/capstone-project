@@ -7,6 +7,7 @@ public class ArrowPuzzleButton : MonoBehaviour
 
     public void ButtonOnClick()
     {
+        AudioManager.PlayPageTurn();
         arrowPuzzleManager.InputArrow(arrowDirection);
     }
 }

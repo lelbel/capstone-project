@@ -43,6 +43,8 @@ public class CodePuzzleManager : MonoBehaviour
     //  function that triggers when the submit button is entered
     public void CheckAnswer()
     {
+        AudioManager.PlayPageTurn();
+        
         if (string.IsNullOrWhiteSpace(solution))
         {
             Debug.Log("Solution string is blank");

@@ -12,6 +12,8 @@ namespace Utility
         //  create instance of the tutorial exit notification if tutorial is active
         public void ButtonOnClick()
         {
+            AudioManager.PlayPageTurn();
+            
             if (GameManager.TutorialActive)
             {
                 if (this.transform.parent != null)

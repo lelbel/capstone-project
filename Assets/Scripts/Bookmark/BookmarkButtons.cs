@@ -35,18 +35,21 @@ public class BookmarkButtons : MonoBehaviour
 
     public void OpenMap()
     {
+        AudioManager.PlayPageTurn();
         map.SetActive(true);
         note.SetActive(false);
     }
 
     public void OpenNotes()
     {
+        AudioManager.PlayPageTurn();
         map.SetActive(false);
         note.SetActive(true);
     }
 
     public void Back()
     {
+        AudioManager.PlayPageTurn();
         Destroy(gameObject);
     }
 }

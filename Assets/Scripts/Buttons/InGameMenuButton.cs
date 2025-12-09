@@ -17,16 +17,19 @@ public class InGameMenuButton : MonoBehaviour
 
     private void Continue()
     {
+        AudioManager.PlayPageTurn();
         LoadSceneManager.LoadScene(LoadSceneManager.SceneName.PuzzleSelect);
     }
 
     private void Tutorial()
     {
+        AudioManager.PlayPageTurn();
         LoadSceneManager.LoadScene(LoadSceneManager.SceneName.Tutorial);
     }
 
     private void Quit()
     {
+        AudioManager.PlayPageTurn();
         Application.Quit();
     }
 }

@@ -2,6 +2,8 @@
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] private AudioSource createAudioSource;
+    private static AudioSource AudioSource;
     private static AudioManager _instance;
     
     private void Awake()
@@ -15,6 +17,16 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+        
+        AudioSource = createAudioSource;
+    }
+
+    public static void PlayPageTurn()
+    {
+        if (AudioSource != null)
+        {
+            AudioSource.Play();
         }
     }
 }

@@ -1,26 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class MapPuzzleManager : MonoBehaviour
 {
-    public static List<GameObject> LabelSpots;
-    public static Button CheckButton;
+    private static List<GameObject> _labelSpots;
+    private static Button _checkButton;
     
     [SerializeField] private List<GameObject> createLabelSpots;
     [SerializeField] private Button createCheckButton;
 
     private void Awake()
     {
-        CheckButton = createCheckButton;
-        CheckButton.enabled = false;
+        _checkButton = createCheckButton;
+        _checkButton.enabled = false;
 
-        LabelSpots = new List<GameObject>();
+        _labelSpots = new List<GameObject>();
 
         foreach (var labelSpot in createLabelSpots)
         {
-            LabelSpots.Add(labelSpot);
+            _labelSpots.Add(labelSpot);
         }
     }
 
@@ -42,7 +41,7 @@ public class MapPuzzleManager : MonoBehaviour
     {
         List<Vector3> positions = new List<Vector3>();
         
-        foreach (var label in LabelSpots)
+        foreach (var label in _labelSpots)
         {
             positions.Add(label.transform.position);
         }
@@ -52,9 +51,9 @@ public class MapPuzzleManager : MonoBehaviour
 
     public static GameObject GetClosestLabelSpot(GameObject labelPosition)
     {
-        GameObject closest = LabelSpots[0];
+        GameObject closest = _labelSpots[0];
         {
-            foreach (var labelSpot in LabelSpots)
+            foreach (var labelSpot in _labelSpots)
             {
                 float closestDistance = Vector3.Distance(labelPosition.transform.position, closest.transform.position);
                 float currentDistance = Vector3.Distance(labelPosition.transform.position, labelSpot.transform.position);
@@ -72,7 +71,7 @@ public class MapPuzzleManager : MonoBehaviour
     //  check that all label spots have a label before enabling the check button
     public static void CanPuzzleBeSolved()
     {
-        foreach (var labelSpot in LabelSpots)
+        foreach (var labelSpot in _labelSpots)
         {
             if (labelSpot.GetComponent<LabelSpot>().GetCurrentLabel() == null)
             {
@@ -80,13 +79,14 @@ public class MapPuzzleManager : MonoBehaviour
             }
         }
         
-        CheckButton.enabled = true;
+        _checkButton.enabled = true;
     }
 
     public void CheckAnswer()
     {
-        //Debug.Log("checking answer");
-        foreach (var labelSpot in LabelSpots)
+        AudioManager.PlayPageTurn();
+
+        foreach (var labelSpot in _labelSpots)
         {
             if (!labelSpot.GetComponent<LabelSpot>().IsCorrect())
             {
@@ -100,15 +100,14 @@ public class MapPuzzleManager : MonoBehaviour
 
     private void Incorrect()
     {
-        foreach (var labelSpot in LabelSpots)
+        foreach (var labelSpot in _labelSpots)
         {
             labelSpot.GetComponent<LabelSpot>().GetCurrentLabel().InitialPosition();
             labelSpot.GetComponent<LabelSpot>().SetCurrentLabel(null);
         }
-
     }
 
-    private void SolvePuzzle()
+    private static void SolvePuzzle()
     {
         Debug.Log("correct");
         if (GameManager.CurrentPuzzle == null)
@@ -119,7 +118,7 @@ public class MapPuzzleManager : MonoBehaviour
         
         GameManager.SolveCurrentPuzzle();
 
-        foreach (var labelSpot in LabelSpots)
+        foreach (var labelSpot in _labelSpots)
         {
             var correctLabel = labelSpot.GetComponent<LabelSpot>().GetCorrectLabel();
             
@@ -127,8 +126,5 @@ public class MapPuzzleManager : MonoBehaviour
             correctLabel.LockLabel();
             correctLabel.GoToPosition(labelSpot.transform.position);
         }
-        
-        
     }
-
 }

@@ -40,6 +40,7 @@ public class PuzzleSelectButton : MonoBehaviour
     //  update current puzzle when puzzle is selected
     public void ButtonOnClick()
     {
+        AudioManager.PlayPageTurn();
         GameManager.UpdateCurrentPuzzle(puzzleName);
     }
 }
