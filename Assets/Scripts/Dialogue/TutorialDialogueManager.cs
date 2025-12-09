@@ -25,11 +25,9 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private LoadSceneManager.SceneName scene;
+    [SerializeField] private GameObject bookmark;
+    
     [SerializeField] private Dialogue dialogue;
-    [SerializeField] private Image bookmark;
-    
-    //[SerializeField] private TutorialArrowManager tutorialArrowManager;
-    
     
     private Queue<Sentence> sentences;
     
@@ -125,7 +123,10 @@ public class TutorialDialogueManager : MonoBehaviour
                 break;
             
             case Actions.ShowBookmark:
-                bookmark.enabled = true;
+                if (bookmark != null)
+                {
+                    bookmark.SetActive(true);
+                }
                 break;
         }
     }
@@ -149,8 +150,3 @@ public class TutorialDialogueManager : MonoBehaviour
         }
     }
 }
-
-/*            case Actions.NextArrow:
-                tutorialArrowManager.NextArrow(); 
-                break; 
-*/

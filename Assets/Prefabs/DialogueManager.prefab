@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2937933886603554298}
   - component: {fileID: 7603302497731574286}
   - component: {fileID: 8429437419730053748}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5787461594102191429}
   - component: {fileID: 2811074197371161688}
   - component: {fileID: 7104066617485082777}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 4173665345072012076}
   - component: {fileID: 6812874892631366409}
   - component: {fileID: 378581871032351947}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 8519955722756974844}
   - component: {fileID: 4294354727734578865}
   - component: {fileID: 5132496801910645046}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 1280166594142774016}
   - component: {fileID: 6415138347570640286}
   - component: {fileID: 2783108223919458911}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,6 +672,7 @@ MonoBehaviour:
   defaultSprite: {fileID: 1148465270101066530, guid: 4d71cd1324b6c754a8b773862703e442, type: 3}
   dialogueBox: {fileID: 7197985869105765958}
   scene: 0
+  bookmarkPrefab: {fileID: 0}
   dialogue:
     name: Name
     sentences: []
@@ -686,7 +687,7 @@ GameObject:
   - component: {fileID: 2240070240503557809}
   - component: {fileID: 7951565784263840097}
   - component: {fileID: 3938881969563705034}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}

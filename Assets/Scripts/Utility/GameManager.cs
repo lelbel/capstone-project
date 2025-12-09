@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     
     public static List<Puzzle> CurrentPuzzleGroup;
     public static Puzzle CurrentPuzzle;
-    //public static List<PuzzleNote> CurrentPuzzleNotes;
     public static bool TutorialActive = false;
     public static bool HasEnteredTutorial = false;
     
@@ -36,8 +35,6 @@ public class GameManager : MonoBehaviour
                 _puzzleGroups.Add(group);
             }
         }
-
-        //CurrentPuzzleNotes = new();
     }
     
     public static Puzzle GetPuzzle(Puzzle.PuzzleName puzzleName)
@@ -53,7 +50,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        //Debug.Log("no puzzle found");
         return null;
     }
 
@@ -113,18 +109,3 @@ public class GameManager : MonoBehaviour
         return true;
     }
 }
-
-/*
-public static void UpdatePuzzleNotes()
-    {
-        CurrentPuzzleNotes.Clear();
-
-        foreach (Puzzle puzzle in CurrentPuzzleGroup)
-        {
-            if (puzzle.GetNote() != null && puzzle.GetNote().IsVisible())
-            {
-                CurrentPuzzleNotes.Add(puzzle.GetNote());
-            }
-        }
-    }
-*/

@@ -10,6 +10,7 @@ public class PuzzleSelectManager : MonoBehaviour
         //  activate dialogue manager if tutorial is active
         if (GameManager.TutorialActive)
         {
+            GameManager.CurrentPuzzle = GameManager.GetPuzzle(Puzzle.PuzzleName.ArrowPuzzle1);
             dialogueManager.SetActive(true);
         }
     }
