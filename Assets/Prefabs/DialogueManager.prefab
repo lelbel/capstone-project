@@ -672,7 +672,7 @@ MonoBehaviour:
   defaultSprite: {fileID: 1148465270101066530, guid: 4d71cd1324b6c754a8b773862703e442, type: 3}
   dialogueBox: {fileID: 7197985869105765958}
   scene: 0
-  bookmarkPrefab: {fileID: 0}
+  bookmark: {fileID: 5101941994335397035, guid: 86fea49307bf05c44885289e9ead80c5, type: 3}
   dialogue:
     name: Name
     sentences: []

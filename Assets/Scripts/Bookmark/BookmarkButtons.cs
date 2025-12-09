@@ -26,6 +26,11 @@ public class BookmarkButtons : MonoBehaviour
             mapButton.enabled = false;
             noteButton.enabled = false;
         }
+
+        if (GameManager.CurrentPuzzle.GetNote() == null)
+        {
+            noteButton.gameObject.SetActive(false);
+        }
     }
 
     public void OpenMap()

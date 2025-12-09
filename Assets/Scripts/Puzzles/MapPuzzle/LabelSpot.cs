@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class LabelSpot : MonoBehaviour
 {
-    public static float dropDistance = 100f;
+    public static float dropDistance = 150f;
     
     [SerializeField] private Label correctLabel;
     

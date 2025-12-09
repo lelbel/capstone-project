@@ -41,7 +41,17 @@ public class TutorialDialogueManager : MonoBehaviour
         //  start the dialogue
         StartDialogue(dialogue);
     }
-    
+
+    /*
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            DisplayNextSentence();
+        }
+    }
+    */
+
     public void StartDialogue(Dialogue dialogue)
     {
         //  set name
@@ -123,10 +133,7 @@ public class TutorialDialogueManager : MonoBehaviour
                 break;
             
             case Actions.ShowBookmark:
-                if (bookmark != null)
-                {
-                    bookmark.SetActive(true);
-                }
+                bookmark.SetActive(true);
                 break;
         }
     }

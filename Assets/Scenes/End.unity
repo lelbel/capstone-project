@@ -232,6 +232,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2068982924}
     m_Modifications:
     - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
+      propertyPath: scene
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 198918707818700350, guid: 04379ed5f34d80e43a7eb99bdea0e650, type: 3}
       propertyPath: dialogue.name
       value: Librarian
       objectReference: {fileID: 0}
