@@ -590,6 +590,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -58.159912
       objectReference: {fileID: 0}
+    - target: {fileID: 6256583224335800133, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256583224335800133, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 227
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256583224335800133, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 990
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256583224335800133, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -113.49994
+      objectReference: {fileID: 0}
     - target: {fileID: 7946244345114319727, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
       propertyPath: bookmark
       value: 

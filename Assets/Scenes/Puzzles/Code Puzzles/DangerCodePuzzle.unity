@@ -131,38 +131,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b9cb8d80eaf2cd4fa0f4af830017686, type: 3}
-    - target: {fileID: 3267315630784505337, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
-      objectReference: {fileID: 0}
-    - target: {fileID: 3267315630784505337, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0000076293945
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1268.6355
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 246.0385
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000045776
-      objectReference: {fileID: 0}
-    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -61.812
-      objectReference: {fileID: 0}
-    - target: {fileID: 4024375738815629764, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1194.2869
-      objectReference: {fileID: 0}
-    - target: {fileID: 4024375738815629764, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000014539
-      objectReference: {fileID: 0}
     - target: {fileID: 4727232990476225060, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
       propertyPath: m_Name
       value: CodePuzzle
@@ -170,22 +138,6 @@ PrefabInstance:
     - target: {fileID: 5001419565725990978, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
       propertyPath: solution
       value: danger
-      objectReference: {fileID: 0}
-    - target: {fileID: 6098272058185896861, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6098272058185896861, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0000076293945
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388275110254998966, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1301.8201
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388275110254998966, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 8289034638881872912, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
       propertyPath: m_LocalPosition.x
