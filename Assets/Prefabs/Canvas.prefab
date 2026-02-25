@@ -154,7 +154,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -266,6 +266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8250460632802729789}
     m_Modifications:
+    - target: {fileID: 1208970224329201921, guid: cee97ffe6fd4a4943807955a0c680e86, type: 3}
+      propertyPath: m_margin.y
+      value: 23.464722
+      objectReference: {fileID: 0}
     - target: {fileID: 2425609523609575895, guid: cee97ffe6fd4a4943807955a0c680e86, type: 3}
       propertyPath: m_Name
       value: BackButton
