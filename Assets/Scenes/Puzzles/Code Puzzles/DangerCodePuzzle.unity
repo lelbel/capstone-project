@@ -131,6 +131,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b9cb8d80eaf2cd4fa0f4af830017686, type: 3}
+    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1051.7764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 203.9809
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00036621
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293969679917077151, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 526.19
+      objectReference: {fileID: 0}
     - target: {fileID: 4727232990476225060, guid: 4316e36b88d31dd47be1b809f4210d93, type: 3}
       propertyPath: m_Name
       value: CodePuzzle
