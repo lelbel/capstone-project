@@ -917,14 +917,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3ccf64121e461a86d0c219d05286ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createLabelSpots:
+  labelSpots:
   - {fileID: 894917460}
   - {fileID: 1290630939}
   - {fileID: 634913944}
   - {fileID: 1091702503}
   - {fileID: 1869796900}
   - {fileID: 1212424963}
-  createCheckButton: {fileID: 350707690}
+  checkButton: {fileID: 350707690}
 --- !u!4 &864865129
 Transform:
   m_ObjectHideFlags: 0

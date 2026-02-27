@@ -1,6 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 //  multiple labels can be dragged onto the same spot
 public class Label : MonoBehaviour
@@ -8,9 +7,11 @@ public class Label : MonoBehaviour
     [SerializeField] private TMP_Text text;
     private bool canMove = true;
     private Vector3 initialPosition;
+    private MapPuzzleManager mapPuzzleManager;
 
     private void Start()
     {
+        mapPuzzleManager = FindFirstObjectByType<MapPuzzleManager>();
         initialPosition = this.transform.position;
     }
 
@@ -26,7 +27,7 @@ public class Label : MonoBehaviour
     public void DropLabel()
     {
         //  get closest label spot
-        GameObject closestLabelSpot = MapPuzzleManager.GetClosestLabelSpot(this.gameObject);
+        GameObject closestLabelSpot = mapPuzzleManager.GetClosestLabelSpot(this.gameObject);
 
         //  check that closest label spot is within snapping distance
         if (Vector3.Distance(this.transform.position, closestLabelSpot.transform.position) <= LabelSpot.dropDistance)
@@ -37,7 +38,7 @@ public class Label : MonoBehaviour
             closestLabelSpot.GetComponent<LabelSpot>().SetCurrentLabel(this.GetComponent<Label>());
             
             //  check if puzzle is able to be solved
-            MapPuzzleManager.CanPuzzleBeSolved();
+            mapPuzzleManager.CanPuzzleBeSolved();
         }
 
         //  go back to original position

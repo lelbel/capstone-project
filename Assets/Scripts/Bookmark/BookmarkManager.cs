@@ -10,7 +10,7 @@ public class BookmarkManager : MonoBehaviour
     {
         if (GameManager.TutorialActive)
         {
-            this.GetComponent<Button>().enabled = false;
+            GetComponent<Button>().enabled = false;
             return;
         }
     }
