@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,7 +24,8 @@ public class LoadSceneManager : MonoBehaviour
         End,
         WizardPuzzle,
         ArrowPuzzle2,
-        ArrowPuzzle3
+        ArrowPuzzle3,
+        BookmarkMenu
     }
 
     //  set to mainMenu for debugging

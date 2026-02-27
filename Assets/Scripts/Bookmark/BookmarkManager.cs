@@ -18,7 +18,8 @@ public class BookmarkManager : MonoBehaviour
     public void OpenBookmarks()
     {
         AudioManager.PlayPageTurn();
-        bookmark = Instantiate(bookmarkPrefab, Vector3.zero, Quaternion.identity);
-        bookmark.transform.SetParent(transform.parent.gameObject.transform, false);
+        LoadSceneManager.LoadScene(LoadSceneManager.SceneName.BookmarkMenu);
+        //bookmark = Instantiate(bookmarkPrefab, Vector3.zero, Quaternion.identity);
+        //bookmark.transform.SetParent(transform.parent.gameObject.transform, false);
     }
 }

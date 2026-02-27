@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
-using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
@@ -25,6 +23,16 @@ public class MapManager : MonoBehaviour
             
             //  set button parent as canvas so it shows up
             marker.transform.SetParent(this.transform, false);
+        }
+
+        //  if there is no note string, move the map to the middle of the bookmark page
+        if (string.IsNullOrWhiteSpace(GameManager.CurrentPuzzle.GetNote()))
+        {
+            Vector3 pos = transform.position;
+
+            Vector3 midPos = new (pos.x, Screen.height / 2, pos.z);
+
+            transform.position = midPos;
         }
     }
 }

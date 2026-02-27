@@ -1962,21 +1962,27 @@ MonoBehaviour:
     puzzleList:
     - puzzleName: 0
       scene: 9
-      puzzleNote: {fileID: 21300000, guid: eb8b8bb4750ab78489adecd6ad2966a2, type: 3}
+      puzzleNote: 'The Hunger Games: Suzanne Collins - Audiobook\n\nStar Wars: Episode
+        IV - A New Hope - DVD\n\nThe Maze Runner: James Dashner - Audiobook\n\nSix
+        of Crows: Leigh Bardugo - Audiobook\nMy Neighbor Totoro - DVD'
       mapMarker:
         hasMapMarker: 1
         x: -340
         y: 60
     - puzzleName: 7
       scene: 18
-      puzzleNote: {fileID: 21300000, guid: c66e21431713a6f499a1515fb3cbe186, type: 3}
+      puzzleNote: '1984: George Orwell\n\nThe Song of Achilles: Madeline Miller\n\nTo
+        Kill a Mockingbird: Harper Lee\n\nRemarkably Bright Creatures: Shelby Van
+        Pelt\n\nBrave New World: Aldous Huxley'
       mapMarker:
         hasMapMarker: 1
         x: -140
         y: 7
     - puzzleName: 8
       scene: 19
-      puzzleNote: {fileID: 21300000, guid: cc85176699c2ac34480eb7596b9caa55, type: 3}
+      puzzleNote: 'Minecraft Guide to Redstone: J794.85\n\nSuper Cool Cooking for
+        Kids: J641.5123\n\nLet''s Get Gardening: J635\n\nHuman Body!: J612\n\nThe
+        New Artist''s Guide to Drawing: J741.2'
       mapMarker:
         hasMapMarker: 1
         x: 206
@@ -1985,28 +1991,28 @@ MonoBehaviour:
     puzzleList:
     - puzzleName: 1
       scene: 10
-      puzzleNote: {fileID: 0}
+      puzzleNote: 
       mapMarker:
         hasMapMarker: 1
         x: 248
         y: 71
     - puzzleName: 2
       scene: 11
-      puzzleNote: {fileID: 0}
+      puzzleNote: 
       mapMarker:
         hasMapMarker: 1
         x: -253
         y: 98
     - puzzleName: 3
       scene: 12
-      puzzleNote: {fileID: 0}
+      puzzleNote: 
       mapMarker:
         hasMapMarker: 1
         x: 140
         y: 122
     - puzzleName: 4
       scene: 13
-      puzzleNote: {fileID: 0}
+      puzzleNote: 
       mapMarker:
         hasMapMarker: 1
         x: -200
@@ -2015,7 +2021,7 @@ MonoBehaviour:
     puzzleList:
     - puzzleName: 5
       scene: 14
-      puzzleNote: {fileID: 0}
+      puzzleNote: 
       mapMarker:
         hasMapMarker: 0
         x: 0

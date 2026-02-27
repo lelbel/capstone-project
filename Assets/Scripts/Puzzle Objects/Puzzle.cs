@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using System.Collections.Generic;
 
 [Serializable]
 public class Puzzle
@@ -21,7 +20,7 @@ public class Puzzle
     
     [SerializeField] private PuzzleName puzzleName;
     [SerializeField] private LoadSceneManager.SceneName scene;
-    [SerializeField] private Sprite puzzleNote;
+    [SerializeField] private string puzzleNote;
     [SerializeField] private MapMarker mapMarker;
     
     private bool isSolved = false;
@@ -63,7 +62,7 @@ public class Puzzle
         //puzzleNote.Visible();
     }
 
-    public Sprite GetNote()
+    public string GetNote()
     {
         return puzzleNote;
     }

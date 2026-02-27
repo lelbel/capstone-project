@@ -1,6 +1,6 @@
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class PuzzleNoteManager : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class PuzzleNoteManager : MonoBehaviour
 
         if (GameManager.CurrentPuzzle.GetNote() != null)
         {
-            this.GetComponent<Image>().sprite = GameManager.CurrentPuzzle.GetNote();
+            this.GetComponent<TMP_Text>().text = GameManager.CurrentPuzzle.GetNote();
         }
 
         else
