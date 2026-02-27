@@ -7,6 +7,7 @@ public class InGameMenuButton : MonoBehaviour
     [SerializeField] private Button continueButton;
     [SerializeField] private Button tutorialButton;
     [SerializeField] private Button settingsButton;
+    [SerializeField] private Button mainMenuButton;
     [SerializeField] private Button quitButton;
 
     private void Start()
@@ -14,6 +15,7 @@ public class InGameMenuButton : MonoBehaviour
         continueButton.onClick.AddListener(Continue);
         tutorialButton.onClick.AddListener(Tutorial);
         settingsButton.onClick.AddListener(Settings);
+        mainMenuButton.onClick.AddListener(MainMenu);
         quitButton.onClick.AddListener(Quit);
     }
 
@@ -33,6 +35,12 @@ public class InGameMenuButton : MonoBehaviour
     {
         AudioManager.PlayPageTurn();
         LoadSceneManager.LoadScene(LoadSceneManager.SceneName.SettingsMenu);
+    }
+
+    private void MainMenu()
+    {
+        AudioManager.PlayPageTurn();
+        LoadSceneManager.LoadScene(LoadSceneManager.SceneName.MainMenu);
     }
 
     private void Quit()

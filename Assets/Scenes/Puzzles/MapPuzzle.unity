@@ -591,9 +591,9 @@ RectTransform:
   m_Father: {fileID: 923090702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 542.76385, y: 960}
-  m_SizeDelta: {x: 1080, y: 1920}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00030518, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &402189166
 MonoBehaviour:
@@ -777,6 +777,10 @@ PrefabInstance:
     - target: {fileID: 3889731296702859183, guid: 0070304558da72245a82ad7a140680e7, type: 3}
       propertyPath: scene
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957223772226990811, guid: 0070304558da72245a82ad7a140680e7, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8250460632802729789, guid: 0070304558da72245a82ad7a140680e7, type: 3}
       propertyPath: m_Pivot.x
