@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class PuzzleNoteManager : MonoBehaviour
 {
@@ -14,11 +13,14 @@ public class PuzzleNoteManager : MonoBehaviour
 
         if (GameManager.CurrentPuzzle.GetNote() != null)
         {
-            this.GetComponent<TMP_Text>().text = GameManager.CurrentPuzzle.GetNote();
+            Debug.Log("setting bookmark sprite");
+            this.GetComponent<Image>().sprite = GameManager.CurrentPuzzle.GetNote();
+            this.GetComponent<Image>().SetNativeSize();
         }
 
         else
         {
+            Debug.Log("no bookmark sprite");
             this.GetComponent<Image>().enabled = false;
         }
     }

@@ -682,10 +682,9 @@ PrefabInstance:
       objectReference: {fileID: 5101941994335397035, guid: 86fea49307bf05c44885289e9ead80c5, type: 3}
     - target: {fileID: 8981144393867878784, guid: d4ddefd472700824aa380ea74cb022fb, type: 3}
       propertyPath: m_text
-      value: 'When searching for an audiobook or DVD,
-
-        on what side of the
-        shelf will it be?'
+      value: 'The Hunger Games: Suzanne Collins - Audiobook\n\nStar Wars: Episode
+        IV - A New Hope - DVD\n\nThe Maze Runner: James Dashner - Audiobook\n\nSix
+        of Crows: Leigh Bardugo - Audiobook\n\nMy Neighbor Totoro - DVD'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

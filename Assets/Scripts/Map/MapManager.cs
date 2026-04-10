@@ -26,8 +26,9 @@ public class MapManager : MonoBehaviour
         }
 
         //  if there is no note string, move the map to the middle of the bookmark page
-        if (string.IsNullOrWhiteSpace(GameManager.CurrentPuzzle.GetNote()))
+        if (GameManager.CurrentPuzzle.GetNote() == null)
         {
+            Debug.Log("disabling bookmark sprite");
             Vector3 pos = transform.position;
 
             Vector3 midPos = new (pos.x, Screen.height / 2, pos.z);
